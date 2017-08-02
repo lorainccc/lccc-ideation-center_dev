@@ -1,0 +1,176 @@
+/*!
+Section 6: Footer
+*/
+
+footer {
+    margin-top: 5rem;
+    background: #0c3b78;
+    padding: 2rem 0 4rem 0;
+    font-size: .75rem
+}
+
+footer h2 {
+    font-size: .75rem;
+    color: #ffc600;
+    text-transform: uppercase;
+    font-weight: 700
+}
+
+footer .menu>li>a {
+    padding: 0 .25rem 0 0
+}
+
+footer a,footer p {
+    color: #fefefe;
+    font-size: .75rem
+}
+
+footer a:hover{
+ color: #fff;
+}
+
+footer .footer-logo {
+    margin-bottom: 2.5rem
+}
+
+@media only screen and (max-width: 40em) {
+					footer ul {
+								margin:0;
+					} 
+}
+
+footer ul {
+    list-style: none;
+    margin-left: 0
+}
+
+footer ul li {
+    margin-bottom: .75rem
+}
+
+footer .underline>li>a {
+    text-decoration: none
+}
+
+footer .underline>li>a:hover, a:hover {
+    text-decoration: underline
+}
+.footer-sm-links {
+    margin-bottom: 2rem
+}
+
+@media screen and (min-width: 40em) {
+		.mobile-app-link img {
+						margin-right: .75rem
+		}
+} 
+.website-feedback{
+ margin:10px 0;
+ float:left;
+ width:100%;
+}
+.website-feedback a{
+ text-decoration: none;
+}
+
+.website-feedback a:hover{
+ text-decoration: underline;
+}
+
+//Highlight current page in Left Nav
+li.current-menu-ancestor, li.current-menu-item {
+background: #dcdcdc;
+}
+
+.main-navigation ul > li.current-menu-ancestor > ul > li {
+border-top: 1px solid #fff;
+}
+
+.main-navigation ul > li.current-menu-ancestor > ul > li.current-menu-item > a {
+font-weight: bold;
+}
+
+
+@media screen and (min-width: 40em) {
+    .service-box-copy {
+        padding-left:0
+    }
+
+    .service-box-image {
+        padding-right: 0
+    }
+
+    .service-box .button {
+        position: absolute;
+        bottom: 1rem;
+        left: 63.5px
+    }
+
+    .service-box-container {
+        height: 100%
+    }
+
+    aside.columns {
+        padding-right: 0;
+        padding-left: 0
+    }
+
+    .gateway-main,.home-left {
+        padding-right: 5rem
+    }
+
+    .main-right {
+        padding-left: 5rem
+    }
+
+    header {
+        padding-top: 1.5rem
+    }
+
+    .mobile-app-link img,.mobile-app-link h2 {
+        float: left
+    }
+}
+
+@media screen and (min-width: 1074px) {
+    nav.menu-centered {
+        height:36px
+    }
+}
+
+@media screen and (max-width: 39.9375em) {
+/*    h1 {
+        font-size:1.35rem;
+        line-height: 105%
+    }*/
+
+    .white-panel {
+        margin-top: 3rem
+    }
+
+    .cta-icons {
+        margin-bottom: 2rem
+    }
+
+    .footer-sm-links {
+        width: 210px;
+        margin: 0 auto 1rem auto
+    }
+
+    .footer-sm-links li a {
+        padding: 0
+    }
+
+    .footer-sm-links li a img {
+        margin: 0 .25rem
+    }
+
+    footer .row .columns {
+        border-bottom: 1px solid #5593db;
+        padding: 2rem 0 1rem 0
+    }
+
+    footer {
+        padding-bottom: 0
+    }
+}

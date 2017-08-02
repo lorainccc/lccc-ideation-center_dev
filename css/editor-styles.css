@@ -1,0 +1,36 @@
+
+/* Clipboard Bullets */
+
+ul.bullet-clipboard{
+ list-style-type:none;
+}
+
+ul.bullet-clipboard link{
+ text-indent: -1.4em;
+}
+
+ul.bullet-clipboard li:before{
+ font-family: "Genericons";
+ content: "\f425";
+ color: #606060;
+ float: left;
+ width: 1.4em;
+}
+
+/* Arrow Bullets */
+
+ul.bullet-arrow{
+ list-style-type:none;
+}
+
+ul.bullet-arrow link{
+ text-indent: -1.4em;
+}
+
+ul.bullet-arrow li:before{
+ font-family: "Genericons";
+ content: "\f429";
+ color: #606060;
+ float: left;
+ width: 1.4em;
+}

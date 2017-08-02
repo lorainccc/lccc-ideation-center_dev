@@ -1,0 +1,51 @@
+/* Clipboard Bullets */
+
+ul.bullet-clipboard{
+ list-style-type:none;
+ margin: 0px;
+}
+
+ul.bullet-clipboard link{
+ text-indent: -1.4em;
+}
+
+ul.bullet-clipboard li{
+ margin: 5px 0 0 0;
+ padding: 0 0 15px 0;
+}
+
+ul.bullet-clipboard li:before{
+ font-family: "Genericons";
+ font-size: 38px;
+ content: "\f425";
+ margin: -18px 0 0 0;
+ color: #606060;
+ float: left;
+ width: 1.4em;
+}
+
+/* Arrow Bullets */
+
+ul.bullet-arrow{
+ list-style-type:none;
+ margin: 0px;
+}
+
+ul.bullet-arrow link{
+ text-indent: -1.4em;
+}
+
+ul.bullet-arrow li{
+ margin: 5px 0 0 0;
+ padding: 0 0 15px 0;
+}
+
+ul.bullet-arrow li:before{
+ font-family: "Genericons";
+ font-size: 38px;
+ content: "\f429";
+ margin: -18px 0 0 0;
+ color: #606060;
+ float: left;
+ width: 1.4em;
+}
