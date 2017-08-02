@@ -7,6 +7,13 @@
  * @package lorainccc_subsite
  */
 
+// Register scripts and stylesheets
+require_once(get_template_directory().'/functions/enqueue-scripts.php'); 
+
+// Register custom menus and menu walkers
+require_once(get_template_directory().'/functions/menu.php'); 
+
+
 if ( ! function_exists( 'lorainccc_subsite_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
