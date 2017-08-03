@@ -3,13 +3,15 @@
 // This theme uses wp_nav_menu() in one location.
 register_nav_menus( 
 	array(
-		'primary' => esc_html__( 'Primary', 'lorainccc_subsite' ),
-		'left-nav' => esc_html__( 'Left Nav', 'lorainccc_subsite' ),
+		'primary' => esc_html__( 'Primary', 'campana' ),
+		'left-nav' => esc_html__( 'Left Nav', 'campana' ),
 		'footer-quicklinks-nav' => esc_html__( 'Footer Quicklinks', 'lorainccc' ),
 		'footer-campus-location-nav' => esc_html__( 'Footer Campus Locations', 'lorainccc' ),
-		'mobile-primary' => esc_html__( 'Mobile Primary Menu', 'lorainccc_subsite' ),
+		'mobile-primary' => esc_html__( 'Mobile Primary Menu', 'campana' ),
   		'header-shortcuts' => esc_html__( 'Header Shortcuts Menu', 'lorainccc' ),
   		'mobile-header-shortcuts' => esc_html__( 'Mobile Header Shortcuts Menu', 'lorainccc' ),
+		'campana-main-nav' => __( 'Campana Main Menu', 'campana'),
+		'campana-top-nav' => __( 'Campana Top Menu')
 	) 
 );
 
@@ -160,7 +162,44 @@ function footer_quicklinks_nav() {
 Menus, Walkers and Fallbacks added by Kiwi Creative for Campana theme
 ***********************************************************************/
 
-// Campana Primary Nav
-function campana_primary_nav() {
-	// To Be Added
+// Campana Main Menu
+function campana_main_nav() {
+	 wp_nav_menu(array(
+        'container' => false,                           // Remove nav container
+        'menu_class' => 'vertical medium-horizontal menu',       // Adding custom nav class
+        'items_wrap' => '<ul id="%1$s" class="%2$s" data-responsive-menu="accordion medium-dropdown" data-close-on-click-inside="false">%3$s</ul>',
+        'theme_location' => 'campana-main-nav',        			// Where it's located in the theme
+        'depth' => 5,                                   // Limit the depth of the nav
+        'fallback_cb' => false,                         // Fallback function (see below)
+        'walker' => new Topbar_Menu_Walker()
+    ));
+} 
+
+// Big thanks to Brett Mason (https://github.com/brettsmason) for the awesome walker
+class Topbar_Menu_Walker extends Walker_Nav_Menu {
+    function start_lvl(&$output, $depth = 0, $args = Array() ) {
+        $indent = str_repeat("\t", $depth);
+        $output .= "\n$indent<ul class=\"menu vertical\">\n";
+    }
 }
+
+// The Top Menu
+function campana_top_nav() {
+    wp_nav_menu(array(
+    	'container' => 'false',                         // Remove nav container
+    	'menu' => __( 'Campana Top Menu', 'campana' ),   	// Nav name
+    	'menu_class' => 'vertical medium-horizontal menu',      					// Adding custom nav class
+    	'theme_location' => 'campana-top-nav',             // Where it's located in the theme
+        'depth' => 0,                                   // Limit the depth of the nav
+    	'fallback_cb' => ''  							// Fallback function
+	));
+}
+
+// Add Foundation active class to menu
+function required_active_nav_class( $classes, $item ) {
+    if ( $item->current == 1 || $item->current_item_ancestor == true ) {
+        $classes[] = 'active';
+    }
+    return $classes;
+}
+add_filter( 'nav_menu_css_class', 'required_active_nav_class', 10, 2 );
