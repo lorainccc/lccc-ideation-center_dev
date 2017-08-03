@@ -13,7 +13,27 @@ $font-extra-bold: 800;
 $body-font-color: #fefefe;
 $body-font-family: 'Open Sans', sans-serif;
 $header-font-family: 'Raleway', sans-serif;
-$lcccblue:#0055a5;
+$light-gray: #e6e6e6;
+$medium-gray: #cacaca;
+$dark-gray: #8a8a8a;
+$black: #0a0a0a;
+$white: #fefefe;
+$body-background: $white;
+$lcccblue: rgb(0, 85, 165);
+$light-blue: rgb(0, 123, 191);
+$dark-blue: rgb(0, 59, 118);
+$purple: rgb(104, 40, 110);
+$orange: rgb(225,96,37);
+$green: rgb(108, 181,69);
+$yellow: rgb(255, 198, 0);
+$aqua: rgb(13, 136, 150);
+
+/* Variables for shrinking sticky nav */
+$topbar-sticky-shrink-padding: 2rem; // controls the un-stuck height of topbar
+$topbar-sticky-shrink-padding-stuck: 1rem; // controls the is stuck height of topbar
+$topbar-sticky-shrink-bg: $white;
+
+
 /*!*********************
 DEFAULT VARIABLES
 **********************/
@@ -27,12 +47,7 @@ $secondary-color: #777;
 $success-color: #3adb76;
 $warning-color: #ffae00;
 $alert-color: #ec5840;
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-$black: #0a0a0a;
-$white: #fefefe;
-$body-background: $white;
+
 
 
 $body-antialiased: true;
