@@ -1,6 +1,14 @@
 /*!
 Section 4: Header
 */
+
+
+.sticky-inner {
+	width: 100%;
+}
+
+
+/*
 input[name=search],input[name=search]:focus {
     max-width: 260px;
     width: 100%;
@@ -51,11 +59,17 @@ a.skip-link.screen-reader-text:focus {
     background-image: url(/wp-content/themes/lorainccc/images/icons/icon_my-campus.svg)
 }
 
-/*ul {
+*/
+
+/*
+ul {
     margin: 2.5rem;
-}*/
+}
+*/
 
 /*! Ryan's Updated Menu Styling */
+
+/*
 .breadcrumb-container {
     padding: 2rem .9375rem !important;
     //font-size: .8625rem !important
@@ -118,3 +132,5 @@ table.gsc-search-box tbody{
 			padding-top: 1rem;
 		}
 }
+
+*/
