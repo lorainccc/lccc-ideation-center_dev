@@ -67,13 +67,15 @@ add_action( 'after_setup_theme', 'lorainccc_subsite_setup' );
 
 
 // Register scripts and stylesheets
-require_once(get_template_directory().'/functions/enqueue-scripts.php'); 
+require get_stylesheet_directory() . '/functions/enqueue-scripts.php';
 
 // Register custom menus and menu walkers
-require_once(get_template_directory().'/functions/menu.php'); 
+require get_stylesheet_directory() . '/functions/menu.php';
 
 // Register sidebars/widget areas
-require_once(get_template_directory().'/functions/sidebar.php');
+require get_stylesheet_directory() . '/functions/sidebar.php';
+
+
 
 
 
