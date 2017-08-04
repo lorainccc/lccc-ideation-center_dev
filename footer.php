@@ -47,13 +47,7 @@
       <h2>Campus Locations</h2>
   <?php if ( has_nav_menu( 'footer-campus-location-nav' ) ) : ?>
 		<nav id="campus-location-navigation" class="footer-navigation" role="navigation">
-			<?php
-				// Primary Footer navigation menu.
-				wp_nav_menu( array(
-					'menu_class'     => 'underline',
-					'theme_location' => 'footer-campus-location-nav',
-				) );
-			?>
+			<?php footer_campus_locations_nav(); ?>
 		</nav><!-- .main-navigation -->
 	<?php endif; ?>
     </div>
@@ -61,13 +55,7 @@
       <h2>Quick Links</h2>
 	<?php if ( has_nav_menu( 'footer-quicklinks-nav' ) ) : ?>
 		<nav id="quicklinks-navigation" class="footer-navigation" role="navigation">
-			<?php
-				// Primary Footer navigation menu.
-				wp_nav_menu( array(
-					'menu_class'     => 'underline',
-					'theme_location' => 'footer-quicklinks-nav',
-				) );
-			?>
+			<?php footer_quicklinks_nav(); ?>
 		</nav><!-- .main-navigation -->
 	<?php endif; ?>
     </div>
