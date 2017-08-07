@@ -2,50 +2,114 @@
 Section 3: Body
 */
 
-body {
-    font-size: 1.1rem;
-    font-family: "Open Sans",sans-serif;
-    font-weight: 500;
-    line-height: 1.5;
-    //color: #606060;
-    color: #404040;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
-}
 
-h1,h2,h3,h4,h5,h6,h7 {
-    font-family: "Raleway",sans-serif
-}
+/******************************
+HOME PAGE STYLES
+******************************/
 
-img.alignright { float: right; margin: 0 0 1em 1em; }
-img.alignleft { float: left; margin: 0 1em 1em 0; }
-img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
-.alignright { float: right; }
-.alignleft { float: left; }
-.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+#home-banner {
+	
+	background: {
+		size: cover;
+		repeat: no-repeat;
+	}
+	
+	.home-banner-inner {
+		
 
-.columns.gateway-header img {
-   width: 100%;
-   max-width: 100%;
-   height: auto;
+		h1 {
+			color: $white;
+			font-weight: $font-extra-bold;
+			line-height: 110%;
+
+			span {
+				font-weight: $font-regular;
+			}
+		}
+
+		p {
+			color: $white;
+
+			font: {
+				family: $header-font-family;
+				weight: $font-semibold;
+			}
+
+			line-height: 110%;
+		}
+
+		/* Small only */
+		@media screen and (max-width: 39.9375em) {
+			
+			background-color: rgba($dark-blue, .6);
+			
+			min-height: 25rem;
+
+			padding: {
+				top: 7.1738125rem;
+				bottom: 7.1738125rem;
+			}
+
+			h1 {
+				font-size: 3.75rem;
+
+				span {
+					font-size: 4.18rem;
+				}
+			}
+
+			p {
+				font-size: 1.4rem;
+			}
+		}
+
+		/* Medium only */
+		@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+			min-height: 40rem;
+
+			padding: {
+				top: 7.1738125rem;
+				bottom: 7.1738125rem;
+			}
+
+			h1 {
+				font-size: 6.74420625rem;
+
+				span {
+					font-size: 7.53091875rem;
+				}
+			}
+
+			p {
+				font-size: 2.528775rem;
+			}
+
+		}
+
+		/* Large and up */
+		@media screen and (min-width: 64em) {
+
+			min-height: 44.96875rem;
+
+			padding: {
+				top: 7.1738125rem;
+				bottom: 7.1738125rem;
+			}
+
+			h1 {
+				font-size: 7.4935625rem;
+
+				span {
+					font-size: 8.3676875rem;
+				}
+			}
+
+			p {
+				font-size: 2.80975rem;
+			}
+
+		}
+		
+	}
 }
-img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
-   width: 100%;
-   max-width: 100%;
-   height: auto;
-}
-div#ui-datepicker-div {
-    box-shadow: none;
-    border: none;
-}
-  table caption{font-size: 22pt; margin: 10px 0 20px 0; font-weight: 700;}
-  table.calendar{width:100%; border:1px solid #000;}
-  td.day{width: 14%; height: 140px; border: 1px solid #000; vertical-align: top;padding: 0.5625rem 0.325rem;}
-		td.day a{text-decoration: underline;}
-  td.day span.day-date{font-size: 14pt; font-weight: 700;}
-  th.header{background-color: #003972; color: #fff; font-size: 14pt; padding: 5px;}
-  .not-month{background-color: #a6c3df;}
-  td.today {background-color:#0062C5; color: #ffffff;}
-		td.today a{color: #ffffff;text-decoration: underline;}
-		td.day span.today-date{font-size: 16pt;}
-		.todayseventslist{padding: 0;list-style: none;margin-bottom: 0;margin-left: 0;} 

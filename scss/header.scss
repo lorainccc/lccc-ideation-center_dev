@@ -2,134 +2,45 @@
 Section 4: Header
 */
 
+[data-sticky] {
+  width: 100%;
+}
 
 .sticky {
-	width: 100%;
+	background: $white;
 }
 
-/*
-input[name=search],input[name=search]:focus {
-    max-width: 260px;
-    width: 100%;
-    height: 2rem;
-    margin: .5rem 0 0 0;
-    border-radius: 20px;
-    padding: .25rem .25rem .25rem 2.2rem;
-    font-size: .75rem;
-    font-weight: 700;
-    background-image: url(/wp-content/themes/lorainccc/images/icons/icon-search.png);
-    background-repeat: no-repeat;
-    background-position: .75rem .45rem
-}
-a.skip-link.screen-reader-text {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden
+.top-bar {
+	background-color: $white;
+	
+	ul {
+		background-color: transparent;
+	}
 }
 
-a.skip-link.screen-reader-text:focus {
-    position: static;
-    width: auto;
-    height: auto
+.top-bar {
+	padding: {
+		top: 2.25rem;
+		bottom: 2.25rem;
+		left: 0;
+		right: 0;
+	}
+	transition: padding .25s ease-out;
+	
+	
 }
 
-.ql-icon {
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: .78125rem .78125rem
+.is-stuck {
+	
+	box-shadow: 0 2px 10px 2px rgba($black, .25);
+	
+	&> .row > .top-bar {
+	padding: {
+		top: .75rem;
+		bottom: .75rem;
+	}
+	
+	transition: padding .25s ease-out;
+	}
 }
 
-.ql-1 {
-    background-image: url(/wp-content/themes/lorainccc/images/icons/icon-az_blue.svg)
-}
-
-.ql-2 {
-    background-image: url(/wp-content/themes/lorainccc/images/icons/icon-faculty_blue.svg)
-}
-
-.ql-3 {
-    background-image: url(/wp-content/themes/lorainccc/images/icons/icon_canvas.svg)
-}
-
-.ql-4 {
-    background-image: url(/wp-content/themes/lorainccc/images/icons/icon_my-campus.svg)
-}
-
-*/
-
-/*
-ul {
-    margin: 2.5rem;
-}
-*/
-
-/*! Ryan's Updated Menu Styling */
-
-/*
-.breadcrumb-container {
-    padding: 2rem .9375rem !important;
-    //font-size: .8625rem !important
-}
-
-.sidebar-widget {
-    padding-top: 0 !important;
-    margin: 1rem 0 3rem 0 !important
-}
-
-header.entry-header {
-    padding-top: 0 !important
-}
-
-.main-navigation ul:not(.sub-menu)>li {
-    border: 1px solid #dcdcdc !important;
-    box-shadow: inset 0 0 10px #dcdcdc !important;
-    padding: .75rem 2rem .75rem 1rem !important
-}
-
-.main-navigation ul:not(.sub-menu)>li>a{
-    font-size: 1rem !important;
-    color: #0055a5 !important;
-    font-weight: 700 !important
-}
-
-.dropdown-toggle {
-    top: 10px !important;
-    right: 4px
-}
-
-.main-navigation ul ul {
-    margin-left: 0 !important;
-    padding-left: 1rem
-}
-
-.main-navigation ul ul li {
-    border-top: 1px solid #dcdcdc !important;
-    padding-top: .5rem;
-    padding-bottom: .5rem
-}
-
-.main-navigation ul ul li a {
-    color: #0055a5 !important
-}
-
-ul {
-    margin-top: 0 !important
-}
-td.gsc-clear-button{
-	display: none;
-}
-table.gsc-search-box tbody{
-	background: transparent; 
-	border: none;
-}
-
-@media print {
-		header.site-header{
-			padding-top: 1rem;
-		}
-}
-
-*/

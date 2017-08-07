@@ -62,7 +62,9 @@
   </div>
 </footer><!-- #colophon -->
 </div><!-- #page -->
-
+</div> <!-- end .off-canvas-content -->
+</div> <!-- end .off-canvas-wrapper-inner -->
+</div> <!-- end .off-canvas-wrapper -->
 <?php wp_footer(); ?>
 
 </body>

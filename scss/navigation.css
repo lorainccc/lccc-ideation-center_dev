@@ -1,0 +1,64 @@
+/*
+Error: Undefined variable: "$white".
+        on line 6 of /Applications/MAMP/htdocs/LCCC-Campana/wp-content/themes/lccc-ideation-center_dev/scss/navigation.scss
+
+1: /*!
+2: Section 5: Navigation
+3: *\/
+4: 
+5: .is-dropdown-submenu {
+6: 	background-color: $white;
+7: 	border: none;
+8: 	box-shadow: 0px 2px 3px rgba($black, .25), -3px 2px 4px rgba($black, .25), 3px 2px 4px rgba($black, .25);
+9: 	
+10: 	li {
+11: 		background: $white;
+
+Backtrace:
+/Applications/MAMP/htdocs/LCCC-Campana/wp-content/themes/lccc-ideation-center_dev/scss/navigation.scss:6
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/script/tree/node.rb:50:in `perform'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/stack.rb:79:in `with_base'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:431:in `map'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/stack.rb:79:in `with_base'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `map'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/root_node.rb:20:in `render'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/engine.rb:278:in `render'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:420:in `run'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/bin/sass:13:in `<top (required)>'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/bin/sass:30:in `load'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/bin/sass:30:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$white\".\A         on line 6 of /Applications/MAMP/htdocs/LCCC-Campana/wp-content/themes/lccc-ideation-center_dev/scss/navigation.scss\A \A 1: /*!\A 2: Section 5: Navigation\A 3: */\A 4: \A 5: .is-dropdown-submenu {\A 6: 	background-color: $white;\A 7: 	border: none;\A 8: 	box-shadow: 0px 2px 3px rgba($black, .25), -3px 2px 4px rgba($black, .25), 3px 2px 4px rgba($black, .25);\A 9: 	\A 10: 	li {\A 11: 		background: $white;"; }

@@ -1,14 +1,6 @@
 /*! 
 Mixins Section: LCCC Mixins
 */
-
-
 /*************************
 SASS Functions
 *************************/
-
-// Tint Function
-
-@function tint($color, $percentage) {
-  @return mix($white, $color, $percentage);
-}

@@ -5,6 +5,7 @@ Variables Section
 /*!*********************
 CUSTOM VARIABLES
 **********************/
+$font-regular: 400;
 $font-medium: 500;
 $font-semibold: 600;
 $font-bold: 700;
@@ -32,7 +33,7 @@ $topbar-sticky-shrink-bg: $white;
 DEFAULT VARIABLES
 **********************/
 
-$global-width: rem-calc(1200);
+$global-width: rem-calc(1300);
 $global-font-size: 100%;
 $global-lineheight: 1.5;
 //$primary-color: #2199e8;
@@ -54,3 +55,14 @@ $global-weight-bold: $font-bold;
 $global-radius: 0;
 $global-text-direction: ltr;
 $rem-base: 16px;
+
+/***************************************************
+Foundation Variables Originally Missing From Theme
+***************************************************/
+
+/*
+// for some reason this is being printed as rem-calc(1300), instead of rem value
+$grid-row-width: $global-width;
+*/
+
+$grid-row-width: 81.25rem;

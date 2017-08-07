@@ -166,8 +166,8 @@ Menus, Walkers and Fallbacks added by Kiwi Creative for Campana theme
 function campana_main_nav() {
 	 wp_nav_menu(array(
         'container' => false,                           // Remove nav container
-        'menu_class' => 'vertical medium-horizontal menu',       // Adding custom nav class
-        'items_wrap' => '<ul id="%1$s" class="%2$s" data-responsive-menu="accordion medium-dropdown" data-close-on-click-inside="false">%3$s</ul>',
+        'menu_class' => 'vertical large-horizontal menu',       // Adding custom nav class
+        'items_wrap' => '<ul id="%1$s" class="%2$s" data-responsive-menu="accordion large-dropdown" data-close-on-click-inside="false">%3$s</ul>',
         'theme_location' => 'campana-main-nav',        			// Where it's located in the theme
         'depth' => 5,                                   // Limit the depth of the nav
         'fallback_cb' => false,                         // Fallback function (see below)
@@ -188,7 +188,7 @@ function campana_top_nav() {
     wp_nav_menu(array(
     	'container' => 'false',                         // Remove nav container
     	'menu' => __( 'Campana Top Menu', 'campana' ),   	// Nav name
-    	'menu_class' => 'vertical medium-horizontal menu',      					// Adding custom nav class
+    	'menu_class' => 'vertical large-horizontal menu',      					// Adding custom nav class
     	'theme_location' => 'campana-top-nav',             // Where it's located in the theme
         'depth' => 0,                                   // Limit the depth of the nav
     	'fallback_cb' => ''  							// Fallback function

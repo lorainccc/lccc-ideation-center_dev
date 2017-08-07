@@ -29,15 +29,27 @@
 </script>
 </head>
 <body <?php body_class(); ?>>
-
-	<div id="page" class="hfeed site">
 	
-		<a class="skip-link screen-reader-text hide-for-print" href="#content"><?php esc_html_e( 'Skip to content', 'lccc-framework' ); ?></a>
-
-		<header id="masthead" class="site-header" role="banner">
-		
-			<?php get_template_part( 'template-parts/nav', 'topbar' ); ?>
+	<div class="off-canvas-wrapper">
+	
+		<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 			
-		</header><!-- #masthead -->
+			<div class="off-canvas position-right" id="offCanvas" data-position="right" data-off-canvas>
+			
+				<?php get_template_part( 'template-parts/nav', 'offcanvas'); ?>
+			
+			</div>
+			
+			<div class="off-canvas-content" data-off-canvas-content>
 
-		<div id="content" class="site-content">
+				<div id="page" class="hfeed site">
+
+					<a class="skip-link screen-reader-text hide-for-print" href="#content"><?php esc_html_e( 'Skip to content', 'lccc-framework' ); ?></a>
+
+					<header id="masthead" class="site-header" role="banner">
+
+						<?php get_template_part( 'template-parts/nav', 'topbar' ); ?>
+
+					</header><!-- #masthead -->
+
+					<div id="content" class="site-content">
