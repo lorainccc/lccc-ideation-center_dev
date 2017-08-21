@@ -714,9 +714,11 @@ hr.shadow-divider {
 #home-cards .card .back-inner {
   padding: 1.5rem;
   height: 100%;
+  /*
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  */ }
   #home-cards .card .back-inner p {
     font-size: 1rem;
     color: #fefefe; }
