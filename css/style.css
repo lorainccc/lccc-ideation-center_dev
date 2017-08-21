@@ -721,7 +721,7 @@ hr.shadow-divider {
     font-size: 1rem;
     color: #fefefe; }
   #home-cards .card .back-inner .button.hollow {
-    display: inline;
+    display: block;
     width: auto;
     border: 1px solid #fefefe;
     color: #fefefe;
