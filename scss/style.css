@@ -714,18 +714,22 @@ hr.shadow-divider {
 #home-cards .card .back-inner {
   padding: 1.5rem;
   height: 100%;
+  /*
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  */ }
   #home-cards .card .back-inner p {
     font-size: 1rem;
     color: #fefefe; }
   #home-cards .card .back-inner .button.hollow {
-    display: inline;
+    display: block;
     width: auto;
     border: 1px solid #fefefe;
     color: #fefefe;
     margin-bottom: 0;
+    box-sizing: border-box;
+    overflow: visible;
     font-size: 1rem;
     font-weight: 700;
     font-family: "Raleway", sans-serif; }
@@ -1176,7 +1180,7 @@ Section 6: Footer
 */
 footer {
   background-color: #0c3b78;
-  padding: 2.5rem 0;
+  padding: 2.75rem 0;
   margin-top: 4rem; }
 
 .footer-inner h2 {
@@ -1202,8 +1206,10 @@ footer {
     .footer-sm-links li {
       margin: 0 .5rem; } }
 @media screen and (min-width: 40em) {
-  .footer-sm-links li {
-    margin-right: 1rem; } }
+  .footer-sm-links li > a {
+    margin-right: 1rem; }
+    .footer-sm-links li > a img {
+      margin-right: 0; } }
 .footer-sm-links li a {
   padding: 0; }
 
