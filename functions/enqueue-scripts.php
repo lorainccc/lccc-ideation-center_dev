@@ -3,9 +3,9 @@
  * Enqueue google fonts.
  */
 function add_google_fonts() {
-wp_enqueue_style( 'open-sans-google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic', false );
-wp_enqueue_style( 'raleway-google-fonts', 'https://fonts.googleapis.com/css?family=Raleway:400,700', false );
-
+//wp_enqueue_style( 'open-sans-google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic', false );
+//wp_enqueue_style( 'raleway-google-fonts', 'https://fonts.googleapis.com/css?family=Raleway:400,700', false );
+wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Raleway:400,500,600,700', false );
 }
 
 add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
