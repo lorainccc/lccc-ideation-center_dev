@@ -2,6 +2,22 @@
 Section 5: Navigation
 */
 
+
+/* Prevent FOUC */
+.no-js .top-bar {
+  display: none;
+}
+
+@media screen and (min-width: 40em) {
+  .no-js .top-bar {
+    display: block;
+  }
+
+  .no-js .title-bar {
+    display: none;
+  }
+}
+
 .is-dropdown-submenu {
 	background-color: $white;
 	border: none;
@@ -28,6 +44,7 @@ Section 5: Navigation
 			& > a {
 				font-size: 1.048125rem;
 				color: $light-blue;
+				
 			}
 			
 			&:last-child {
@@ -35,7 +52,10 @@ Section 5: Navigation
 					padding-right: 0;
 				}
 			}
+			
+			
 		}
+		
 	}
 	
 }
@@ -52,6 +72,11 @@ Section 5: Navigation
 				}
 				color: $dark-blue;
 				
+				padding: {
+					left: .7rem;
+					right: .7rem;
+				}
+				
 			}
 			
 			&.is-dropdown-submenu-parent {
@@ -65,6 +90,63 @@ Section 5: Navigation
 					padding-right: 0;
 				}
 			}
+			
+			&:first-child > a {
+				padding-left: 0;
+			}
 		}
 	}
 }
+
+.off-canvas {
+	height: 100%;
+	background-color: $dark-blue;
+	
+	
+	.menu {
+		li {
+			a {
+				font: {
+					family: $header-font-family;
+					weight: $font-semibold;
+				}
+				
+				color: $white;
+				padding: {
+					top: 1rem;
+					bottom: 1rem;
+				}
+				border-bottom: 1px solid $light-blue;
+				
+				&:hover {
+					text-decoration: none;
+				}
+				
+				&::after {
+					border-top-color: $white;
+				}
+			}
+			
+			.submenu {
+				li {
+					a {
+						padding-left: 2rem;
+						font-weight: $font-medium;
+						
+						&::before {
+							content:"-";
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	&.position-right {
+		width: 400px;
+		right: -400px;
+		top: 0;
+	}
+}
+
+

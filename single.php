@@ -5,28 +5,50 @@
  * @package LCCC Framework
  */
 
-get_header(); ?>
+get_header();
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+?>
 
-		<?php while ( have_posts() ) : the_post(); ?>
+<div class="blog-single-content">
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+	<?php 
+	
+	if ( have_posts() ) : while( have_posts() ) : the_post(); 
+	
+		get_template_part( 'template-parts/content', 'banner' );
+	
+	?>
+	
+	<div class="blog-single-inner row">
+	
+		<main role="main" class="small-12 large-9 columns">
+		
+			<?php get_template_part('template-parts/loop', 'single'); ?>
+		
+		</main>
+		
+		<aside id="blog-sidebar" role="complementary" class="small-12 large-3 columns">
+		
+			<?php 
+			
+			if( is_active_sidebar('sidebar-1') ) :
 
-			<?php the_post_navigation(); ?>
+				dynamic_sidebar('sidebar-1');
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template
-	if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
+			endif; 
+				
+			get_template_part( 'template-parts/content', 'sidebar-quick-links');
+				
+			get_template_part( 'template-parts/content', 'sidebar-cta');
+								
 			?>
+		
+		</aside>
+	
+	</div>
+	
+	<?php endwhile; endif; ?>
 
-		<?php endwhile; // end of the loop. ?>
+</div>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

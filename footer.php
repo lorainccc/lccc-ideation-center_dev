@@ -6,65 +6,84 @@
  *
  * @package LCCC Framework
  */
-?>
-	</div><!-- #content -->
 
-	<footer id="colophon" class="small-12 medium-12 large-12 columns site-footer hide-for-print" role="contentinfo">
-		  <div class="row text-center medium-text-left">
-    <div class="large-3 medium-3 columns"> <a href="/" title="Lorain County Community College Home"><img class="footer-logo" src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/lccclogo_white.svg" alt="" width="220" height="42.5"/></a>
-      <h2>Connect with LCCC</h2>
-      <ul class="menu footer-sm-links">
-        <li><a href="http://facebook.com/lorainccc" title="Follow LCCC on Facebook" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/facebook_white.svg" height="30" width="30" alt="" /></a></li>
-        <li><a href="http://twitter.com/lorainccc" title="Follow LCCC on Twitter" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/twitter_white.svg" height="30" width="30" alt="" /></a></li>
-        <li><a href="http://www.linkedin.com/company/lorain-county-community-college" title="Follow LCCC on LinkedIn" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/linkedin_white.svg" height="30" width="30" alt="" /></a></li>
-        <!--<li><a href="#" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/pinterest_white.svg" height="30" width="30" alt="" /></a></li>-->
-        <li><a href="http://www.instagram.com/lorainccc" title="Follow LCCC on Instagram" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/instagram_white.svg" height="30" width="30" alt="" /></a></li>
-      </ul>
-      <a href="/campus-technology/lccc-mobile/" title="Download LCCC's Mobile App" target="_blank" class="clearfix mobile-app-link"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/smartphone_yellow.svg" heigth="33" width="20" alt=""/>
-      <h2>LCCC'S<br />
-        Mobile App</h2>
-      </a>
-     <?php if($_GET['siteurl'] == ''){ ?>
-     <p class="website-feedback">
-      <a href="/website-feedback?siteurl=<?php echo 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>" title="Provide Feedback about this Page" target="_blank">Feedback about this page</a>
-     </p>
-     <?php } ?>
-     </div>
-    <div class="large-3 medium-3 columns">
-      <h2>Contact LCCC</h2>
-      <p>1005 N Abbe Rd<br />
-        Elyria, OH 44035<br />
-        1-800-995-LCCC (5222)<br />
-							 or (440) 365-5222<br />
-        <a href="mailto:info@lorainccc.edu" title="Email LCCC for more information">info@lorainccc.edu</a> </p>
-      <ul class="underline"> 
-        <li><a href="/about/map-and-directions-to-lccc/" title="Map and Directions to LCCC">Map and Directions</a></li>
-        <li><a href="/about/contact-lorain-county-community-college/" title="Contact LCCC">Contact LCCC</a></li>
-        <li><a href="/getting-started/campus-visitation-days/" title="Visit LCCC">Visit LCCC</a></li>
-      </ul>
-    </div>
-    <div class="large-3 medium-3 columns">
-      <h2>Campus Locations</h2>
-  <?php if ( has_nav_menu( 'footer-campus-location-nav' ) ) : ?>
-		<nav id="campus-location-navigation" class="footer-navigation" role="navigation">
-			<?php footer_campus_locations_nav(); ?>
-		</nav><!-- .main-navigation -->
-	<?php endif; ?>
-    </div>
-    <div class="large-3 medium-3 columns">
-      <h2>Quick Links</h2>
-	<?php if ( has_nav_menu( 'footer-quicklinks-nav' ) ) : ?>
-		<nav id="quicklinks-navigation" class="footer-navigation" role="navigation">
-			<?php footer_quicklinks_nav(); ?>
-		</nav><!-- .main-navigation -->
-	<?php endif; ?>
-    </div>
-  </div>
-</footer><!-- #colophon -->
-</div><!-- #page -->
-</div> <!-- end .off-canvas-content -->
-</div> <!-- end .off-canvas-wrapper-inner -->
-</div> <!-- end .off-canvas-wrapper -->
+
+$location_heading = get_field('location_heading', 'option');
+$street_address = get_field('street_address', 'option');
+$city = get_field('city', 'option');
+$state = get_field('state', 'option');
+$zipcode = get_field('zipcode', 'option');
+$phone_number = get_field('phone_number', 'option');
+$map_and_directions_label = get_field('map_and_directions_label', 'option');
+$google_maps_link = get_field('google_maps_link', 'option');
+$twitter_handle = get_field('twitter_handle', 'option');
+$twitter_url = get_field('twitter_url', 'option');
+$instagram_handle = get_field('instagram_handle', 'option');
+$instagram_url = get_field('instagram_url', 'option');
+$facebook_handle = get_field('facebook_handle', 'option');
+$facebook_url = get_field('facebook_url', 'option');
+
+
+?>
+
+					</div><!-- #content -->
+
+					<footer role="contentinfo">
+					
+						<div class="footer-inner row text-center medium-text-left">
+						
+							<div class="small-12 medium-4 columns">
+							
+								<img class="footer-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/LCCC-Campana-logo-white.png" alt="Campana Center for Ideation adn Invention of Lorain County Community College" />
+								
+								<?php if( $twitter_url || $instagram_url || $facebook_url ) : ?>
+								
+								<h2>Connect with Campana</h2>
+								
+								<ul class="footer-sm-links menu">
+								
+									<?php if( $twitter_url ) : ?>
+									
+									<li><a href="<?php echo $facebook_url; ?>" title="Follow Campana Center of Ideation and Invention on Facebook" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/facebook_white.svg" alt="Facebook icon" height="30" width="30" /></a></li>
+									
+									<li><a href="<?php echo $twitter_url; ?>" title="Follow Campana Center of Ideation and Invention on Twitter" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/twitter_white.svg" alt="Twitter icon" height="30" width="30" /></a></li>
+									
+									<li><a href="<?php echo $instagram_url; ?>" title="Follow Campana Center of Ideation and Invention on Instagram" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/instagram_white.svg" alt="Instagram icon" height="30" width="30" /></a></li>
+									
+									<?php endif; ?>
+									
+								</ul>
+								
+								<?php endif; ?>
+							
+							</div>
+							
+							<div class="small-12 medium-4 columns">
+							
+								<h2>Contact <?php echo $location_heading; ?></h2>
+								
+							</div>
+							
+							<div class="small-12 medium-4 columns">
+							
+								<h2>Quick Links</h2>
+								
+								<?php footer_quicklinks_nav(); ?>
+							
+							</div>
+							
+						</div> <!-- end .footer-inner -->
+
+					</footer>
+
+				</div><!-- #page -->
+				
+			</div> <!-- end .off-canvas-content -->
+			
+		</div> <!-- end .off-canvas-wrapper-inner -->
+		
+	</div> <!-- end .off-canvas-wrapper -->
+	
 <?php wp_footer(); ?>
 
 </body>

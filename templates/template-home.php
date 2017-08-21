@@ -15,6 +15,25 @@ Template Name: Home
 	
 	<main id="main" role="main">
 	
+		<?php 
+		
+		get_template_part( 'template-parts/home', 'cards' ); 
+		
+		get_template_part( 'template-parts/content', 'shadow-divider' );
+		
+		get_template_part( 'template-parts/home', 'cool' );
+		
+		get_template_part( 'template-parts/content', 'shadow-divider' );
+		
+		get_template_part( 'template-parts/home', 'connect' );
+		
+		get_template_part( 'template-parts/home', 'events' );
+		
+		get_template_part( 'template-parts/content', 'shadow-divider' );
+		
+		get_template_part( 'template-parts/home', 'news' );
+		
+		?>
 	
 	</main> <!-- end #main -->
 	

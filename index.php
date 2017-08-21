@@ -1,44 +1,66 @@
 <?php
-/**
- * The template for displaying all pages.
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
- *
- * @package LCCC Framework
- */
+/* 
+This template is for mainly used for the blog/news archive page (Settings > Reading > Front page dispalys > Posts page). 
+But will be used as a fallback if other various templates are not found.
 
-get_header(); ?>
-<div class="row page-content">
+*/
 
-	<div class="small-12 medium-8 large-8 columns">
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-<?php if ( is_active_sidebar( 'lccc-announcements-sidebar' ) ) { ?>
-						<?php dynamic_sidebar( 'lccc-announcements-sidebar' ); ?>
-				<?php } ?>
+get_header();
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-</div>
-<div class="small-12 medium-4 large-4 columns">
-	<?php if ( is_active_sidebar( 'lccc-badges-sidebar' ) ) { ?>
-			<div class="small-12 medium-12 large-12 columns hide-for-print">
-			<?php dynamic_sidebar( 'lccc-badges-sidebar' ); ?>
-			</div>
-	<?php } ?>
-			<?php if ( is_active_sidebar( 'lccc-events-sidebar' ) ) { ?>
-																							<?php dynamic_sidebar( 'lccc-events-sidebar' ); ?>
-																		<?php } ?>				
+?>
+
+<div id="blog-archive-content">
+	
+	<?php 
+	
+	if (have_posts()) :  
+	
+		get_template_part( 'template-parts/content', 'banner' );
+		
+		get_template_part( 'template-parts/content', 'standard-intro');
+		
+	?>
+	
+	<div class="blog-archive-inner row">
+	
+		<main id="main" role="main" class="small-12 large-9 columns">
+			
+			<?php 
+			
+			while (have_posts()) : the_post();
+			
+				get_template_part( 'template-parts/loop', 'archive');
+				
+			endwhile;
+				
+			?>
+
+		</main>
+		
+		<aside id="blog-sidebar" role="complementary" class="small-12 large-3 columns">
+		
+			<?php 
+			
+			if( is_active_sidebar('sidebar-1') ) :
+
+				dynamic_sidebar('sidebar-1');
+
+			endif; 
+				
+			get_template_part( 'template-parts/content', 'sidebar-quick-links');
+				
+			get_template_part( 'template-parts/content', 'sidebar-cta');
+								
+			?>
+		
+		</aside>
+	
 	</div>
-	<?php
- //Jetpack Sharing Buttons
-if ( function_exists( 'sharing_display' ) ) {
-    sharing_display( '', true );
-}
- ?>
+	
+	<?php  endif; ?>
+	
 </div>
+
 <?php get_footer(); ?>
+
 

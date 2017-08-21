@@ -1,127 +1,64 @@
-/*!
-Section 6: Footer
+/*
+Error: Undefined variable: "$footer-blue".
+        on line 6 of /Applications/MAMP/htdocs/LCCC-Campana/wp-content/themes/lccc-ideation-center_dev/scss/footer.scss
+
+1: /*!
+2: Section 6: Footer
+3: *\/
+4: 
+5: footer {
+6: 	background-color: $footer-blue;
+7: 	padding: 2.75rem 0;
+8: 	margin-top: 4rem;
+9: }
+10: 
+11: .footer-inner {
+
+Backtrace:
+/Applications/MAMP/htdocs/LCCC-Campana/wp-content/themes/lccc-ideation-center_dev/scss/footer.scss:6
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/script/tree/node.rb:50:in `perform'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/stack.rb:79:in `with_base'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:431:in `map'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/stack.rb:79:in `with_base'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `map'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/root_node.rb:20:in `render'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/engine.rb:278:in `render'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:420:in `run'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/bin/sass:13:in `<top (required)>'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/bin/sass:30:in `load'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/bin/sass:30:in `<main>'
 */
-footer {
-  margin-top: 5rem;
-  background: #0c3b78;
-  padding: 2rem 0 4rem 0;
-  font-size: 0.75rem; }
-
-footer h2 {
-  font-size: .75rem;
-  color: #ffc600;
-  text-transform: uppercase;
-  font-weight: 700; }
-
-footer .menu > li > a {
-  padding: 0 0.25rem 0 0; }
-
-footer a, footer p {
-  color: #fefefe;
-  font-size: 0.75rem; }
-
-footer a:hover {
-  color: #fff; }
-
-footer .footer-logo {
-  margin-bottom: 2.5rem; }
-
-@media only screen and (max-width: 40em) {
-  footer ul {
-    margin: 0; } }
-footer ul {
-  list-style: none;
-  margin-left: 0; }
-
-footer ul li {
-  margin-bottom: 0.75rem; }
-
-footer .underline > li > a {
-  text-decoration: none; }
-
-footer .underline > li > a:hover, a:hover {
-  text-decoration: underline; }
-
-.footer-sm-links {
-  margin-bottom: 2rem; }
-
-@media screen and (min-width: 40em) {
-  .mobile-app-link img {
-    margin-right: 0.75rem; } }
-.website-feedback {
-  margin: 10px 0;
-  float: left;
-  width: 100%; }
-
-.website-feedback a {
-  text-decoration: none; }
-
-.website-feedback a:hover {
-  text-decoration: underline; }
-
-li.current-menu-ancestor, li.current-menu-item {
-  background: #dcdcdc; }
-
-.main-navigation ul > li.current-menu-ancestor > ul > li {
-  border-top: 1px solid #fff; }
-
-.main-navigation ul > li.current-menu-ancestor > ul > li.current-menu-item > a {
-  font-weight: bold; }
-
-@media screen and (min-width: 40em) {
-  .service-box-copy {
-    padding-left: 0; }
-
-  .service-box-image {
-    padding-right: 0; }
-
-  .service-box .button {
-    position: absolute;
-    bottom: 1rem;
-    left: 63.5px; }
-
-  .service-box-container {
-    height: 100%; }
-
-  aside.columns {
-    padding-right: 0;
-    padding-left: 0; }
-
-  .gateway-main, .home-left {
-    padding-right: 5rem; }
-
-  .main-right {
-    padding-left: 5rem; }
-
-  .mobile-app-link img, .mobile-app-link h2 {
-    float: left; } }
-@media screen and (min-width: 1074px) {
-  nav.menu-centered {
-    height: 36px; } }
-@media screen and (max-width: 39.9375em) {
-  /*    h1 {
-          font-size:1.35rem;
-          line-height: 105%
-      }*/
-  .white-panel {
-    margin-top: 3rem; }
-
-  .cta-icons {
-    margin-bottom: 2rem; }
-
-  .footer-sm-links {
-    width: 210px;
-    margin: 0 auto 1rem auto; }
-
-  .footer-sm-links li a {
-    padding: 0; }
-
-  .footer-sm-links li a img {
-    margin: 0 0.25rem; }
-
-  footer .row .columns {
-    border-bottom: 1px solid #5593db;
-    padding: 2rem 0 1rem 0; }
-
-  footer {
-    padding-bottom: 0; } }
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$footer-blue\".\A         on line 6 of /Applications/MAMP/htdocs/LCCC-Campana/wp-content/themes/lccc-ideation-center_dev/scss/footer.scss\A \A 1: /*!\A 2: Section 6: Footer\A 3: */\A 4: \A 5: footer {\A 6: 	background-color: $footer-blue;\A 7: 	padding: 2.75rem 0;\A 8: 	margin-top: 4rem;\A 9: }\A 10: \A 11: .footer-inner {"; }

@@ -3,6 +3,74 @@ Section 6: Footer
 */
 
 footer {
+	background-color: $footer-blue;
+	padding: 2.75rem 0;
+	margin-top: 4rem;
+}
+
+.footer-inner {
+	h2 {
+		font-size: .75rem;
+		color: $yellow;
+		text-transform: uppercase;
+	}
+	
+	ul:not(.footer-sm-links) {
+		list-style: none;
+		margin: 0;
+		
+		li {
+			a {
+				
+			}
+		}
+	}
+	
+	a {
+		color: $white;
+	}
+}
+
+.footer-logo {
+	margin-bottom: 2rem;
+}
+
+.footer-sm-links {
+	
+	@media screen and (max-width: 39.9375em) {
+		
+		display: flex;
+		flex-wrap: wrap;
+		-webkit-box-pack: center;
+		justify-content: center;
+		flex-direction: row;
+		
+		li {
+			margin: 0 .5rem;
+		}
+	}
+	
+	@media screen and (min-width: 40em) {
+		
+		li > a {
+			margin-right: 1rem;
+			
+			img {
+				margin-right: 0;
+			}
+		}
+	}
+	
+	li {
+		a {
+			padding: 0;
+		}
+	}
+}
+
+
+/*
+footer {
     margin-top: 5rem;
     background: #0c3b78;
     padding: 2rem 0 4rem 0;
@@ -77,7 +145,7 @@ footer .underline>li>a:hover, a:hover {
  text-decoration: underline;
 }
 
-//Highlight current page in Left Nav
+
 li.current-menu-ancestor, li.current-menu-item {
 background: #dcdcdc;
 }
@@ -136,10 +204,6 @@ font-weight: bold;
 }
 
 @media screen and (max-width: 39.9375em) {
-/*    h1 {
-        font-size:1.35rem;
-        line-height: 105%
-    }*/
 
     .white-panel {
         margin-top: 3rem
@@ -171,3 +235,5 @@ font-weight: bold;
         padding-bottom: 0
     }
 }
+
+*/

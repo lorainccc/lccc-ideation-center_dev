@@ -2,114 +2,29 @@
 Section 3: Body
 */
 
+body {
+	font-family: $body-font-family;
+}
 
-/******************************
-HOME PAGE STYLES
-******************************/
-
-#home-banner {
-	
-	background: {
-		size: cover;
-		repeat: no-repeat;
-	}
-	
-	.home-banner-inner {
-		
-
-		h1 {
-			color: $white;
-			font-weight: $font-extra-bold;
-			line-height: 110%;
-
-			span {
-				font-weight: $font-regular;
-			}
-		}
-
-		p {
-			color: $white;
-
-			font: {
-				family: $header-font-family;
-				weight: $font-semibold;
-			}
-
-			line-height: 110%;
-		}
-
-		/* Small only */
-		@media screen and (max-width: 39.9375em) {
-			
-			background-color: rgba($dark-blue, .6);
-			
-			min-height: 25rem;
-
-			padding: {
-				top: 7.1738125rem;
-				bottom: 7.1738125rem;
-			}
-
-			h1 {
-				font-size: 3.75rem;
-
-				span {
-					font-size: 4.18rem;
-				}
-			}
-
-			p {
-				font-size: 1.4rem;
-			}
-		}
-
-		/* Medium only */
-		@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-
-			min-height: 40rem;
-
-			padding: {
-				top: 7.1738125rem;
-				bottom: 7.1738125rem;
-			}
-
-			h1 {
-				font-size: 6.74420625rem;
-
-				span {
-					font-size: 7.53091875rem;
-				}
-			}
-
-			p {
-				font-size: 2.528775rem;
-			}
-
-		}
-
-		/* Large and up */
-		@media screen and (min-width: 64em) {
-
-			min-height: 44.96875rem;
-
-			padding: {
-				top: 7.1738125rem;
-				bottom: 7.1738125rem;
-			}
-
-			h1 {
-				font-size: 7.4935625rem;
-
-				span {
-					font-size: 8.3676875rem;
-				}
-			}
-
-			p {
-				font-size: 2.80975rem;
-			}
-
+.row {
+	max-width: $grid-row-width;
+	/*
+	@media screen and (max-width: 63.9375em) {
+		padding: {
+			left: .5rem;
+			right: .5rem;
 		}
 		
+		.row {
+			padding: {
+				left: 0;
+				right: 0;
+			}
+		}
 	}
+	*/
+}
+
+.off-canvas-content {
+	box-shadow: none;
 }

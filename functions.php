@@ -132,6 +132,9 @@ function custom_excerpt_length($length) {
     return 30;
     else if ($post->post_type == 'lccc_announcement')
     return 70;
+	// custom lenght for post excerpts on homepage
+	else if ($post->post_type == 'post' && !in_category('featured') && is_front_page())
+    return 15;
     else
     return 40;
 }
@@ -262,5 +265,64 @@ function wpbeginner_numeric_posts_nav() {
 }
 
 
+/**************************************************************
+Functions added by Kiwi
+**************************************************************/
+
+// Takes Hex color value, converts to rgb and adds alpha value for transparency
+function color_convert($color, $alpha) {
+	
+		list($r, $g, $b) = sscanf($color, "#%02x%02x%02x");
+		$a = $alpha;
+
+		echo 'rgba('. $r .','. $g .','. $b .',' . $a . ')';
+	
+}
+
+// This removes the brackets around the ... at the end of an excerpt
+function excerpt_end($more) {
+	global $post;
+return '...';
+}
+add_filter('excerpt_more', 'excerpt_end');
+
+// Add ACF options pages
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Theme Settings',
+		'menu_title'	=> 'Theme Settings',
+		'menu_slug' 	=> 'theme-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> true
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Visit/Contact Campana Center Settings',
+		'menu_title'	=> 'Visit/Contact',
+		'parent_slug'	=> 'theme-settings',
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Fallbacks/Defaults',
+		'menu_title'	=> 'Fallbacks/Defaults',
+		'parent_slug'	=> 'theme-settings',
+	));
+	
+}
+
+// remove aside tag from widgets, change h1 to h2, add class .sidebar-widget
+function campana_edit_widget_output( $output ) {
+	
+	$output[0]['before_widget'] = str_replace( 'aside', 'div', $output[0]['before_widget'] );
+	$output[0]['before_widget'] = str_replace( 'class="widget', 'class="sidebar-widget widget', $output[0]['before_widget'] );
+	$output[0]['after_widget'] = str_replace( 'aside', 'div', $output[0]['after_widget'] );
+	$output[0]['before_title'] = str_replace( 'h1', 'h2', $output[0]['before_title'] );
+	$output[0]['after_title'] = str_replace( 'h1', 'h2', $output[0]['after_title'] );
+	
+	return $output;
+}
+add_filter( 'dynamic_sidebar_params', 'campana_edit_widget_output' );
 
 ?>

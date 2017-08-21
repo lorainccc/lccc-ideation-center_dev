@@ -8,10 +8,5 @@ CUSTOM VARIABLES
 /*!*********************
 DEFAULT VARIABLES
 **********************/
-/***************************************************
-Foundation Variables Originally Missing From Theme
-***************************************************/
-/*
-// for some reason this is being printed as rem-calc(1300), instead of rem value
-$grid-row-width: $global-width;
-*/
+/* Base Typography */
+/* Typography Helpers */

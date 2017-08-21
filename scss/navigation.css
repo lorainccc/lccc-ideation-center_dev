@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$white".
-        on line 6 of /Applications/MAMP/htdocs/LCCC-Campana/wp-content/themes/lccc-ideation-center_dev/scss/navigation.scss
+        on line 22 of /Applications/MAMP/htdocs/LCCC-Campana/wp-content/themes/lccc-ideation-center_dev/scss/navigation.scss
 
-1: /*!
-2: Section 5: Navigation
-3: *\/
-4: 
-5: .is-dropdown-submenu {
-6: 	background-color: $white;
-7: 	border: none;
-8: 	box-shadow: 0px 2px 3px rgba($black, .25), -3px 2px 4px rgba($black, .25), 3px 2px 4px rgba($black, .25);
-9: 	
-10: 	li {
-11: 		background: $white;
+17:     display: none;
+18:   }
+19: }
+20: 
+21: .is-dropdown-submenu {
+22: 	background-color: $white;
+23: 	border: none;
+24: 	box-shadow: 0px 2px 3px rgba($black, .25), -3px 2px 4px rgba($black, .25), 3px 2px 4px rgba($black, .25);
+25: 	
+26: 	li {
+27: 		background: $white;
 
 Backtrace:
-/Applications/MAMP/htdocs/LCCC-Campana/wp-content/themes/lccc-ideation-center_dev/scss/navigation.scss:6
+/Applications/MAMP/htdocs/LCCC-Campana/wp-content/themes/lccc-ideation-center_dev/scss/navigation.scss:22
 /Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/script/tree/node.rb:50:in `perform'
 /Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
@@ -61,4 +61,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 6 of /Applications/MAMP/htdocs/LCCC-Campana/wp-content/themes/lccc-ideation-center_dev/scss/navigation.scss\A \A 1: /*!\A 2: Section 5: Navigation\A 3: */\A 4: \A 5: .is-dropdown-submenu {\A 6: 	background-color: $white;\A 7: 	border: none;\A 8: 	box-shadow: 0px 2px 3px rgba($black, .25), -3px 2px 4px rgba($black, .25), 3px 2px 4px rgba($black, .25);\A 9: 	\A 10: 	li {\A 11: 		background: $white;"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 22 of /Applications/MAMP/htdocs/LCCC-Campana/wp-content/themes/lccc-ideation-center_dev/scss/navigation.scss\A \A 17:     display: none;\A 18:   }\A 19: }\A 20: \A 21: .is-dropdown-submenu {\A 22: 	background-color: $white;\A 23: 	border: none;\A 24: 	box-shadow: 0px 2px 3px rgba($black, .25), -3px 2px 4px rgba($black, .25), 3px 2px 4px rgba($black, .25);\A 25: 	\A 26: 	li {\A 27: 		background: $white;"; }

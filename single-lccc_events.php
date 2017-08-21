@@ -15,6 +15,7 @@ get_header();
 		<div class="small-12 medium-8 large-8 columns nopadding content-container">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			<h1> Event </h1>
 		<?php
 		while ( have_posts() ) : the_post();
 

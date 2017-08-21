@@ -16,7 +16,7 @@ $supporting_content = get_field('supporting_content');
 
 		<div id="home-banner-content" class="row">
 
-			<div class="small-12 medium-9 large-8 columns end">
+			<div class="small-12 medium-9 large-8 text-center medium-text-left columns end">
 
 				<h1><?php echo $banner_headline; ?></h1>
 

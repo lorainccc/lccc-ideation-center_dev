@@ -9,7 +9,7 @@ function lorainccc_subsite_widgets_init() {
 		'name'          => esc_html__( 'Sidebar', 'campana' ),
 		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', 'campana' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'before_widget' => '<section id="%1$s" class="sidebar-widget widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
@@ -123,5 +123,13 @@ function lorainccc_subsite_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'id'            => 'ss_recent_posts',
+		'class'         => 'ss-recent-posts',
+		'name'          => __( 'Standard Sub Recent Posts', 'campana' ),
+		'description'   => __( 'Widget Area Designated for Recent Posts widget', 'campana' ),
+		'before_widget' => '<div class="sidebar-recent-posts sidebar-widget">',
+		'after_widget'  => '</div>',
+	));
 }
 add_action( 'widgets_init', 'lorainccc_subsite_widgets_init' );

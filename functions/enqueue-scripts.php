@@ -46,3 +46,49 @@ function lorainccc_subsite_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'lorainccc_subsite_scripts', 99 );
+
+function sticky_shrinking_header() {
+?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js" type="text/javascript"></script>
+<script>
+	function init() {
+    window.addEventListener('scroll', function(e){
+        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+            shrinkOn = 100,
+            header = document.querySelector("header");
+        if (distanceY > shrinkOn) {
+            classie.add(header,"smaller");
+        } else {
+            if (classie.has(header,"smaller")) {
+                classie.remove(header,"smaller");
+            }
+        }
+    });
+}
+window.onload = init();
+</script>
+<?php
+}
+add_action( 'wp_footer', 'sticky_shrinking_header', 100);
+
+function flip_cards_init() {
+	if( is_front_page() ) :
+?>
+<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+<script>
+	jQuery(".card").flip();
+</script>
+<?php
+	endif;
+}
+add_action( 'wp_footer', 'flip_cards_init', 100 );
+
+
+// Enqueue colors.js for custom ACF color picker pallete
+function my_admin_enqueue_scripts() {
+
+	wp_enqueue_script( 'my-admin-js', get_stylesheet_directory_uri() . '/js/colors.js', array(), '1.0.0', true );
+
+}
+
+add_action('admin_enqueue_scripts', 'my_admin_enqueue_scripts');
