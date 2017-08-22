@@ -546,24 +546,22 @@ hr.shadow-divider {
       color: #fefefe;
       font-size: 2rem; }
 
-.accordion .accordion-item {
-  margin-bottom: .25rem; }
-  .accordion .accordion-item .accordion-title {
-    border: none;
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    font-size: 1.5rem;
-    background-color: #d8eaf5;
-    color: #0055a4; }
-    .accordion .accordion-item .accordion-title:hover, .accordion .accordion-item .accordion-title:focus, .accordion .accordion-item .accordion-title:active {
-      background-color: #a5d0e8;
-      text-decoration: none; }
-    .accordion .accordion-item .accordion-title::before {
-      margin-top: -.65rem; }
-  .accordion .accordion-item .accordion-content {
-    margin-top: .25rem;
-    margin-bottom: .25rem;
-    border: 2px solid #a5d0e8; }
+.accordion .accordion-item .accordion-title {
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  background-color: #d8eaf5;
+  color: #0055a4; }
+  .accordion .accordion-item .accordion-title:hover, .accordion .accordion-item .accordion-title:focus, .accordion .accordion-item .accordion-title:active {
+    background-color: #a5d0e8;
+    text-decoration: none; }
+  .accordion .accordion-item .accordion-title::before {
+    margin-top: -.65rem; }
+.accordion .accordion-item .accordion-content {
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+  border: 2px solid #a5d0e8; }
 
 .tabs {
   border: none; }
