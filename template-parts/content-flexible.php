@@ -4,6 +4,8 @@
 
 if( have_rows('flexible_content_layouts') ) :
 
+	echo '<div class="flexible-content-area">';
+
 	while( have_rows('flexible_content_layouts') ) : the_row();
 
 		// Regular old WYSIWYG editor
@@ -365,6 +367,8 @@ if( have_rows('flexible_content_layouts') ) :
         endif;
 
 	endwhile;
+
+	echo '</div>';
 
 endif;
 

@@ -21,11 +21,7 @@ Template Name: Overview
 		
 		get_template_part( 'template-parts/content', 'shadow-divider' );
 		
-		echo '<div class="flexible-content-area">';
-		
 		get_template_part( 'template-parts/content', 'flexible' );
-		
-		echo '</div>';
 		
 		get_template_part( 'template-parts/content', 'shadow-divider' );
 		

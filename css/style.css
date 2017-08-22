@@ -534,15 +534,17 @@ hr.shadow-divider {
 .flexible-content-area > div:not(:last-child) {
   margin-bottom: 2rem; }
 
-.layout-row .callout {
-  color: #fefefe;
-  border: none; }
-  .layout-row .callout .button.hollow.white {
-    border: 1px solid #fefefe;
-    color: #fefefe; }
-  .layout-row .callout h3 {
+.layout-row {
+  margin-bottom: 2rem; }
+  .layout-row .callout {
     color: #fefefe;
-    font-size: 2rem; }
+    border: none; }
+    .layout-row .callout .button.hollow.white {
+      border: 1px solid #fefefe;
+      color: #fefefe; }
+    .layout-row .callout h3 {
+      color: #fefefe;
+      font-size: 2rem; }
 
 .accordion .accordion-item {
   margin-bottom: .25rem; }
