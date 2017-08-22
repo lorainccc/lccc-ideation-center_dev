@@ -10,9 +10,9 @@ Error: Undefined variable: "$body-font-family".
 6: 	font-family: $body-font-family;
 7: }
 8: 
-9: .row {
-10: 	max-width: $grid-row-width;
-11: 	/*
+9: 
+10: .row {
+11: 	max-width: $grid-row-width;
 
 Backtrace:
 /Applications/MAMP/htdocs/LCCC-Campana/wp-content/themes/lccc-ideation-center_dev/scss/body.scss:6
@@ -61,4 +61,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$body-font-family\".\A         on line 6 of /Applications/MAMP/htdocs/LCCC-Campana/wp-content/themes/lccc-ideation-center_dev/scss/body.scss\A \A 1: /*!\A 2: Section 3: Body\A 3: */\A 4: \A 5: body {\A 6: 	font-family: $body-font-family;\A 7: }\A 8: \A 9: .row {\A 10: 	max-width: $grid-row-width;\A 11: 	/*"; }
+  content: "Error: Undefined variable: \"$body-font-family\".\A         on line 6 of /Applications/MAMP/htdocs/LCCC-Campana/wp-content/themes/lccc-ideation-center_dev/scss/body.scss\A \A 1: /*!\A 2: Section 3: Body\A 3: */\A 4: \A 5: body {\A 6: 	font-family: $body-font-family;\A 7: }\A 8: \A 9: \A 10: .row {\A 11: 	max-width: $grid-row-width;"; }

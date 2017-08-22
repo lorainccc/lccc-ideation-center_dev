@@ -334,7 +334,8 @@ Section 2: Content
 *****************************************/
 h1, h2, h3, h4, h5 {
   font-family: "Raleway", sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+  line-height: 110%; }
 
 h2 {
   font-size: 1.9375rem;
@@ -356,6 +357,11 @@ p {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   font-weight: 700; }
+  .button:not(.hollow) {
+    background-color: #003b76;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out; }
+    .button:not(.hollow):hover {
+      background-color: #0055a4; }
 
 .read-more {
   font-weight: 700;
@@ -689,6 +695,11 @@ hr.shadow-divider {
     color: #e16025;
     text-transform: uppercase;
     margin-top: 2rem; }
+  @media screen and (max-width: 39.9375em) {
+    .section-title-row h2 {
+      font-size: 2.5rem; }
+      .section-title-row h2.h2-subheading {
+        font-size: 1.25rem; } }
 .section-title-row p {
   font-size: 1.125rem; }
 
@@ -755,6 +766,13 @@ hr.shadow-divider {
   font-size: 1rem;
   font-weight: 700;
   color: #0055a4; }
+@media screen and (max-width: 39.9375em) {
+  #cool .featured-items-row .columns {
+    padding-bottom: 1.5rem; }
+    #cool .featured-items-row .columns:not(:first-child) {
+      padding-top: 1.5rem; }
+    #cool .featured-items-row .columns:not(:last-child) {
+      border-bottom: 1px solid #cacaca; } }
 
 .menu.home-sm-links-list {
   display: inline-block; }
@@ -769,6 +787,10 @@ hr.shadow-divider {
 .home-featured-post h3 {
   font-size: 1.8125rem;
   color: #0055a4; }
+@media screen and (max-width: 39.9375em) {
+  .home-featured-post {
+    border-bottom: 1px solid #cacaca;
+    padding-bottom: 1.5rem; } }
 
 .home-recent-posts .home-recent-posts-row h3 {
   font-size: 1.3125rem;
@@ -780,6 +802,9 @@ hr.shadow-divider {
   padding-bottom: 1.5rem; }
 .home-recent-posts .home-recent-posts-row:not(:first-child) {
   padding-top: 1.5rem; }
+@media screen and (max-width: 39.9375em) {
+  .home-recent-posts .home-recent-posts-row:first-child {
+    padding-top: 1.5rem; } }
 .home-recent-posts .news-divider {
   height: 1px;
   width: 100%;
@@ -790,6 +815,9 @@ hr.shadow-divider {
 ****************************************/
 .overveiw-top-content {
   margin-top: 3rem; }
+  @media screen and (max-width: 39.9375em) {
+    .overveiw-top-content {
+      margin-top: 1rem; } }
 
 .overview-features h3 {
   font-weight: 700;
@@ -805,6 +833,11 @@ hr.shadow-divider {
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #cacaca; }
+@media screen and (max-width: 39.9375em) {
+  .overview-features {
+    margin-top: 2rem; }
+    .overview-features .feature:last-child {
+      border: none; } }
 
 /******************************************
 2.5 AUDIENCE TEMPLATE STYLES
@@ -852,6 +885,9 @@ hr.shadow-divider {
     font-size: 1.3125rem;
     color: #e16025;
     margin-bottom: .3rem; }
+  @media screen and (max-width: 39.9375em) {
+    .alternating-row img {
+      margin-bottom: 1rem; } }
 
 /***************************************************************
 2.6 STANDARD SUB PAGE TEMPLATE STYLES (default page tempalte )
@@ -910,6 +946,9 @@ BLOG STYLES
 @media screen and (min-width: 64em) {
   .blog-archive-inner main, .blog-single-inner main {
     padding-right: 3rem; } }
+@media screen and (max-width: 39.9375em) {
+  .blog-archive-inner main article:last-child, .blog-single-inner main article:last-child {
+    padding-bottom: 1.5rem; } }
 @media screen and (min-width: 64em) {
   .blog-archive-inner aside, .blog-single-inner aside {
     border-left: 1px solid #cacaca;
@@ -941,7 +980,14 @@ BLOG STYLES
     line-height: 100%; }
   .blog-single-inner .wp-post-image {
     margin: 2rem 0; }
+  @media screen and (max-width: 39.9375em) {
+    .blog-single-inner {
+      padding-top: 0; } }
 
+@media screen and (max-width: 39.9375em) {
+  #blog-sidebar {
+    padding-top: 1.5rem;
+    border-top: 1px solid #cacaca; } }
 /*!
 Section 3: Body
 */
@@ -949,22 +995,7 @@ body {
   font-family: "Open Sans", sans-serif; }
 
 .row {
-  max-width: 81.25rem;
-  /*
-  @media screen and (max-width: 63.9375em) {
-  	padding: {
-  		left: .5rem;
-  		right: .5rem;
-  	}
-  	
-  	.row {
-  		padding: {
-  			left: 0;
-  			right: 0;
-  		}
-  	}
-  }
-  */ }
+  max-width: 81.25rem; }
 
 .off-canvas-content {
   box-shadow: none; }

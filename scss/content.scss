@@ -20,6 +20,8 @@ h1, h2, h3, h4, h5 {
 		family: $header-font-family;
 		weight: $font-bold;
 	} 
+	
+	line-height: 110%;
 }
 
 h2 {
@@ -50,6 +52,15 @@ p {
 		size: 1rem;
 		weight: $font-bold;
 	}	
+	
+	&:not(.hollow) {
+		background-color: $dark-blue;
+		transition: background-color 0.25s ease-out, color 0.25s ease-out;
+		
+		&:hover {
+			background-color: $medium-blue;
+		}
+	}
 }
 
 .read-more {
@@ -632,6 +643,8 @@ hr.shadow-divider {
 			size: 3.8125rem;
 			weight: $font-regular;
 		}
+		
+		
 		color: $dark-blue;
 		
 		&.h2-subheading {
@@ -643,6 +656,14 @@ hr.shadow-divider {
 			color: $orange;
 			text-transform: uppercase;
 			margin-top: 2rem;
+		}
+		
+		@media screen and (max-width: 39.9375em) {
+			font-size: 2.5rem;
+			
+			&.h2-subheading {
+				font-size: 1.25rem;
+			}
 		}
 	}
 	
@@ -766,6 +787,21 @@ hr.shadow-divider {
 			}
 			color: $medium-blue;
 		}
+		
+		@media screen and (max-width: 39.9375em) {
+			.columns {
+				padding-bottom: 1.5rem;
+				
+				&:not(:first-child) {
+					padding-top: 1.5rem;
+				}
+				
+				&:not(:last-child) {
+					border-bottom: 1px solid $medium-gray;
+
+				}
+			}
+		}
 	}
 	
 }
@@ -798,7 +834,10 @@ hr.shadow-divider {
 		color: $medium-blue;
 	}
 	
-	
+	@media screen and (max-width: 39.9375em) {
+		border-bottom: 1px solid $medium-gray;
+		padding-bottom: 1.5rem;
+	}
 	
 }
 
@@ -821,9 +860,14 @@ hr.shadow-divider {
 		
 		&:not(:first-child) {
 			padding-top: 1.5rem;
+			
 		}
 		
-		
+		@media screen and (max-width: 39.9375em) { 
+			&:first-child {
+				padding-top: 1.5rem;
+			}
+		}
 	}
 	
 	.news-divider {
@@ -839,6 +883,11 @@ hr.shadow-divider {
 
 .overveiw-top-content {
 	margin-top: 3rem;
+	
+	@media screen and (max-width: 39.9375em) { 
+		
+		margin-top: 1rem;
+	}
 }
 
 .overview-features {
@@ -868,6 +917,14 @@ hr.shadow-divider {
 		}
 		
 		border-bottom: 1px solid $medium-gray;
+	}
+	
+	@media screen and (max-width: 39.9375em) {
+		margin-top: 2rem;
+		
+		.feature:last-child {
+			border: none;
+		}
 	}
 }
 
@@ -952,6 +1009,12 @@ hr.shadow-divider {
 	}
 	
 	box-sizing: border-box;
+	
+	@media screen and (max-width: 39.9375em) {
+		img {
+			margin-bottom: 1rem;
+		}
+	}
 }
 
 /***************************************************************
@@ -1045,7 +1108,11 @@ BLOG STYLES
 		@media screen and (min-width: 64em) {
 			padding-right: 3rem;
 		}
-		
+		@media screen and (max-width: 39.9375em) {
+			article:last-child {
+				padding-bottom: 1.5rem;
+			}
+		}
 	}
 	
 	aside {
@@ -1097,5 +1164,18 @@ BLOG STYLES
 		
 	.wp-post-image {
 		margin: 2rem 0;
-		}
+	}
+	
+	@media screen and (max-width: 39.9375em) {
+		padding-top: 0;
+		
+	}
+}
+
+@media screen and (max-width: 39.9375em) {
+	#blog-sidebar {
+		padding-top: 1.5rem;
+		border-top: 1px solid $medium-gray;
+	}
+		
 }

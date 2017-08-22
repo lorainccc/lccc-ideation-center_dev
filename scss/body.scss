@@ -6,23 +6,9 @@ body {
 	font-family: $body-font-family;
 }
 
+
 .row {
 	max-width: $grid-row-width;
-	/*
-	@media screen and (max-width: 63.9375em) {
-		padding: {
-			left: .5rem;
-			right: .5rem;
-		}
-		
-		.row {
-			padding: {
-				left: 0;
-				right: 0;
-			}
-		}
-	}
-	*/
 }
 
 .off-canvas-content {
