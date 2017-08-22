@@ -10,27 +10,55 @@
 get_header(); 
 
 ?>
-	<div class="row main">
-<div class="small-12 medium-12 large-12 columns contentdiv">
-		<div class="small-12 medium-8 large-8 columns nopadding content-container">
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-			<h1> Event </h1>
-		<?php
-		while ( have_posts() ) : the_post();
 
-			get_template_part( 'template-parts/content', 'lccc-event' );
+<div id="event-content">
 
-		endwhile; // End of the loop.
-		?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	<?php 
+	
+	get_template_part( 'template-parts/content', 'banner' );
+	
+	if( have_posts() ) :
+	
+	?>
+	
+	<div class="single-event-inner row">
+	
+		<main id="main" role="main" class="small-12 large-9 columns">
+		
+			<?php
+			
+			while( have_posts() ) : the_post();
+			
+				get_template_part( 'template-parts/content', 'lccc-event' );
+			
+			endwhile;
+			
+			?>
+		
+		</main>
+		
+		<aside role="complementary" class="small-12 large-3 columns">
+		
+			<?php
+			
+			get_template_part( 'template-parts/content', 'sidebar-quick-links' );
+			
+			?>
+		
+		</aside>
+	
 	</div>
-		<div class="small-12 medium-4 large-4 columns sidebarcontainer">
-<?php
-get_sidebar();?>
-	</div>
+	
+	<?php
+	
+	else :
+	
+		get_template_part( 'template-parts/content', 'missing' );
+	
+	endif;
+	
+	?>
+
 </div>
-<?php
-get_footer();
+
+<?php get_footer(); ?>

@@ -47,6 +47,29 @@ elseif( is_singular('post') ) :
 
 	endif;
 
+elseif( is_singular('lccc_events') ) :
+
+	global $post;
+	$event_id = $post->ID;
+
+	if( has_post_thumbnail($event_id) ) :
+
+		$thumb_id = get_post_thumbnail_id( $event_id );
+		$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true);
+		$background_image = $thumb_url_array[0];
+		$background_image_vertical_alignment = get_field('events_background_image_vertical_alignment', $event_id);
+		$angle_overlay = get_field('events_angle_overlay', $event_id);
+		$banner_headline = '<div class="fake-h1">' . get_field('events_banner_headline', $event_id) . '</div>';
+
+	else :
+
+		$background_image = get_field('events_banner_image', 'option');
+		$background_image_vertical_alignment = get_field('events_background_image_vertical_alignment', 'option');
+		$angle_overlay = get_field('events_angle_overlay', 'option');
+		$banner_headline = '<div class="fake-h1">' . get_field('events_banner_headline', 'option') . '</div>';
+
+	endif;
+
 else :
 
 	$background_image = get_field('page_banner_image', 'option');

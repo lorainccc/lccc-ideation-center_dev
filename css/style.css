@@ -804,7 +804,9 @@ hr.shadow-divider {
   padding-top: 1.5rem; }
 @media screen and (max-width: 39.9375em) {
   .home-recent-posts .home-recent-posts-row:first-child {
-    padding-top: 1.5rem; } }
+    padding-top: 1.5rem; }
+  .home-recent-posts .home-recent-posts-row .wp-post-image {
+    margin-bottom: 1rem; } }
 .home-recent-posts .news-divider {
   height: 1px;
   width: 100%;

@@ -28,6 +28,16 @@
 					
 				</div>
 				
+				<?php if( is_active_sidebar('lccc-search-sidebar') ) : ?>
+				
+				<div class="float-right">
+				
+					<?php dynamic_sidebar('lccc-search-sidebar'); ?>
+				
+				</div>
+				
+				<?php endif; ?>
+				
 			</div>
 			
 		</div>
