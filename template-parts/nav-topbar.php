@@ -12,12 +12,6 @@
 		
 			<div class="top-nav-container clearfix">
 			
-				<div class="float-right">
-				
-					<?php campana_top_nav(); ?>
-					
-				</div>
-				
 				<?php if( is_active_sidebar('lccc-search-sidebar') ) : ?>
 				
 				<div class="float-right search-container">
@@ -27,7 +21,12 @@
 				</div>
 				
 				<?php endif; ?>
-
+			
+				<div class="float-right">
+				
+					<?php campana_top_nav(); ?>
+					
+				</div>
 				
 			</div>
 			
@@ -36,9 +35,7 @@
 				<div class="float-right">
 				
 					<?php campana_main_nav(); ?>
-					
-					<?php echo do_shortcode('[do_widget id=cgs-widget-2]'); ?>
-					
+										
 				</div>
 							
 			</div>
