@@ -26,7 +26,7 @@
 				
 					<?php campana_main_nav(); ?>
 					
-					<?php echo do_shortcode('[do_widget id=cgs-widget-2'); ?>
+					<?php echo do_shortcode('[do_widget id=cgs-widget-2]'); ?>
 					
 				</div>
 				
