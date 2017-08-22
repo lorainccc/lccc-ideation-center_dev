@@ -343,7 +343,6 @@ hr.shadow-divider {
 
 .layout-row {
 	
-	margin-bottom: 2rem;
 	
 	.callout {
 		color: $white;
@@ -363,6 +362,7 @@ hr.shadow-divider {
 
 .accordion {
 	.accordion-item {
+		margin-bottom: .25rem;
 
 		.accordion-title {
 			border: none;
