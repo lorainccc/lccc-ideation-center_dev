@@ -26,6 +26,8 @@
 				
 					<?php campana_main_nav(); ?>
 					
+					<?php echo do_shortcode('[do_widget id=cgs-widget-2'); ?>
+					
 				</div>
 				
 				<?php if( is_active_sidebar('lccc-search-sidebar') ) : ?>
