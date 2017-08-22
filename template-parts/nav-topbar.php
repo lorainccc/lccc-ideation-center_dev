@@ -20,7 +20,7 @@
 				
 				<?php if( is_active_sidebar('lccc-search-sidebar') ) : ?>
 				
-				<div class="float-right">
+				<div class="float-right search-container">
 				
 					<?php dynamic_sidebar('lccc-search-sidebar'); ?>
 				
