@@ -18,6 +18,17 @@
 					
 				</div>
 				
+				<?php if( is_active_sidebar('lccc-search-sidebar') ) : ?>
+				
+				<div class="float-right">
+				
+					<?php dynamic_sidebar('lccc-search-sidebar'); ?>
+				
+				</div>
+				
+				<?php endif; ?>
+
+				
 			</div>
 			
 			<div class="main-nav-container clearfix">
@@ -29,17 +40,7 @@
 					<?php echo do_shortcode('[do_widget id=cgs-widget-2]'); ?>
 					
 				</div>
-				
-				<?php if( is_active_sidebar('lccc-search-sidebar') ) : ?>
-				
-				<div class="float-right">
-				
-					<?php dynamic_sidebar('lccc-search-sidebar'); ?>
-				
-				</div>
-				
-				<?php endif; ?>
-				
+							
 			</div>
 			
 		</div>
