@@ -12,7 +12,7 @@
 		
 			<div class="top-nav-container clearfix">
 			
-				<?php if( is_active_sidebar('lccc-search-sidebar') ) : ?>
+				<?php /*?><?php if( is_active_sidebar('lccc-search-sidebar') ) : ?>
 				
 				<div class="float-right search-container">
 				
@@ -20,7 +20,7 @@
 				
 				</div>
 				
-				<?php endif; ?>
+				<?php endif; ?><?php */?>
 			
 				<div class="float-right">
 				
