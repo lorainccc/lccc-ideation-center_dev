@@ -51,6 +51,8 @@
 						<?php get_template_part( 'template-parts/nav', 'topbar' ); ?>
 
 					</header><!-- #masthead -->
+
+					<div id="content" class="site-content">
 					
 					<?php if( is_active_sidebar('lccc-search-sidebar') ) : ?>
 				
@@ -61,5 +63,3 @@
 					</div>
 
 					<?php endif; ?>
-
-					<div id="content" class="site-content">
