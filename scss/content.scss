@@ -1204,6 +1204,10 @@ SEARCH RESULTS PAGE STYLES
 	color: $orange !important;
 }
 
+.gsc-result .gs-title {
+	height: auto !important;
+}
+
 .gs-result .gs-snippet {
 	font: {
 		family: $body-font-family !important; 

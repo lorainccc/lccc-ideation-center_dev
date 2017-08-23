@@ -1002,6 +1002,9 @@ SEARCH RESULTS PAGE STYLES
   font-weight: 700 !important;
   color: #e16025 !important; }
 
+.gsc-result .gs-title {
+  height: auto !important; }
+
 .gs-result .gs-snippet {
   font-family: "Open Sans", sans-serif !important;
   font-size: 1.125rem !important; }
