@@ -1109,7 +1109,7 @@ header:not(.article-header) {
 form.gsc-search-box {
   width: 250px !important;
   margin: 0 !important;
-  padding: .25rem 0 0 1rem !important; }
+  padding: .25rem 0 0 2rem !important; }
   form.gsc-search-box tbody {
     border: none; }
     form.gsc-search-box tbody [type='text'] {
