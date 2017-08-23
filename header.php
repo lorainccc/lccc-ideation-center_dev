@@ -56,7 +56,7 @@
 					
 					<?php if( is_active_sidebar('lccc-search-sidebar') ) : ?>
 				
-					<div class="column row">
+					<div id="gcs-container" class="column row" data-toggler>
 
 						<?php dynamic_sidebar('lccc-search-sidebar'); ?>
 
