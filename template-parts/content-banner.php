@@ -72,11 +72,14 @@ elseif( is_singular('lccc_events') ) :
 
 elseif( is_search() ) :
 
+	global $post;
+	$search_id = $post->ID;
+
 	$background_image = get_field('search_banner_image', 'option');
 	$background_image_vertical_alignment = get_field('search_background_image_vertical_alignment', 'option');
 	$angle_overlay = get_field('search_angle_overlay', 'option');
-	$banner_headline = '<h1>' . get_field('search_banner_headline', 'option') . '</h1>';
-
+	//$banner_headline = '<h1>' . get_field('search_banner_headline', 'option') . '</h1>';
+	$banner_headline = '<h1>' . get_the_title($search_id) . '</h1>';
 
 else :
 
