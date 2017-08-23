@@ -150,6 +150,7 @@ input.gsc-search-button {
 	padding: .85em 1em !important;
 	background-color: transparent !important;
 	transition: background-color 0.25s ease-out, color .25s ease-out;
+	line-height: 100% !important;
 	
 	&:hover, &:focus {
 		background-color: $white !important;
