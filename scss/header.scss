@@ -51,7 +51,7 @@ header:not(.article-header) {
 
 				.top-nav-container {
 
-					display: none;
+					//display: none;
 
 
 				}
@@ -107,9 +107,11 @@ header:not(.article-header) {
 #gcs-container {
 	display: none;
 	background-color: $dark-blue;
+	margin-top: .5rem;
 	
 	tbody {
 		background-color: transparent;
+		border: none;
 	}
 }
 

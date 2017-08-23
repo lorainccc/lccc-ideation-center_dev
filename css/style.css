@@ -1079,8 +1079,6 @@ header:not(.article-header) {
         header:not(.article-header).smaller .top-bar .logo {
           height: 56px;
           width: 225px; }
-        header:not(.article-header).smaller .top-bar .top-nav-container {
-          display: none; }
         header:not(.article-header).smaller .top-bar .main-nav-container {
           margin-top: .55rem; } }
 
@@ -1109,9 +1107,11 @@ header:not(.article-header) {
 
 #gcs-container {
   display: none;
-  background-color: #003b76; }
+  background-color: #003b76;
+  margin-top: .5rem; }
   #gcs-container tbody {
-    background-color: transparent; }
+    background-color: transparent;
+    border: none; }
 
 .gsc-clear-button {
   display: none; }
