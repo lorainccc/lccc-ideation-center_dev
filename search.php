@@ -18,7 +18,7 @@ get_header();
 		
 	?>
 	
-	<div class="blog-archive-inner row">
+	<div class="row">
 	
 		<main id="main" role="main" class="small-12 columns">
 			
