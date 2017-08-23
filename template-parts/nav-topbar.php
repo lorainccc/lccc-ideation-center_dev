@@ -12,16 +12,6 @@
 		
 			<div class="top-nav-container clearfix">
 			
-				<?php if( is_active_sidebar('lccc-search-sidebar') ) : ?>
-				
-				<div class="float-right search-container">
-				
-					<?php dynamic_sidebar('lccc-search-sidebar'); ?>
-				
-				</div>
-				
-				<?php endif; ?>
-			
 				<div class="float-right">
 				
 					<?php campana_top_nav(); ?>
