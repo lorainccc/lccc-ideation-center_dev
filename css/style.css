@@ -1089,7 +1089,8 @@ header:not(.article-header) {
     margin-top: 149px; } }
 .top-bar {
   background: #fefefe;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  padding: .5rem 0; }
   .top-bar ul {
     background: #fefefe; }
   .top-bar .top-bar-title {

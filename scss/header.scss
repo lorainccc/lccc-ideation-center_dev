@@ -76,6 +76,7 @@ header:not(.article-header) {
 .top-bar {
 	background: $white;
 	transition: all 0.3s ease;
+	padding: .5rem 0;
 	
 	ul {
 		background: $white;
