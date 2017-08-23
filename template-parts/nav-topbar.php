@@ -62,7 +62,7 @@
 							
 			<div class="large-1 columns">
 								
-				<button data-toggle="gcs-container">&times;</button>
+				<img class="search-close" src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/search-close.svg" alt="close search box" data-toggle="gcs-container" />
 							
 			</div>
 						
