@@ -8,7 +8,7 @@ $background_image = get_field('search_banner_image', 'option');
 $background_image_vertical_alignment = get_field('search_background_image_vertical_alignment', 'option');
 $angle_overlay = get_field('search_angle_overlay', 'option');
 //$banner_headline = '<h1>' . get_field('search_banner_headline', 'option') . '</h1>';
-$banner_headline = '<h1>Results for ' . esc_html( get_search_query( false ) ) . '</h1>';
+$banner_headline = '<h1>Search Results</h1>';
 
 
 if( $angle_overlay == 'lightBlue' ) :
