@@ -44,7 +44,7 @@
 				
 				<?php if( is_active_sidebar('lccc-search-sidebar') ) : ?>
 				
-				<div class="float-right search-container">
+				<div class="column row">
 				
 					<?php dynamic_sidebar('lccc-search-sidebar'); ?>
 				
