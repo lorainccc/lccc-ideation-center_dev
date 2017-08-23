@@ -42,18 +42,6 @@
 			
 			<div class="off-canvas-content" data-off-canvas-content>
 				
-				<?php if( is_active_sidebar('lccc-search-sidebar') ) : ?>
-				
-				<div class="column row">
-				
-					<?php dynamic_sidebar('lccc-search-sidebar'); ?>
-				
-				</div>
-				
-				<?php endif; ?>
-			
-
-
 				<div id="page" class="hfeed site">
 
 					<a class="skip-link screen-reader-text hide-for-print" href="#content"><?php esc_html_e( 'Skip to content', 'lccc-framework' ); ?></a>
@@ -63,5 +51,15 @@
 						<?php get_template_part( 'template-parts/nav', 'topbar' ); ?>
 
 					</header><!-- #masthead -->
+					
+					<?php if( is_active_sidebar('lccc-search-sidebar') ) : ?>
+				
+					<div class="column row">
+
+						<?php dynamic_sidebar('lccc-search-sidebar'); ?>
+
+					</div>
+
+					<?php endif; ?>
 
 					<div id="content" class="site-content">
