@@ -140,14 +140,14 @@ header:not(.article-header) {
 
 input.gsc-search-button {
 	
-	border: 1px solid $white;
-	color: $white;
+	border: 1px solid $white !important;
+	color: $white !important;
 	font: {
-		family: $header-font-family;
-		size: 1rem;
-		weight: $font-bold;
+		family: $header-font-family !important;
+		size: 1rem !important;
+		weight: $font-bold !important;
 	}
-	background-color: transparent;
+	background-color: transparent !important;
 	transition: background-color 0.25s ease-out, color .25s ease-out;
 	
 	&:hover, &:focus {

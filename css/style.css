@@ -1125,12 +1125,12 @@ header:not(.article-header) {
   margin-bottom: 0; }
 
 input.gsc-search-button {
-  border: 1px solid #fefefe;
-  color: #fefefe;
-  font-family: "Raleway", sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  background-color: transparent;
+  border: 1px solid #fefefe !important;
+  color: #fefefe !important;
+  font-family: "Raleway", sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  background-color: transparent !important;
   transition: background-color 0.25s ease-out, color .25s ease-out; }
   input.gsc-search-button:hover, input.gsc-search-button:focus {
     background-color: #fefefe;
