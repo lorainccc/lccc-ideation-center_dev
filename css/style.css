@@ -1110,6 +1110,9 @@ header:not(.article-header) {
 #gcs-container {
   display: none; }
 
+.gsc-clear-button {
+  display: none; }
+
 /*
 form {
 	&.gsc-search-box {

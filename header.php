@@ -56,9 +56,23 @@
 					
 					<?php if( is_active_sidebar('lccc-search-sidebar') ) : ?>
 				
-					<div id="gcs-container" class="column row" data-toggler data-animate="slide-in-down slide-out-up">
+					<div id="gcs-container" data-toggler data-animate="slide-in-down slide-out-up">
+						
+						<div class="row">
+						
+							<div class="large-11 columns">
 
-						<?php dynamic_sidebar('lccc-search-sidebar'); ?>
+								<?php dynamic_sidebar('lccc-search-sidebar'); ?>
+						
+							</div>
+							
+							<div class="large-1 columns">
+								
+								<button class="close-button" data-close>&times;</button>
+							
+							</div>
+						
+						</div>
 
 					</div>
 
