@@ -1001,6 +1001,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/search.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/search.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/single-lccc_events.php": {
 		"fileType": 8192,
 		"ignore": 0,
