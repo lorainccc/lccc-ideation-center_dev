@@ -98,6 +98,24 @@ header:not(.article-header) {
 	}
 }
 
+form {
+	&.gsc-search-box {
+		width: 100% !important;
+		margin: 0;
+		
+		tbody {
+			border: none;
+			
+			[type='text'] {
+				margin-bottom: 0;
+				height: 30px;
+			}
+		}
+	}
+}
+
+
+
 /*
 
 @media screen and (max-width: 67.4375em) {

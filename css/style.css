@@ -1102,6 +1102,15 @@ header:not(.article-header) {
 
   .top-bar .top-bar-right {
     width: 20%; } }
+form.gsc-search-box {
+  width: 100% !important;
+  margin: 0; }
+  form.gsc-search-box tbody {
+    border: none; }
+    form.gsc-search-box tbody [type='text'] {
+      margin-bottom: 0;
+      height: 30px; }
+
 /*
 
 @media screen and (max-width: 67.4375em) {
