@@ -56,7 +56,7 @@
 					
 					<?php if( is_active_sidebar('lccc-search-sidebar') ) : ?>
 				
-					<div id="gcs-container" data-toggler data-animate="slide-in-down slide-out-up fast">
+					<div id="gcs-container" data-toggler data-animate="fade-in fade-out">
 						
 						<div class="row">
 						
