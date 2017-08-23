@@ -1161,7 +1161,7 @@ header:not(.article-header) {
   .gsc-input [type="text"]:focus {
     box-shadow: none !important; }
 
-input.gsc-search-button {
+header input.gsc-search-button {
   border: 1px solid #fefefe !important;
   color: #fefefe !important;
   font-family: "Raleway", sans-serif !important;
@@ -1170,7 +1170,7 @@ input.gsc-search-button {
   padding: .25rem 1em !important;
   background-color: transparent !important;
   transition: background-color 0.25s ease-out, color .25s ease-out; }
-  input.gsc-search-button:hover, input.gsc-search-button:focus {
+  header input.gsc-search-button:hover, header input.gsc-search-button:focus {
     background-color: #fefefe !important;
     color: #003b76 !important; }
 
