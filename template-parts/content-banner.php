@@ -83,10 +83,13 @@ elseif( is_search() ) :
 
 else :
 
+	global $post;
+	$page_id = $post->ID;
+
 	$background_image = get_field('page_banner_image', 'option');
 	$background_image_vertical_alignment = get_field('page_background_image_vertical_alignment', 'option');
 	$angle_overlay = get_field('page_angle_overlay', 'option');
-	$banner_headline = '<h1>' . get_field('page_banner_headline', 'option') . '</h1>';
+	$banner_headline = '<h1>' . get_the_title($page_id) . '</h1>';
 	
 endif;
 
