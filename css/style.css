@@ -1116,7 +1116,8 @@ form.gsc-search-box {
       margin-bottom: 0;
       height: 30px;
       padding: 0 .5rem;
-      margin-left: 0 !important; }
+      margin-left: 0 !important;
+      margin-right: 0 !important; }
     form.gsc-search-box tbody td {
       padding: 0; }
 
