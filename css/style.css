@@ -1080,7 +1080,9 @@ header:not(.article-header) {
           height: 56px;
           width: 225px; }
         header:not(.article-header).smaller .top-bar .menu li a {
-          padding: .25rem 1rem; }
+          padding: 0 1rem; }
+        header:not(.article-header).smaller .top-bar .search-icon {
+          margin-top: -.5rem; }
         header:not(.article-header).smaller .top-bar .main-nav-container {
           margin-top: .55rem; } }
 

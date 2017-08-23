@@ -52,9 +52,13 @@ header:not(.article-header) {
 				.menu {
 					li {
 						a {
-							padding: .25rem 1rem;
+							padding: 0 1rem;
 						}
 					}
+				}
+				
+				.search-icon {
+					margin-top: -.5rem;
 				}
 
 				.top-nav-container {
