@@ -99,11 +99,15 @@ header:not(.article-header) {
 	}
 }
 
+.search-container {
+	margin-left: .75rem;
+}
+
 form {
 	&.gsc-search-box {
 		width: 100% !important;
-		margin: 0;
-		padding: .25rem 0 0 2rem !important;
+		margin: 0 !important;
+		padding: .25rem 0 0 1rem !important;
 		
 		tbody {
 			border: none;
@@ -112,7 +116,7 @@ form {
 				margin-bottom: 0;
 				height: 30px;
 				padding: 0 .5rem;
-				margin-left: 1.5rem;
+				margin-left: 0 !important;
 			}
 			
 			td {
