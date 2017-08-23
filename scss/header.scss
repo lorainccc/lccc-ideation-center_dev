@@ -135,6 +135,10 @@ header:not(.article-header) {
 .gsc-input {
 	[type="text"] {
 		margin-bottom: 0;
+		
+		&:focus {
+			box-shadow: none !important;
+		}
 	}
 }
 
