@@ -50,7 +50,7 @@
 
 <?php if( is_active_sidebar('lccc-search-sidebar') ) : ?>
 				
-<div id="gcs-container" data-toggler data-animate="fade-in fade-out">
+<div id="gcs-container" data-toggler data-animate="fade-in fade-out" class="show-for-large">
 						
 		<div class="row">
 						
@@ -62,7 +62,7 @@
 							
 			<div class="large-1 columns">
 								
-				<img class="search-close" src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/search-close.svg" alt="close search box" data-toggle="gcs-container" />
+				<img class="search-close" src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/search-close.svg" height="35" width="35" alt="close search box" data-toggle="gcs-container" />
 							
 			</div>
 						
