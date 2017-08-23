@@ -1079,6 +1079,8 @@ header:not(.article-header) {
         header:not(.article-header).smaller .top-bar .logo {
           height: 56px;
           width: 225px; }
+        header:not(.article-header).smaller .top-bar .menu li a {
+          padding: .25rem 1rem; }
         header:not(.article-header).smaller .top-bar .main-nav-container {
           margin-top: .55rem; } }
 
