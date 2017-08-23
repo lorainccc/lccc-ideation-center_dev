@@ -53,27 +53,3 @@
 					</header><!-- #masthead -->
 
 					<div id="content" class="site-content">
-					
-					<?php if( is_active_sidebar('lccc-search-sidebar') ) : ?>
-				
-					<div id="gcs-container" data-toggler data-animate="fade-in fade-out">
-						
-						<div class="row">
-						
-							<div class="large-11 columns">
-
-								<?php dynamic_sidebar('lccc-search-sidebar'); ?>
-						
-							</div>
-							
-							<div class="large-1 columns">
-								
-								<button data-toggle="gcs-container">&times;</button>
-							
-							</div>
-						
-						</div>
-
-					</div>
-
-					<?php endif; ?>
