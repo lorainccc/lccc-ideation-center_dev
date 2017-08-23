@@ -1142,6 +1142,10 @@ input.gsc-search-button {
     background-color: #fefefe !important;
     color: #003b76 !important; }
 
+.search-close {
+  margin-top: 1.375rem;
+  cursor: pointer; }
+
 /*
 form {
 	&.gsc-search-box {
