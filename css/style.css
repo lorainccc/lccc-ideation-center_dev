@@ -1130,10 +1130,9 @@ input.gsc-search-button {
   font-family: "Raleway", sans-serif !important;
   font-size: 1rem !important;
   font-weight: 700 !important;
-  padding: .85em 1em !important;
+  padding: 0 1em !important;
   background-color: transparent !important;
-  transition: background-color 0.25s ease-out, color .25s ease-out;
-  line-height: 50% !important; }
+  transition: background-color 0.25s ease-out, color .25s ease-out; }
   input.gsc-search-button:hover, input.gsc-search-button:focus {
     background-color: #fefefe !important;
     color: #003b76 !important; }
