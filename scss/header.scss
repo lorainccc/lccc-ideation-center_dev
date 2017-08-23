@@ -103,6 +103,7 @@ form {
 	&.gsc-search-box {
 		width: 100% !important;
 		margin: 0;
+		padding: .25rem 0 0 2rem;
 		
 		tbody {
 			border: none;
@@ -111,7 +112,7 @@ form {
 				margin-bottom: 0;
 				height: 30px;
 				padding: 0 .5rem;
-				margin-left: 1rem;
+				margin-left: 1.5rem;
 			}
 			
 			td {
