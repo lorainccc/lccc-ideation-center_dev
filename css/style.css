@@ -1103,8 +1103,12 @@ header:not(.article-header) {
 
   .top-bar .top-bar-right {
     width: 20%; } }
-.search-container {
-  margin-left: .75rem; }
+.search-icon {
+  margin: .75rem 0 0 1.5rem;
+  cursor: pointer; }
+
+#gcs-container {
+  display: none; }
 
 /*
 form {

@@ -99,8 +99,13 @@ header:not(.article-header) {
 	}
 }
 
-.search-container {
-	margin-left: .75rem;
+.search-icon {
+	margin: .75rem 0 0 1.5rem;
+	cursor: pointer;
+}
+
+#gcs-container {
+	display: none;
 }
 
 /*

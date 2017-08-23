@@ -14,7 +14,7 @@
 			
 				<div class="float-right">
 				
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/icon-search.png" alt="search" data-toggle="gcs-container" />
+					<img class="search-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/icon-search.png" alt="search" data-toggle="gcs-container" />
 				
 				</div>
 			
