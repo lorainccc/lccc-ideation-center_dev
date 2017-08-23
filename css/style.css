@@ -1109,7 +1109,11 @@ form.gsc-search-box {
     border: none; }
     form.gsc-search-box tbody [type='text'] {
       margin-bottom: 0;
-      height: 30px; }
+      height: 30px;
+      padding: 0 .5rem;
+      margin-left: 1rem; }
+    form.gsc-search-box tbody td {
+      padding: 0; }
 
 /*
 
