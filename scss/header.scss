@@ -119,13 +119,17 @@ header:not(.article-header) {
 #gcs-container {
 	display: none;
 	background-color: $dark-blue;
-	margin-top: .5rem;
+	margin-top: 1.65rem;
 	box-shadow: 0 2px 10px 2px rgba($black, .25);
 	
 	tbody {
 		background-color: transparent;
 		border: none;
 	}
+}
+
+.smaller #gcs-container {
+	margin-top: .5rem;
 }
 
 .gsc-clear-button {
