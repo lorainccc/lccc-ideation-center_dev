@@ -147,12 +147,13 @@ input.gsc-search-button {
 		size: 1rem !important;
 		weight: $font-bold !important;
 	}
+	padding: .85em 1em !important;
 	background-color: transparent !important;
 	transition: background-color 0.25s ease-out, color .25s ease-out;
 	
 	&:hover, &:focus {
-		background-color: $white;
-		color: $dark-blue;
+		background-color: $white !important;
+		color: $dark-blue !important;
 	}
 	
 }
