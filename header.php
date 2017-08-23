@@ -68,7 +68,7 @@
 							
 							<div class="large-1 columns">
 								
-								<button data-close>&times;</button>
+								<button data-toggle="gcs-container">&times;</button>
 							
 							</div>
 						
