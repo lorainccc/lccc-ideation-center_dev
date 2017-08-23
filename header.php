@@ -68,7 +68,7 @@
 							
 							<div class="large-1 columns">
 								
-								<button class="close-button" data-close>&times;</button>
+								<button data-close>&times;</button>
 							
 							</div>
 						
