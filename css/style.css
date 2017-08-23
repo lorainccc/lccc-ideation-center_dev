@@ -1109,7 +1109,9 @@ header:not(.article-header) {
 
 #gcs-container {
   display: none;
-  background-color: #007bbf; }
+  background-color: #003b76; }
+  #gcs-container tbody {
+    background-color: transparent; }
 
 .gsc-clear-button {
   display: none; }
