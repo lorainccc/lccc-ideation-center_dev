@@ -1121,6 +1121,9 @@ form.gsc-search-box {
     form.gsc-search-box tbody td {
       padding: 0; }
 
+table.gsc-search-box td.gsc-input {
+  padding-right: 0 !important; }
+
 /*
 
 @media screen and (max-width: 67.4375em) {
