@@ -50,24 +50,24 @@
 
 <?php if( is_active_sidebar('lccc-search-sidebar') ) : ?>
 				
-					<div id="gcs-container" data-toggler data-animate="fade-in fade-out">
+<div id="gcs-container" data-toggler data-animate="fade-in fade-out">
 						
-						<div class="row">
+		<div class="row">
 						
-							<div class="large-11 columns">
+			<div class="large-11 columns">
 
-								<?php dynamic_sidebar('lccc-search-sidebar'); ?>
+				<?php dynamic_sidebar('lccc-search-sidebar'); ?>
 						
-							</div>
+			</div>
 							
-							<div class="large-1 columns">
+			<div class="large-1 columns">
 								
-								<button data-toggle="gcs-container">&times;</button>
+				<button data-toggle="gcs-container">&times;</button>
 							
-							</div>
+			</div>
 						
-						</div>
+		</div>
 
-					</div>
+	</div>
 
-					<?php endif; ?>
+<?php endif; ?>

@@ -1108,7 +1108,8 @@ header:not(.article-header) {
   cursor: pointer; }
 
 #gcs-container {
-  display: none; }
+  display: none;
+  background-color: #007bbf; }
 
 .gsc-clear-button {
   display: none; }
