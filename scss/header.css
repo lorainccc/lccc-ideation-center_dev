@@ -5,7 +5,7 @@ Error: Undefined variable: "$white".
 3: *\/
 4: 
 5: 
-6: header:not(.article-header) {
+6: header:not(.article-header):not(.entry-header) {
 7: 	width: 100%;
 8: 	background: $white;
 9: 	
@@ -61,4 +61,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 8 of /Applications/MAMP/htdocs/LCCC-Campana/wp-content/themes/lccc-ideation-center_dev/scss/header.scss\A \A 3: */\A 4: \A 5: \A 6: header:not(.article-header) {\A 7: 	width: 100%;\A 8: 	background: $white;\A 9: 	\A 10: 	.logo {\A 11: 		transition: all .3s ease;\A 12: 	}\A 13: 	"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 8 of /Applications/MAMP/htdocs/LCCC-Campana/wp-content/themes/lccc-ideation-center_dev/scss/header.scss\A \A 3: */\A 4: \A 5: \A 6: header:not(.article-header):not(.entry-header) {\A 7: 	width: 100%;\A 8: 	background: $white;\A 9: 	\A 10: 	.logo {\A 11: 		transition: all .3s ease;\A 12: 	}\A 13: 	"; }

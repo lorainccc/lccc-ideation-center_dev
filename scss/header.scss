@@ -3,7 +3,7 @@ Section 4: Header
 */
 
 
-header:not(.article-header) {
+header:not(.article-header):not(.entry-header) {
 	width: 100%;
 	background: $white;
 	
