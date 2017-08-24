@@ -1111,7 +1111,7 @@ header:not(.article-header):not(.entry-header) {
         header:not(.article-header):not(.entry-header).smaller .top-bar .logo {
           height: 56px;
           width: 225px; }
-        header:not(.article-header):not(.entry-header).smaller .top-bar .menu:not(.submenu) li a {
+        header:not(.article-header):not(.entry-header).smaller .top-bar .menu:not(.submenu):not(.is-dropdown-submenu) li a {
           padding: 0 1rem; }
         header:not(.article-header):not(.entry-header).smaller .top-bar .search-icon {
           margin-top: -.5rem; }

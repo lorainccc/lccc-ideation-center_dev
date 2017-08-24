@@ -49,7 +49,7 @@ header:not(.article-header):not(.entry-header) {
 					width: 225px;
 				}
 				
-				.menu:not(.submenu) {
+				.menu:not(.submenu):not(.is-dropdown-submenu) {
 					li {
 						a {
 							padding: 0 1rem;
