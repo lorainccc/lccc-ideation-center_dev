@@ -382,4 +382,5 @@ function cf_search_distinct( $where ) {
 }
 add_filter( 'posts_distinct', 'cf_search_distinct' );
 
+
 ?>
