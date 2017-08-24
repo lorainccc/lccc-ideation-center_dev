@@ -1113,6 +1113,17 @@ header:not(.article-header):not(.entry-header) {
           width: 225px; }
         header:not(.article-header):not(.entry-header).smaller .top-bar .menu:not(.submenu):not(.is-dropdown-submenu) li a {
           padding: 0 1rem; }
+        header:not(.article-header):not(.entry-header).smaller .top-bar .is-dropdown-submenu {
+          background-color: #fefefe;
+          border: none;
+          box-shadow: 0px 2px 3px rgba(10, 10, 10, 0.25), -3px 2px 4px rgba(10, 10, 10, 0.25), 3px 2px 4px rgba(10, 10, 10, 0.25); }
+          header:not(.article-header):not(.entry-header).smaller .top-bar .is-dropdown-submenu li {
+            background: #fefefe; }
+            header:not(.article-header):not(.entry-header).smaller .top-bar .is-dropdown-submenu li a {
+              padding: 1.25rem 1rem;
+              font-size: .9375rem; }
+            header:not(.article-header):not(.entry-header).smaller .top-bar .is-dropdown-submenu li:hover {
+              background: #daecf5; }
         header:not(.article-header):not(.entry-header).smaller .top-bar .search-icon {
           margin-top: -.5rem; }
         header:not(.article-header):not(.entry-header).smaller .top-bar .main-nav-container {
