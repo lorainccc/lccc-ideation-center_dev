@@ -1309,10 +1309,14 @@ Section 5: Navigation
     font-weight: 500; }
     .off-canvas .menu li .submenu li a::before {
       content: "-"; }
+  .off-canvas .menu#menu-main-nav li:first-child a {
+    border-top: 1px solid #007bbf; }
   .off-canvas.position-right {
     width: 400px;
     right: -400px;
     top: 0; }
+  .off-canvas form table.gsc-search-box {
+    width: 58% !important; }
   .off-canvas form tbody {
     background: transparent !important;
     border: none !important; }
