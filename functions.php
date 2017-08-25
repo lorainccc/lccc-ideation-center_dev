@@ -382,5 +382,14 @@ function cf_search_distinct( $where ) {
 }
 add_filter( 'posts_distinct', 'cf_search_distinct' );
 
+// Hide content editor for certain pages/templates
+add_action( 'admin_head', 'hide_editor' );
+function hide_editor() {
+	$template_file = $template_file = basename( get_page_template() );
+	if($template_file == 'template-home.php'){ 
+		remove_post_type_support('page', 'editor');
+	}
+}
+
 
 ?>
