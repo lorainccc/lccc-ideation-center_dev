@@ -943,7 +943,7 @@ hr.shadow-divider {
   font-size: 1rem; }
 
 /***********************************
-BLOG STYLES
+2.7 BLOG STYLES
 ***********************************/
 @media screen and (min-width: 64em) {
   .blog-archive-inner main, .blog-single-inner main {
@@ -991,7 +991,7 @@ BLOG STYLES
     padding-top: 1.5rem;
     border-top: 1px solid #cacaca; } }
 /*******************************************
-SEARCH RESULTS PAGE STYLES
+2.8 SEARCH RESULTS PAGE STYLES
 *******************************************/
 .cse .gsc-control-cse, .gsc-control-cse {
   padding: 0 !important; }
@@ -1021,6 +1021,33 @@ SEARCH RESULTS PAGE STYLES
   #search-content input.gsc-search-button:hover, #search-content input.gsc-search-button:focus {
     background-color: #003b76 !important;
     color: #fefefe !important; }
+
+/************************************************
+2.9 EVENTS STYLES
+************************************************/
+#event-content h1 {
+  font-weight: 400;
+  color: #003b76;
+  padding-right: 1rem;
+  border-bottom: 2px solid #e16025; }
+
+.event-info {
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 1.5rem; }
+  .event-info .info-label {
+    font-weight: 700; }
+  .event-info a {
+    color: #e16025; }
+
+.event-social-sharing .share-label {
+  margin-bottom: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #e16025; }
+.event-social-sharing .menu ul li a {
+  padding: 0;
+  margin-right: 1rem; }
 
 /*!
 Section 3: Body
