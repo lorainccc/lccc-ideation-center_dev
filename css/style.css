@@ -1025,14 +1025,13 @@ hr.shadow-divider {
 /************************************************
 2.9 EVENTS STYLES
 ************************************************/
-#event-content {
+#event-content h1 {
+  font-weight: 400;
+  color: #003b76;
+  padding-right: 1.5rem;
+  border-bottom: 2px solid #e16025;
   margin-bottom: 1rem;
   display: inline-block; }
-  #event-content h1 {
-    font-weight: 400;
-    color: #003b76;
-    padding-right: 1.5rem;
-    border-bottom: 2px solid #e16025; }
 
 .event-info {
   font-family: "Raleway", sans-serif;
@@ -1052,7 +1051,7 @@ hr.shadow-divider {
   font-weight: 700;
   text-transform: uppercase;
   color: #e16025; }
-.event-social-sharing .menu ul li a {
+.event-social-sharing .menu > ul > li > a {
   padding: 0;
   margin-right: .5rem; }
 

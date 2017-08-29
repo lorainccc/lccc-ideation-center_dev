@@ -1245,9 +1245,10 @@ hr.shadow-divider {
 		color: $dark-blue;
 		padding-right: 1.5rem;
 		border-bottom: 2px solid $orange;
+		margin-bottom: 1rem;
+		display: inline-block;
 	}
-	margin-bottom: 1rem;
-	display: inline-block;
+	
 }
 
 .event-info {
@@ -1284,7 +1285,7 @@ hr.shadow-divider {
 		color: $orange;
 	}
 	
-	.menu ul li a {
+	.menu > ul > li > a {
 		padding: 0;
 		margin-right: .5rem;
 	}
