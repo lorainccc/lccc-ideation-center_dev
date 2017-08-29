@@ -10,7 +10,7 @@
 	
 	?>
 	
-	<div id="events-archive-inner row">
+	<div class="events-archive-inner row">
 	
 		<main class="small-12 medium-7 medium-push-5 columns" role="main">
 		
@@ -18,6 +18,7 @@
 			
 			$today = date( 'Y-m-d' );
 			
+			// get all events that have an end date that equals today's date or later
 			$event_args = array(
 				'post_type'              => array( 'lccc_events' ),
 				'post_status'            => array( 'publish' ),
@@ -25,13 +26,13 @@
 				'posts_per_page' => '10',
 				'meta_query'			 => array(
 					array(
-						'key'		=>	'event_start_date',
+						'key'		=>	'event_end_date',
 						'value'		=>	$today,
 						'compare'	=>	'>=',
 						'type'		=>	'DATE'
 					)
 				),
-				'meta_key'				 => 'event_start_date',
+				'meta_key'				 => 'event_end_date',
 				'order'                  => 'ASC',
 				'orderby'                => 'meta_value',
 				'paged' 				=> ( get_query_var('paged') ? get_query_var('paged') : 1 ),
