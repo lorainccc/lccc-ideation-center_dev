@@ -12,7 +12,7 @@
 		
 			<div class="small-12 columns">
 			
-				<?php get_template_part( 'template-parts/content', 'flexible' ); ?>
+				<?php get_template_part( 'template-parts/content', '404' ); ?>
 				
 			</div>
 					
