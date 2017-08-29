@@ -16,16 +16,25 @@
 		
 			<?php
 			
+			$today = date( 'Y-m-d' );
+			
 			$event_args = array(
 				'post_type'              => array( 'lccc_events' ),
 				'post_status'            => array( 'publish' ),
 				'nopaging'               => false,
-				'posts_per_archive_page' => '10',
+				'posts_per_page' => '10',
+				'meta_query'			 => array(
+					array(
+						'key'		=>	'event_start_date',
+						'value'		=>	$today,
+						'compare'	=>	'>=',
+						'type'		=>	'DATE'
+					)
+				),
 				'meta_key'				 => 'event_start_date',
-				'meta_value'			 => current_time('Ymd'),
-				'meta_compare'			 => '>=',
 				'order'                  => 'ASC',
-				'orderby'                => 'meta_value_num',
+				'orderby'                => 'meta_value',
+				'paged' 				=> ( get_query_var('paged') ? get_query_var('paged') : 1 ),
 			);
 
 			$events_query = new WP_Query( $event_args );
