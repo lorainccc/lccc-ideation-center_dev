@@ -1,5 +1,6 @@
 <?php
 
+// for any page that isn't the news or events, and has a featured image set
 if( has_post_thumbnail() && !is_home() && !is_singular('post') && !is_singular('lccc_events') ) :
 
 	$thumb_id = get_post_thumbnail_id();
@@ -9,6 +10,7 @@ if( has_post_thumbnail() && !is_home() && !is_singular('post') && !is_singular('
 	$angle_overlay = get_field('angle_overlay');
 	$banner_headline = '<h1>' . get_field('banner_headline') . '</h1>';
 
+// if is news archive page and has featured image set
 elseif( has_post_thumbnail( get_option('page_for_posts') ) && is_home() ) :
 
 	$blog_archive_id = get_option('page_for_posts');
@@ -19,6 +21,7 @@ elseif( has_post_thumbnail( get_option('page_for_posts') ) && is_home() ) :
 	$angle_overlay = get_field('angle_overlay', $blog_archive_id);
 	$banner_headline = '<h1>' . get_field('banner_headline', $blog_archive_id) . '</h1>';
 
+// if is news archive and doesn't have a featued image set, use news default (theme options)
 elseif( is_home() && !has_post_thumbnail( get_option('page_for_posts') ) ) : 
 
 	$background_image = get_field('news_banner_image', 'option');
@@ -26,8 +29,10 @@ elseif( is_home() && !has_post_thumbnail( get_option('page_for_posts') ) ) :
 	$angle_overlay = get_field('news_angle_overlay', 'option');
 	$banner_headline = '<h1>' . get_field('news_banner_headline', 'option') . '</h1>';
 
+// if is single news artice. 
 elseif( is_singular('post') ) : 
 
+	// if featured image is set on news archive page, use on-page options, otherwise use news default banner (theme options)
 	if( has_post_thumbnail( get_option('page_for_post') ) ) :
 
 	$blog_archive_id = get_option('page_for_posts');
@@ -47,11 +52,10 @@ elseif( is_singular('post') ) :
 
 	endif;
 
+// if is single event
 elseif( is_singular('lccc_events') ) :
 
-	//global $post;
-	//$event_id = $post->ID;
-
+	// if single event has a featued image set, use on-page options, otherwise use default for events (theme options)
 	if( has_post_thumbnail() ) :
 
 		$thumb_id = get_post_thumbnail_id();
@@ -70,6 +74,15 @@ elseif( is_singular('lccc_events') ) :
 
 	endif;
 
+// if is events archive page, use default banner options (theme options)
+elseif( is_post_type_archive('lccc_events') ) :
+
+		$background_image = get_field('events_banner_image', 'option');
+		$background_image_vertical_alignment = get_field('events_background_image_vertical_alignment', 'option');
+		$angle_overlay = get_field('events_angle_overlay', 'option');
+		$banner_headline = '<h1>' . get_field('events_banner_headline', 'option') . '</h1>';
+
+// final else, if all other conditional checks return false, use the page default banner options (theme options)
 else :
 
 	global $post;
@@ -83,6 +96,7 @@ else :
 endif;
 
 
+// set which banner overlay color to use
 
 if( $angle_overlay == 'lightBlue' ) :
 	$angle = 'angle-light-blue.png';

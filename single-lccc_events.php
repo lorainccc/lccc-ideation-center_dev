@@ -50,6 +50,15 @@ get_header();
 	</div>
 	
 	<?php
+		
+	get_template_part( 'template-parts/content', 'shadow-divider' );
+		
+	get_template_part( 'template-parts/content', 'tour' );
+		
+	?>
+
+	
+	<?php
 	
 	else :
 	
