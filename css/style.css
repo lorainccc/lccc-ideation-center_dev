@@ -1051,7 +1051,7 @@ hr.shadow-divider {
   font-weight: 700;
   text-transform: uppercase;
   color: #e16025; }
-.event-social-sharing .menu > ul > li > a {
+.event-social-sharing .menu > li > a {
   padding: 0;
   margin-right: .5rem; }
 
