@@ -1,6 +1,6 @@
 <?php
 
-if( has_post_thumbnail() && !is_home() && !is_singular('post') ) :
+if( has_post_thumbnail() && !is_home() && !is_singular('post') && !is_singular('lccc_events') ) :
 
 	$thumb_id = get_post_thumbnail_id();
 	$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true);
