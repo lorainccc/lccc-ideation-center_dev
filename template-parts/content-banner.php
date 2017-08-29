@@ -82,6 +82,14 @@ elseif( is_post_type_archive('lccc_events') ) :
 		$angle_overlay = get_field('events_angle_overlay', 'option');
 		$banner_headline = '<h1>' . get_field('events_banner_headline', 'option') . '</h1>';
 
+// if is 404 page, get banner values from Fallbacks/Defaults option page
+elseif( is_404() ) :
+
+		$background_image = get_field('404_banner_image', 'option');
+		$background_image_vertical_alignment = get_field('404_background_image_vertical_alignment', 'option');
+		$angle_overlay = get_field('404_angle_overlay', 'option');
+		$banner_headline = '<h1>' . get_field('404_banner_headline', 'option') . '</h1>';
+
 // final else, if all other conditional checks return false, use the page default banner options (theme options)
 else :
 
