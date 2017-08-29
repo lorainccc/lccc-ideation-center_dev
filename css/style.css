@@ -1055,6 +1055,14 @@ hr.shadow-divider {
   padding: 0;
   margin-right: .5rem; }
 
+@media screen and (min-width: 64em) {
+  .single-event-inner main {
+    padding-right: 3rem; } }
+@media screen and (min-width: 64em) {
+  .single-event-inner aside {
+    border-left: 1px solid #cacaca;
+    padding-left: 3rem; } }
+
 /*!
 Section 3: Body
 */

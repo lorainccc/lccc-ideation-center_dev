@@ -1291,3 +1291,20 @@ hr.shadow-divider {
 	}
 	
 }
+
+.single-event-inner {
+	main {
+		
+		@media screen and (min-width: 64em) {
+			padding-right: 3rem;
+		}
+		
+	}
+	
+	aside {
+		@media screen and (min-width: 64em) {
+			border-left: 1px solid $medium-gray;
+			padding-left: 3rem;
+		}
+	}
+}
