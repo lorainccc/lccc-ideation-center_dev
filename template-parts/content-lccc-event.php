@@ -164,7 +164,7 @@ $linkedInURL = 'https://www.linkedin.com/shareArticle?mini=true&url='.$eventURL.
 
 			<div class="event-tickets">
 
-				<a href="<?php echo $ticketlink; ?>" title="Buy tickets for <?php the_title(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/tickets.svg" alt="buy tickets link icon" height="30" width="30"/> Buy Tickets</a>
+				<a href="<?php echo $ticketlink; ?>" title="Buy tickets for <?php the_title(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/tickets.svg" alt="buy tickets link icon" height="30" width="30"/> <span>Buy Tickets</span></a>
 
 			</div>
 

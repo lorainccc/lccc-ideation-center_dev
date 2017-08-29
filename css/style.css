@@ -1025,29 +1025,35 @@ hr.shadow-divider {
 /************************************************
 2.9 EVENTS STYLES
 ************************************************/
-#event-content h1 {
-  font-weight: 400;
-  color: #003b76;
-  padding-right: 1rem;
-  border-bottom: 2px solid #e16025; }
+#event-content {
+  margin-bottom: 1rem; }
+  #event-content h1 {
+    font-weight: 400;
+    color: #003b76;
+    padding-right: 1.5rem;
+    border-bottom: 2px solid #e16025; }
 
 .event-info {
   font-family: "Raleway", sans-serif;
   margin-bottom: 1.5rem; }
   .event-info .info-label {
     font-weight: 700; }
-  .event-info a {
-    color: #e16025; }
+  .event-info a span {
+    color: #e16025;
+    text-decoration: underline;
+    font-weight: 600; }
+  .event-info div:not(:last-child) {
+    margin-bottom: .5rem; }
 
 .event-social-sharing .share-label {
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #e16025; }
 .event-social-sharing .menu ul li a {
   padding: 0;
-  margin-right: 1rem; }
+  margin-right: .5rem; }
 
 /*!
 Section 3: Body
