@@ -32,7 +32,7 @@
 						'type'		=>	'DATE'
 					)
 				),
-				'meta_key'				 => 'event_end_date',
+				'meta_key'				 => 'event_start_date',
 				'order'                  => 'ASC',
 				'orderby'                => 'meta_value',
 				'paged' 				=> ( get_query_var('paged') ? get_query_var('paged') : 1 ),

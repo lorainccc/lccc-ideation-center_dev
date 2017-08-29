@@ -140,7 +140,7 @@ $iso_8601 = date( 'c', $event_time );
 			<?php endif; ?>
 
 		</div>
-		
+		<?php the_excerpt(); ?>
 		<a class="button" href="<?php the_permalink(); ?>">Read More</a>
 	
 	</div> <!-- end .entry-content -->
