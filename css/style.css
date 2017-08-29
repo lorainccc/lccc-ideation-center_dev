@@ -1026,7 +1026,8 @@ hr.shadow-divider {
 2.9 EVENTS STYLES
 ************************************************/
 #event-content {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  display: inline-block; }
   #event-content h1 {
     font-weight: 400;
     color: #003b76;
