@@ -32,7 +32,7 @@ if( $cta_to_display == 'default' ) :
 
 	endif;
 
-elseif( $cta_to_display == 'custom' && ( !is_home() || !is_single() ) ) :
+elseif( $cta_to_display == 'custom' && ( !is_home() || !is_single() || !is_tag() || !is_category()  ) ) :
 
 	$cta_title = get_field('cta_title');
 	$cta_content = get_field('cta_content');
@@ -51,7 +51,7 @@ elseif( $cta_to_display == 'custom' && ( !is_home() || !is_single() ) ) :
 
 	endif;
 
-elseif( $cta_to_diplay == 'custom' && ( is_home() || is_single() )) :
+elseif( $cta_to_diplay == 'custom' && ( is_home() || is_single() || is_tag() || is_category() )) :
 
 	$cta_title = get_field('cta_title', $blog_archive_id);
 	$cta_content = get_field('cta_content', $blog_archive_id);
