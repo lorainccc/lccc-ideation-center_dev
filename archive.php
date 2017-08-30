@@ -48,8 +48,14 @@ get_header();
 			endif; 
 				
 			get_template_part( 'template-parts/content', 'sidebar-quick-links');
+			
+			// excluding sidebar CTA on taxonomy archive page due to page link returning ID instead of ACF value
+			// Not sure, but may be due to a conflict with the pre_get_posts filter being used in the Events plugin
+			if( !is_tag() || !is_category ) :
 				
-			get_template_part( 'template-parts/content', 'sidebar-cta');
+				get_template_part( 'template-parts/content', 'sidebar-cta');
+			
+			endif;
 								
 			?>
 		
