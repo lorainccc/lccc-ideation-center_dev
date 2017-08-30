@@ -1,7 +1,7 @@
 <?php
 
 /* If is Blog archive or single post, get ACF values from Blog archive page, else get from current page (for standard sub template) */
-if( is_home() || is_singular('post') ) :
+if( is_home() || is_singular('post') || is_tag() || is_category() ) :
 
 	$blog_archive_id = get_option( 'page_for_posts' );
 	$quick_links_title = get_field( 'quick_links_title', $blog_archive_id );
