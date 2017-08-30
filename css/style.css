@@ -475,7 +475,7 @@ hr.shadow-divider {
       display: flex;
       flex-direction: column;
       justify-content: center; }
-    .page-banner .banner-headline-row h1, .page-banner .banner-headline-row .fake-h1 {
+    .page-banner .banner-headline-row h1:not(.tax-title), .page-banner .banner-headline-row .fake-h1 {
       font-size: 3rem; }
     .page-banner .banner-headline-row h1.tax-title {
       font-size: 2.25rem;
@@ -504,14 +504,16 @@ hr.shadow-divider {
   @media screen and (min-width: 40em) and (max-width: 63.9375em) {
     .page-banner {
       height: 25rem; }
-      .page-banner .banner-headline-row h1, .page-banner .fake-h1 {
+      .page-banner .banner-headline-row h1:not(.tax-title), .page-banner .fake-h1 {
         font-size: 4.5rem;
         position: absolute;
         bottom: 0;
         left: 0; }
-      .page-banner h1.tax-title {
+      .page-banner .banner-headline-row h1.tax-title {
         font-size: 3.5rem;
-        line-height: 100%; }
+        line-height: 120%;
+        bottom: 0;
+        left: 0; }
       .page-banner .banner-headline-row .columns {
         padding-bottom: 3rem;
         padding-top: 2rem; }
@@ -520,14 +522,16 @@ hr.shadow-divider {
   @media screen and (min-width: 64em) {
     .page-banner {
       height: 33.125rem; }
-      .page-banner .banner-headline-row h1, .page-banner .fake-h1 {
+      .page-banner .banner-headline-row h1:not(.tax-title), .page-banner .fake-h1 {
         font-size: 6.5rem;
         position: absolute;
         bottom: 0;
         left: 0; }
-      .page-banner h1.tax-title {
-        font-size: 3.5rem;
-        line-height: 100%; }
+      .page-banner .banner-headline-row h1.tax-title {
+        font-size: 5rem;
+        line-height: 120%;
+        bottom: 0;
+        left: 0; }
       .page-banner .banner-headline-row .columns {
         padding-bottom: 4rem;
         padding-top: 3rem; }

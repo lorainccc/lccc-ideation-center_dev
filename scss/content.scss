@@ -232,7 +232,7 @@ hr.shadow-divider {
 				flex-direction: column;
 				justify-content: center;
 			}
-			h1, .fake-h1 {
+			h1:not(.tax-title), .fake-h1 {
 				font-size: 3rem;
 			}
 			
@@ -289,7 +289,7 @@ hr.shadow-divider {
 	@media screen and (min-width: 40em) and (max-width: 63.9375em) {
 		height: 25rem;
 		
-		.banner-headline-row h1, .fake-h1 {
+		.banner-headline-row h1:not(.tax-title), .fake-h1 {
 			font-size: 4.5rem;
 			position: absolute;
 			bottom: 0;
@@ -297,9 +297,11 @@ hr.shadow-divider {
 
 		}
 		
-		h1.tax-title {
-				font-size: 3.5rem;
-				line-height: 100%;
+		.banner-headline-row h1.tax-title {
+			font-size: 3.5rem;
+			line-height: 120%;
+			bottom: 0;
+			left: 0;
 		}
 		
 		.banner-headline-row .columns {
@@ -317,16 +319,18 @@ hr.shadow-divider {
 	@media screen and (min-width: 64em) {
 		height: 33.125rem;
 		
-		.banner-headline-row h1, .fake-h1 {
+		.banner-headline-row h1:not(.tax-title), .fake-h1 {
 			font-size: 6.5rem;
 			position: absolute;
 			bottom: 0;
 			left: 0;
 		}
 		
-		h1.tax-title {
-			font-size: 3.5rem;
-			line-height: 100%;
+		.banner-headline-row h1.tax-title {
+			font-size: 5rem;
+			line-height: 120%;
+			bottom: 0;
+			left: 0;
 		}
 
 		
