@@ -1082,6 +1082,9 @@ hr.shadow-divider {
     border-left: 1px solid #cacaca;
     padding-left: 3rem; } }
 
+.event-taxonomy-links {
+  margin-bottom: 1.5rem; }
+
 /*!
 Section 3: Body
 */
