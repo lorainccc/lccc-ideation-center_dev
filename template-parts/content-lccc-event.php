@@ -128,10 +128,6 @@ $linkedInURL = 'https://www.linkedin.com/shareArticle?mini=true&url='.$eventURL.
 		
 		</div>
 		
-		<?php else : ?>
-		
-		<div>fail</div>
-		
 		<?php endif; ?>
 
 		<div class="event-info">

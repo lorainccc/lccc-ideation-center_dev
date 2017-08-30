@@ -1,4 +1,4 @@
-		<?php if( term() ) : ?>
+		<?php if( has_category() || has_tag() ) : ?>
 		
 		<div class="post-taxonomies">
 		
