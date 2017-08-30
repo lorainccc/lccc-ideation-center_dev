@@ -95,7 +95,7 @@ $iso_8601 = date( 'c', $event_time );
 		<h2 itemprop="name" class="entry-title event-title"><?php the_title(); ?></h2>
 		
 		
-		<?php if( has_category() ) : ?>
+		<?php if( has_term('', 'event_categories', $post->ID) ) : ?>
 		
 		<div class="event-taxonomy-links">
 		
