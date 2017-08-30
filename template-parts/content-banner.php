@@ -32,9 +32,12 @@ elseif( is_home() && !has_post_thumbnail( get_option('page_for_posts') ) ) :
 // if is category or tag archive page
 elseif( is_category() || is_tag() ) :
 
-	$background_image = get_field('news_banner_image', 'option');
-	$background_image_vertical_alignment = get_field('news_background_image_vertical_alignment', 'option');
-	$angle_overlay = get_field('news_angle_overlay', 'option');
+	$blog_archive_id = get_option('page_for_posts');
+	$thumb_id = get_post_thumbnail_id( $blog_archive_id );
+	$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true);
+	$background_image = $thumb_url_array[0];
+	$background_image_vertical_alignment = get_field('background_image_vertical_alignment', $blog_archive_id);
+	$angle_overlay = get_field('angle_overlay', $blog_archive_id);
 
 	if( is_category() ) :
 
