@@ -1,6 +1,6 @@
 <?php
 
-if( is_home() || is_single() ) :
+if( is_home() || is_single() || is_tag() || is_category() ) :
 
 	$blog_archive_id = get_option('page_for_posts');
 	$cta_to_display = get_field('cta_to_display', $blog_archive_id);
