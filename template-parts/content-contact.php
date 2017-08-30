@@ -15,9 +15,9 @@ $form_shortcode = get_field('form_shortcode', 'option');
 ?>
 
 
-<section id="contact" class="row">
+<section id="contact" class="row" data-equalizer data-equalize-on="medium">
 
-	<div class="small-12 medium-6 medium-push-6 columns contact-form">
+	<div class="small-12 medium-6 medium-push-6 columns contact-form" data-equalizer-watch>
 	
 		<?php 
 		
@@ -37,7 +37,7 @@ $form_shortcode = get_field('form_shortcode', 'option');
 
 	</div>
 	
-	<div class="small-12 medium-6 medium-pull-6 columns location-info">
+	<div class="small-12 medium-6 medium-pull-6 columns location-info" data-equalizer-watch>
 	
 		<?php
 		
