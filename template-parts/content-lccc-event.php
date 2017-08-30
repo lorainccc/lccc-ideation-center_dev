@@ -120,7 +120,7 @@ $linkedInURL = 'https://www.linkedin.com/shareArticle?mini=true&url='.$eventURL.
 		<h1 itemprop="name" class="entry-title event-title"><?php the_title(); ?></h1>
 		
 		
-		<?php if( has_category() ) : ?>
+		<?php if( has_term() ) : ?>
 		
 		<div class="event-taxonomy-links">
 		
