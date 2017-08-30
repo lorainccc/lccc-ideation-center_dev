@@ -982,9 +982,9 @@ hr.shadow-divider {
 .blog-archive-item:not(:first-child) {
   padding-top: 1.5rem; }
 
-.post-taxonomies {
+.post-taxonomies, .event-taxonomy-links {
   margin-bottom: .5rem; }
-  .post-taxonomies a {
+  .post-taxonomies a, .event-taxonomy-links a {
     font-weight: 600;
     color: #e16025;
     text-decoration: underline; }
@@ -1047,6 +1047,10 @@ hr.shadow-divider {
   border-bottom: 2px solid #e16025;
   margin-bottom: 1rem;
   display: inline-block; }
+#event-content .subheading {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: #e16025; }
 
 .event-info {
   font-family: "Raleway", sans-serif;

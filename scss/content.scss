@@ -1172,7 +1172,7 @@ hr.shadow-divider {
 	}
 }
 
-.post-taxonomies {
+.post-taxonomies, .event-taxonomy-links {
 	a {
 		font-weight: $font-semibold;
 		color: $orange;
@@ -1271,6 +1271,12 @@ hr.shadow-divider {
 		border-bottom: 2px solid $orange;
 		margin-bottom: 1rem;
 		display: inline-block;
+	}
+	
+	.subheading {
+		font-size: 1.25rem;
+		text-transform: uppercase;
+		color: $orange;
 	}
 	
 }
