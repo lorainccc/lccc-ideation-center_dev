@@ -17,7 +17,9 @@ Template Name: Contact
 		
 		get_template_part( 'template-parts/content', 'banner' );
 		
-		get_template_part( 'template-parts/content', 'standard-intro');
+		get_template_part( 'template-parts/content', 'standard-intro' );
+		
+		get_template_part( 'template-parts/content', 'contact' );
 		
 		?>
 	

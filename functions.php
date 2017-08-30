@@ -386,7 +386,7 @@ add_filter( 'posts_distinct', 'cf_search_distinct' );
 add_action( 'admin_head', 'hide_editor' );
 function hide_editor() {
 	$template_file = $template_file = basename( get_page_template() );
-	if($template_file == 'template-home.php' || $template_file == 'template-audience.php' || $template_file == 'template-overview.php' || $template_file == 'template-full-width.php' || $template_file == 'page.php'){ 
+	if($template_file == 'template-home.php' || $template_file == 'template-audience.php' || $template_file == 'template-overview.php' || $template_file == 'template-full-width.php' || $template_file == 'page.php' || $template_file == 'template-contact.php'){ 
 		remove_post_type_support('page', 'editor');
 	}
 }
