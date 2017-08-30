@@ -477,6 +477,9 @@ hr.shadow-divider {
       justify-content: center; }
     .page-banner .banner-headline-row h1, .page-banner .banner-headline-row .fake-h1 {
       font-size: 3rem; }
+    .page-banner .banner-headline-row h1.tax-title {
+      font-size: 2.25rem;
+      line-height: 100%; }
     .page-banner .page-banner-inner {
       height: 100%;
       width: 100%;
@@ -506,6 +509,9 @@ hr.shadow-divider {
         position: absolute;
         bottom: 0;
         left: 0; }
+      .page-banner h1.tax-title {
+        font-size: 3.5rem;
+        line-height: 100%; }
       .page-banner .banner-headline-row .columns {
         padding-bottom: 3rem;
         padding-top: 2rem; }
@@ -519,6 +525,9 @@ hr.shadow-divider {
         position: absolute;
         bottom: 0;
         left: 0; }
+      .page-banner h1.tax-title {
+        font-size: 3.5rem;
+        line-height: 100%; }
       .page-banner .banner-headline-row .columns {
         padding-bottom: 4rem;
         padding-top: 3rem; }

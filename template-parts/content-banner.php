@@ -41,11 +41,11 @@ elseif( is_category() || is_tag() ) :
 
 	if( is_category() ) :
 
-		$banner_headline = '<h1>Category Archive: ' . get_the_title() . '</h1>';
+		$banner_headline = '<h1 class="tax-title">Category Archive: ' . get_the_title() . '</h1>';
 
 	elseif( is_tag() ) :
 
-		$banner_headline = '<h1>Tag Archive: ' . get_the_title() . '</h1>';
+		$banner_headline = '<h1 class="tax-title">Tag Archive: ' . get_the_title() . '</h1>';
 
 	endif;
 
