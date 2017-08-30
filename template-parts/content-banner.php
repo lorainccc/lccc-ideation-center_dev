@@ -30,7 +30,7 @@ elseif( is_home() && !has_post_thumbnail( get_option('page_for_posts') ) ) :
 	$banner_headline = '<h1>' . get_field('news_banner_headline', 'option') . '</h1>';
 
 // if is category or tag archive page
-elseif( is_category() || is_tag() ) :
+elseif( is_archive() && is_category() || is_archive() && is_tag() ) :
 
 	$background_image = get_field('news_banner_image', 'option');
 	$background_image_vertical_alignment = get_field('news_background_image_vertical_alignment', 'option');
