@@ -60,7 +60,8 @@ elseif( $cta_to_diplay == 'custom' && ( is_home() || is_single() || is_tag() || 
 
 	if( $button_link_type == 'internal' ) :
 
-		$cta_link = get_field('button_page_link', $blog_archive_id);
+		$cta_link_page_id = get_field('button_page_link', $blog_archive_id, false);
+		$cta_link = get_the_permalink( $cta_link_page_id);
 		$cta_target = '';
 
 	elseif( $button_link_type == 'external' ) :
