@@ -42,7 +42,7 @@ elseif( $cta_to_display == 'custom' && ( !is_home() || !is_single() || !is_tag()
 	if( $button_link_type == 'internal' ) :
 
 		$cta_link = get_field('button_page_link');
-		$cta_target = '';
+		$cta_target = ' target="_self"';
 
 	elseif( $button_link_type == 'external' ) :
 
