@@ -29,6 +29,23 @@ elseif( is_home() && !has_post_thumbnail( get_option('page_for_posts') ) ) :
 	$angle_overlay = get_field('news_angle_overlay', 'option');
 	$banner_headline = '<h1>' . get_field('news_banner_headline', 'option') . '</h1>';
 
+// if is category or tag archive page
+elseif( is_category() || is_tag() ) :
+
+	$background_image = get_field('news_banner_image', 'option');
+	$background_image_vertical_alignment = get_field('news_background_image_vertical_alignment', 'option');
+	$angle_overlay = get_field('news_angle_overlay', 'option');
+
+	if( is_category() ) :
+
+		$banner_headline = '<h1>Category Archive: ' . get_field('news_banner_headline', 'option') . '</h1>';
+
+	elseif( is_tag() ) :
+
+		$banner_headline = '<h1>Tag Archive: ' . get_field('news_banner_headline', 'option') . '</h1>';
+
+	endif;
+
 // if is single news artice. 
 elseif( is_singular('post') ) : 
 
