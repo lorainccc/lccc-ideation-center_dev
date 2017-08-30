@@ -1047,7 +1047,7 @@ hr.shadow-divider {
   border-bottom: 2px solid #e16025;
   margin-bottom: 1rem;
   display: inline-block; }
-#event-content .subheading {
+#event-content h2.subheading {
   font-size: 1.25rem;
   text-transform: uppercase;
   color: #007bbf; }
