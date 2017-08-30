@@ -37,7 +37,7 @@ $form_shortcode = get_field('form_shortcode', 'option');
 
 	</div>
 	
-	<div class="small-12 medium-6 medium-pull-6 columns">
+	<div class="small-12 medium-6 medium-pull-6 columns location-info">
 	
 		<?php
 		

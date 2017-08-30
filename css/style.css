@@ -602,23 +602,23 @@ hr.shadow-divider {
   margin-bottom: 2rem; }
 
 /* Visit Campana Section */
-#visit-campana .section-title-row .h2-subheading {
+#visit-campana .section-title-row .h2-subheading, #contact .section-title-row .h2-subheading {
   margin-top: 1rem; }
 @media screen and (min-width: 40em) {
-  #visit-campana .location-info {
+  #visit-campana .location-info, #contact .location-info {
     padding-right: 4rem; } }
-#visit-campana .location-info h3 {
+#visit-campana .location-info h3, #contact .location-info h3 {
   font-size: 1.3125rem;
   color: #e16025; }
-#visit-campana .location-info .span-block {
+#visit-campana .location-info .span-block, #contact .location-info .span-block {
   display: block; }
-#visit-campana .location-info .map-container {
+#visit-campana .location-info .map-container, #contact .location-info .map-container {
   margin-bottom: 1.5rem; }
 @media screen and (min-width: 40em) {
-  #visit-campana .tour-form {
+  #visit-campana .tour-form, #visit-campana .contact-form, #contact .tour-form, #contact .contact-form {
     border-left: 2px solid #003b76;
     padding-left: 4rem; } }
-#visit-campana .tour-form h3 {
+#visit-campana .tour-form h3, #visit-campana .contact-form h3, #contact .tour-form h3, #contact .contact-form h3 {
   font-size: 1.8125rem;
   color: #003b76; }
 

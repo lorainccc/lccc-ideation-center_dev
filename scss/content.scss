@@ -469,7 +469,7 @@ hr.shadow-divider {
 
 /* Visit Campana Section */
 
-#visit-campana {
+#visit-campana, #contact {
 	
 	.section-title-row {
 		.h2-subheading {
@@ -495,7 +495,7 @@ hr.shadow-divider {
 		}
 	}
 	
-	.tour-form {
+	.tour-form, .contact-form {
 		
 		@media screen and (min-width: 40em) {
 			border-left: 2px solid $dark-blue;
