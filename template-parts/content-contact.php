@@ -9,8 +9,8 @@ $state = get_field('state', 'option');
 $zipcode = get_field('zipcode', 'option');
 $phone_number = get_field('phone_number', 'option');
 $center_hours_heading = get_field('center_hours_heading', 'option');
-$form_heading = get_field('form_heading', 'option');
-$form_shortcode = get_field('form_shortcode', 'option');
+$form_heading = get_field('form_heading');
+$form_shortcode = get_field('form_shortcode');
 
 ?>
 
