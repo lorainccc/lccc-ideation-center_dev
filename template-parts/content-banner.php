@@ -1,7 +1,7 @@
 <?php
 
 // for any page that isn't the news or events, and has a featured image set
-if( has_post_thumbnail() && !is_home() && !is_singular('post') && !is_singular('lccc_events') ) :
+if( has_post_thumbnail() && !is_home() && !is_singular('post') && !is_singular('lccc_events') && !is_archive() ) :
 
 	$thumb_id = get_post_thumbnail_id();
 	$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true);
