@@ -88,7 +88,7 @@ $bgcolor = event_meta_box_get_meta( 'event_meta_box_stoccker_bg_color' );
 $ticketlink = event_meta_box_get_meta( 'event_meta_box_stocker_ticket_link' );
 $eventsubheading = event_meta_box_get_meta( 'event_meta_box_sub_heading' );
 
-// Events Date String
+// Events Date String - if is one day event, display full date, if event last for more than one day, display start and end date
 
 if( $endeventdate === $eventstartdate ) :
 	

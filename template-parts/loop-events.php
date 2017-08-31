@@ -54,6 +54,8 @@ $endeventtimehours = date( "G", $endeventtimevar );
 $endeventtimeminutes = date( "i", $endeventtimevar );
 $enddate = strtotime( $endeventdate );
 $endeventdate = date( "Y-m-d", $enddate );
+$event_end_month = date( 'F', $enddate );
+$event_end_day = date( 'j', $enddate );
 $duration = '';
 
 if ( $endeventtimehours == 0 ) {
@@ -79,6 +81,18 @@ if ( $durationminutes > 0 ) {
 $location = event_meta_box_get_meta( 'event_meta_box_event_location' );
 $cost = event_meta_box_get_meta( 'event_meta_box_ticket_price_s_' );
 $eventsubheading = event_meta_box_get_meta( 'event_meta_box_sub_heading' );
+
+// Events Date String - if is one day event, display full date, if event last for more than one day, display start and end date
+
+if( $endeventdate === $eventstartdate ) :
+	
+	$event_date_string = $eventstartmonthfull . ' ' . $eventstartday . ', ' . $eventstartyear;
+
+else :
+
+	$event_date_string = $eventstartmonthfull . ' ' . $eventstartday . ' - ' . $event_end_month . ' ' . $event_end_day;
+
+endif;
 
 // convert event date and time to ISO 8601 for schema.org markup 
 $event_date_time = $eventstartmonthfull . ' ' . $eventstartday . ', ' . $eventstartyear . ' ' . $starttime;
@@ -113,7 +127,7 @@ $iso_8601 = date( 'c', $event_time );
 
 			<div class="event-date">
 
-				<span class="info-label">Date: </span><span class="info-value" itemprop="startDate" content="<?php echo $iso_8601; ?>"><?php echo $eventstartmonthfull . ' ' . $eventstartday . ', ' . $eventstartyear; ?></span>
+				<span class="info-label">Date: </span><span class="info-value" itemprop="startDate" content="<?php echo $iso_8601; ?>"><?php echo $event_date_string; ?></span>
 
 			</div>
 

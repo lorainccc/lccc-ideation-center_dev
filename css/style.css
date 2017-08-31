@@ -789,6 +789,30 @@ hr.shadow-divider {
     #cool .featured-items-row .columns:not(:last-child) {
       border-bottom: 1px solid #cacaca; } }
 
+/* Events section */
+.calendar-icon {
+  height: 60px;
+  width: 60px;
+  background-image: url(../images/icons/calendaricon_blue.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  position: relative; }
+  .calendar-icon .calendar-month {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: .875rem;
+    color: #003b76;
+    position: absolute;
+    top: 18px; }
+  .calendar-icon .calendar-day {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.59rem;
+    font-weight: 600;
+    color: #003b76;
+    position: absolute;
+    bottom: 12px; }
+
 .menu.home-sm-links-list {
   display: inline-block; }
   .menu.home-sm-links-list li a {

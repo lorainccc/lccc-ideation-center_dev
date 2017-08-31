@@ -830,6 +830,43 @@ hr.shadow-divider {
 	
 }
 
+/* Events section */
+
+.calendar-icon {
+	height: 60px;
+	width: 60px;
+	background: {
+		image: url(../images/icons/calendaricon_blue.svg);
+		repeat: no-repeat;
+		size: contain;
+		position: center center;
+	}
+	position: relative;
+	
+	.calendar-month {
+		font: {
+			family: $header-font-family;
+			weight: $font-bold;
+			size: .875rem;
+		}
+		
+		color: $dark-blue;
+		position: absolute;
+		top: 18px;
+	}
+	
+	.calendar-day {
+		font: {
+			family: $body-font-family;
+			size: 1.59rem;
+			weight: $font-semibold;
+		}
+		color: $dark-blue;
+		position: absolute;
+		bottom: 12px;
+	}
+}
+
 .menu.home-sm-links-list {
 	display: inline-block;
 	
