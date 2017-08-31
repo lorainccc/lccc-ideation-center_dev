@@ -22,7 +22,7 @@
 			$event_args = array(
 				'post_type'              => array( 'lccc_events' ),
 				'post_status'            => array( 'publish' ),
-				'nopaging'               => false,
+				//'nopaging'               => false,
 				'posts_per_page' => '3',
 				'meta_query'			 => array(
 					array(
@@ -35,7 +35,7 @@
 				'meta_key'				 => 'event_start_date',
 				'order'                  => 'ASC',
 				'orderby'                => 'meta_value',
-				'paged' 				=> ( get_query_var('paged') ? get_query_var('paged') : 1 ),
+				//'paged' 				=> ( get_query_var('paged') ? get_query_var('paged') : 1 ),
 			);
 
 			$events_query = new WP_Query( $event_args );
