@@ -48,7 +48,13 @@
 			
 				endwhile;
 			
-				campana_page_navi();
+				//campana_page_navi();
+				echo '<nav>';
+			
+				previous_post_link('&laquo; previous');
+				next_post_link('next &raquo;');
+			
+				echo '</nav>';
 						
 			endif;
 			
