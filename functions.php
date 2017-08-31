@@ -395,13 +395,13 @@ function hide_editor() {
 // Pagination for achive pages
 function campana_page_navi($before = '', $after = '') {
 	
-	global $wpdb, $wp_query;
+	global $wpdb, $events_query;
 	
-	$request = $wp_query->request;
+	$request = $events_query->request;
 	$posts_per_page = intval(get_query_var('posts_per_page'));
 	$paged = intval(get_query_var('paged'));
-	$numposts = $wp_query->found_posts;
-	$max_page = $wp_query->max_num_pages;
+	$numposts = $events_query->found_posts;
+	$max_page = $events_query->max_num_pages;
 	
 	if ( $numposts <= $posts_per_page ) { return; }
 	
