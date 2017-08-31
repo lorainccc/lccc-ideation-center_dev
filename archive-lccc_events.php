@@ -40,6 +40,8 @@
 
 			$events_query = new WP_Query( $event_args );
 			
+			global $events_query;
+			
 			if( $events_query->have_posts() ) : 
 			
 				while( $events_query->have_posts() ) : $events_query->the_post();
