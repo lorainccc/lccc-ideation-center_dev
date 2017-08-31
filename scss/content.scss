@@ -1433,7 +1433,8 @@ hr.shadow-divider {
 		}
 	}
 }
-
-.event-taxonomy-links {
-	margin-bottom: 1.5rem;
+.events-archive-item {
+	.event-info {
+		margin-top: 1.5rem;
+	}
 }
