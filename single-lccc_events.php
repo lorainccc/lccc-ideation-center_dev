@@ -23,7 +23,7 @@ get_header();
 	
 	<div class="single-event-inner row">
 	
-		<main id="main" role="main" class="small-12 large-9 columns">
+		<main id="main" role="main" class="small-12 medium-8 large-9 columns">
 		
 			<?php
 			
@@ -37,7 +37,7 @@ get_header();
 		
 		</main>
 		
-		<aside role="complementary" class="small-12 large-3 columns">
+		<aside role="complementary" class="small-12 medium-4 large-3 columns">
 		
 			<?php
 			

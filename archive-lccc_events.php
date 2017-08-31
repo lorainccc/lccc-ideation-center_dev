@@ -12,7 +12,7 @@
 	
 	<div class="events-archive-inner row">
 	
-		<main class="small-12 medium-7 medium-push-5 columns" role="main">
+		<main class="small-12 medium-8 large-9 columns" role="main">
 		
 			<?php
 			
@@ -54,7 +54,7 @@
 		
 		</main>
 	
-		<aside class="small-12 medium-5 medium-pull-7 columns" role="complementary">
+		<aside class="small-12 medium-4 large-3 columns" role="complementary">
 		
 			<?php //get_template_part('template-parts/content', 'events-sidebar'); ?>
 			sidebar goes here
