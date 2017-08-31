@@ -1464,7 +1464,8 @@ Section 5: Navigation
   header.smaller .top-bar .is-dropdown-submenu {
     background-color: #fefefe;
     border: none;
-    box-shadow: 0px 2px 3px rgba(10, 10, 10, 0.25), -3px 2px 4px rgba(10, 10, 10, 0.25), 3px 2px 4px rgba(10, 10, 10, 0.25); }
+    box-shadow: 0px 2px 3px rgba(10, 10, 10, 0.25), -3px 2px 4px rgba(10, 10, 10, 0.25), 3px 2px 4px rgba(10, 10, 10, 0.25);
+    top: 150% !important; }
     header.smaller .top-bar .is-dropdown-submenu li {
       background: #fefefe; }
       header.smaller .top-bar .is-dropdown-submenu li a {
