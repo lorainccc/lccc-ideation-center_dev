@@ -48,6 +48,8 @@
 			
 				endwhile;
 			
+			campana_page_navi();
+			
 			endif;
 			
 			?>
