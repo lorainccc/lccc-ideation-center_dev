@@ -804,20 +804,22 @@ hr.shadow-divider {
     font-size: .875rem;
     color: #003b76;
     position: absolute;
-    top: 18px;
+    top: 16px;
     left: 50%;
     -webkit-transform: translateX(-50%);
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+    line-height: 90%; }
   .calendar-icon .calendar-day {
     font-family: "Open Sans", sans-serif;
     font-size: 1.59rem;
     font-weight: 600;
     color: #003b76;
     position: absolute;
-    bottom: 12px;
+    bottom: 11px;
     left: 50%;
     -webkit-transform: translateX(-50%);
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+    line-height: 90%; }
 
 .menu.home-sm-links-list {
   display: inline-block; }

@@ -852,10 +852,11 @@ hr.shadow-divider {
 		
 		color: $dark-blue;
 		position: absolute;
-		top: 18px;
+		top: 16px;
 		left: 50%;
 		-webkit-transform: translateX(-50%);
-		transform: translateX(-50%)
+		transform: translateX(-50%);
+		line-height: 90%;
 	}
 	
 	.calendar-day {
@@ -867,10 +868,11 @@ hr.shadow-divider {
 		
 		color: $dark-blue;
 		position: absolute;
-		bottom: 12px;
+		bottom: 11px;
 		left: 50%;
 		-webkit-transform: translateX(-50%);
-		transform: translateX(-50%)
+		transform: translateX(-50%);
+		line-height: 90%;
 	}
 }
 
