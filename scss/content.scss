@@ -869,6 +869,17 @@ hr.shadow-divider {
 	}
 }
 
+@media screen and (max-width: 39.9375em) {
+	.event-info-column {
+		padding-left: 1.4375rem;
+	}
+	
+	.single-event:not(:last-child) {
+		border-bottom: 1px solid $medium-gray;
+		margin-bottom: 1.5rem;
+	}
+}
+
 .calendar-icon {
 	height: 60px;
 	width: 60px;
