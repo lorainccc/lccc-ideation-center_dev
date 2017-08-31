@@ -50,7 +50,8 @@
 			
 				endwhile;
 			
-				campana_page_navi();
+				//campana_page_navi();
+				wpbeginner_numeric_posts_nav();
 			/*
 				echo '<nav>';
 			
