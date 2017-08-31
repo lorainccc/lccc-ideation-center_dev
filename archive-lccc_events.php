@@ -18,12 +18,12 @@
 			
 			$today = date( 'Y-m-d' );
 			
-			// get all events that have an end date that equals today's date or later
+			// get all events that have an end date that equals today's date or later, then order by the start date
 			$event_args = array(
 				'post_type'              => array( 'lccc_events' ),
 				'post_status'            => array( 'publish' ),
 				'nopaging'               => false,
-				'posts_per_page' => '10',
+				'posts_per_page' => '3',
 				'meta_query'			 => array(
 					array(
 						'key'		=>	'event_end_date',
