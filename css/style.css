@@ -811,9 +811,6 @@ hr.shadow-divider {
   .event-info-column {
     padding-left: 0; }
 
-  .calendar-column {
-    padding-right: 0; }
-
   .calendar-icon {
     margin-left: 1rem; } }
 .calendar-icon {
@@ -837,7 +834,8 @@ hr.shadow-divider {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    line-height: 90%; }
+    line-height: 90%;
+    text-transform: uppercase; }
   .calendar-icon .calendar-day {
     font-family: "Open Sans", sans-serif;
     font-size: 1.59rem;

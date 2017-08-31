@@ -863,11 +863,7 @@ hr.shadow-divider {
 	.event-info-column {
 		padding-left: 0;
 	}
-	
-	.calendar-column {
-		padding-right: 0;
-	}
-	
+		
 	.calendar-icon {
 		margin-left: 1rem;
 	}
@@ -902,6 +898,7 @@ hr.shadow-divider {
 		-webkit-transform: translateX(-50%);
 		transform: translateX(-50%);
 		line-height: 90%;
+		text-transform: uppercase;
 	}
 	
 	.calendar-day {
