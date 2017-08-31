@@ -811,6 +811,9 @@ hr.shadow-divider {
   background-size: contain;
   background-position: center center;
   position: relative; }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .calendar-icon {
+      margin: 0 auto 1.5rem; } }
   .calendar-icon .calendar-month {
     font-family: "Raleway", sans-serif;
     font-weight: 700;

@@ -865,6 +865,10 @@ hr.shadow-divider {
 	}
 	position: relative;
 	
+	@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+		margin: 0 auto 1.5rem;
+	}
+	
 	.calendar-month {
 		font: {
 			family: $header-font-family;

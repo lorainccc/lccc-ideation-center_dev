@@ -23,6 +23,8 @@ $event_args = array(
 
 $events_query = new WP_Query( $event_args );
 
+$events_subheading = get_field('events_subheading');
+
 ?>
 	
 
@@ -30,7 +32,7 @@ $events_query = new WP_Query( $event_args );
 
 	<div class="small-12 columns text-center">
 	
-		<h2>Events Section Goes Here</h2>
+		<h2 class="h2-subheading"><?php echo $events_subheading; ?></h2>
 	
 	</div>
 
