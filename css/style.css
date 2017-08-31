@@ -1034,15 +1034,15 @@ hr.shadow-divider {
     border-left: 1px solid #cacaca;
     padding-left: 3rem; } }
 
-.blog-archive-item h2 {
+.blog-archive-item h2, .events-archive-item h2 {
   font-size: 1.8125rem;
   margin-bottom: 0; }
-  .blog-archive-item h2 a {
-    color: #0055a4; }
-.blog-archive-item:not(:last-child) {
+  .blog-archive-item h2 a, .events-archive-item h2 a {
+    color: #003b76; }
+.blog-archive-item:not(:last-child), .events-archive-item:not(:last-child) {
   padding-bottom: 1.5rem;
   border-bottom: 1px solid #cacaca; }
-.blog-archive-item:not(:first-child) {
+.blog-archive-item:not(:first-child), .events-archive-item:not(:first-child) {
   padding-top: 1.5rem; }
 
 .post-taxonomies, .event-taxonomy-links {

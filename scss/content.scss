@@ -1247,13 +1247,13 @@ hr.shadow-divider {
 	}
 }
 
-.blog-archive-item {
+.blog-archive-item, .events-archive-item {
 	h2 {
 		font-size: 1.8125rem;
 		margin-bottom: 0;
 		
 		a { 
-			color: $medium-blue;
+			color: $dark-blue;
 		}
 	}
 	

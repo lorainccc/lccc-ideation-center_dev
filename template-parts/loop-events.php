@@ -102,11 +102,11 @@ $iso_8601 = date( 'c', $event_time );
 ?>
 
 
-<article id="post-<?php the_ID(); ?>" itemscope itemtype="http://schema.org/Event">
+<article class="events-archive-item" id="post-<?php the_ID(); ?>" itemscope itemtype="http://schema.org/Event">
 	
 	<header class="entry-header">
 
-		<h2 itemprop="name" class="entry-title event-title"><?php the_title(); ?></h2>
+		<h2 itemprop="name" class="entry-title event-title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 		
 		
 		<?php if( has_term('', 'event_categories', $post->ID) ) : ?>
@@ -155,7 +155,7 @@ $iso_8601 = date( 'c', $event_time );
 
 		</div>
 		<?php the_excerpt(); ?>
-		<a class="button" href="<?php the_permalink(); ?>">Read More</a>
+		<a class="read-more" href="<?php the_permalink(); ?>">Read More</a>
 	
 	</div> <!-- end .entry-content -->
 
