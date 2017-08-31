@@ -790,6 +790,18 @@ hr.shadow-divider {
       border-bottom: 1px solid #cacaca; } }
 
 /* Events section */
+.single-event-inner h3 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: #003b76; }
+.single-event-inner .event-title-underline {
+  height: 1px;
+  width: 100%;
+  background-color: #e16025; }
+.single-event-inner .event-description > .info-value {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem; }
+
 .calendar-icon {
   height: 60px;
   width: 60px;
@@ -804,7 +816,7 @@ hr.shadow-divider {
     font-size: .875rem;
     color: #003b76;
     position: absolute;
-    top: 16px;
+    top: 18px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -815,7 +827,7 @@ hr.shadow-divider {
     font-weight: 600;
     color: #003b76;
     position: absolute;
-    bottom: 11px;
+    bottom: 7px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);

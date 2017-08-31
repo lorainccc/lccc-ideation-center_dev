@@ -832,6 +832,27 @@ hr.shadow-divider {
 
 /* Events section */
 
+.single-event-inner {
+	h3 {
+		font-size: 1.25rem;
+		text-transform: uppercase;
+		color: $dark-blue;
+	}
+	
+	.event-title-underline {
+		height: 1px;
+		width: 100%;
+		background-color: $orange;
+	}
+	
+	.event-description > .info-value {
+		font: {
+			family: $header-font-family;
+			size: 1rem;
+		}
+	}
+}
+
 .calendar-icon {
 	height: 60px;
 	width: 60px;
@@ -852,7 +873,7 @@ hr.shadow-divider {
 		
 		color: $dark-blue;
 		position: absolute;
-		top: 16px;
+		top: 18px;
 		left: 50%;
 		-webkit-transform: translateX(-50%);
 		transform: translateX(-50%);
@@ -868,7 +889,7 @@ hr.shadow-divider {
 		
 		color: $dark-blue;
 		position: absolute;
-		bottom: 11px;
+		bottom: 7px;
 		left: 50%;
 		-webkit-transform: translateX(-50%);
 		transform: translateX(-50%);
