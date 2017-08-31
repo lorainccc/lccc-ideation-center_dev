@@ -151,7 +151,7 @@ $events_query = new WP_Query( $event_args );
 	
 		<div class="row single-event-inner">
 		
-			<div class="small-3 medium-12 large-3 columns medium-text-center large-text-left">
+			<div class="small-3 medium-12 large-3 columns">
 			
 				<div class="calendar-icon">
 				

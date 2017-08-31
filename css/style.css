@@ -805,9 +805,9 @@ hr.shadow-divider {
     color: #003b76;
     position: absolute;
     top: 18px;
-    rigth: 0;
-    left: 0;
-    margin: 0 auto; }
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
   .calendar-icon .calendar-day {
     font-family: "Open Sans", sans-serif;
     font-size: 1.59rem;
@@ -815,9 +815,9 @@ hr.shadow-divider {
     color: #003b76;
     position: absolute;
     bottom: 12px;
-    right: 0;
-    left: 0;
-    margin: 0 auto; }
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
 
 .menu.home-sm-links-list {
   display: inline-block; }
