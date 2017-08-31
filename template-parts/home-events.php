@@ -22,13 +22,24 @@ $event_args = array(
 );
 
 $events_query = new WP_Query( $event_args );
+$event_count = $events_query->post_count;
+
+if( ( $events_query->current_post + 1 ) == $event_count ) :
+
+	$end = ' end';
+
+else :
+
+	$end = '';
+
+endif;
 
 $events_subheading = get_field('events_subheading');
 
 ?>
 	
 
-<div class="row section-title-row">
+<div class="row section-title-row full-margin">
 
 	<div class="small-12 columns text-center">
 	
@@ -149,7 +160,7 @@ $events_subheading = get_field('events_subheading');
 	
 	?>
 	
-	<div class="small-12 medium-4 columns single-event">
+	<div class="small-12 medium-4 columns single-event<?php echo $end; ?>">
 	
 		<div class="row single-event-inner">
 		
