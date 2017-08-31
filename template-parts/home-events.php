@@ -19,7 +19,6 @@ $event_args = array(
 	'meta_key'				 => 'event_start_date',
 	'order'                  => 'ASC',
 	'orderby'                => 'meta_value',
-	'paged' 				=> ( get_query_var('paged') ? get_query_var('paged') : 1 ),
 );
 
 $events_query = new WP_Query( $event_args );
@@ -152,9 +151,9 @@ $events_query = new WP_Query( $event_args );
 	
 		<div class="row single-event-inner">
 		
-			<div class="small-3 columns">
+			<div class="small-3 medium-12 large-3 columns medium-text-center large-text-left">
 			
-				<div class="calendar-icon text-center">
+				<div class="calendar-icon">
 				
 					<div class="calendar-month"><?php echo $eventstartmonth; ?></div>
 				
@@ -164,7 +163,7 @@ $events_query = new WP_Query( $event_args );
 			
 			</div>
 			
-			<div class="small-9 columns">
+			<div class="small-9 medium-12 large-9 columns">
 			
 				<h3><?php the_title(); ?></h3>
 				

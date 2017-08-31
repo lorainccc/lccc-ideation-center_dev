@@ -853,6 +853,9 @@ hr.shadow-divider {
 		color: $dark-blue;
 		position: absolute;
 		top: 18px;
+		rigth: 0;
+		left: 0;
+		margin: 0 auto;
 	}
 	
 	.calendar-day {
@@ -865,6 +868,9 @@ hr.shadow-divider {
 		color: $dark-blue;
 		position: absolute;
 		bottom: 12px;
+		right: 0;
+		left: 0;
+		margin: 0 auto;
 	}
 }
 
