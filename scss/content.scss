@@ -840,12 +840,13 @@ hr.shadow-divider {
 	}
 	
 	.event-title-underline {
-		height: 1px;
+		height: 2px;
 		width: 100%;
 		background-color: $orange;
+		margin-bottom: .75rem;
 	}
 	
-	.event-description > .info-value {
+	.event-description > .info-value > p {
 		font: {
 			family: $header-font-family;
 			size: 1rem;

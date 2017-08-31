@@ -795,10 +795,11 @@ hr.shadow-divider {
   text-transform: uppercase;
   color: #003b76; }
 .single-event-inner .event-title-underline {
-  height: 1px;
+  height: 2px;
   width: 100%;
-  background-color: #e16025; }
-.single-event-inner .event-description > .info-value {
+  background-color: #e16025;
+  margin-bottom: .75rem; }
+.single-event-inner .event-description > .info-value > p {
   font-family: "Raleway", sans-serif;
   font-size: 1rem; }
 
