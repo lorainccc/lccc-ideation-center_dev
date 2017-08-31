@@ -1246,8 +1246,8 @@ header:not(.article-header):not(.entry-header) {
           header:not(.article-header):not(.entry-header).smaller .top-bar .is-dropdown-submenu li {
             background: #fefefe; }
             header:not(.article-header):not(.entry-header).smaller .top-bar .is-dropdown-submenu li a {
-              padding: 1.25rem 1rem;
-              font-size: .9375rem; }
+              padding: 1.25rem 1rem !important;
+              font-size: .9375rem !important; }
             header:not(.article-header):not(.entry-header).smaller .top-bar .is-dropdown-submenu li:hover {
               background: #daecf5; }
         header:not(.article-header):not(.entry-header).smaller .top-bar .search-icon {
@@ -1468,8 +1468,8 @@ Section 5: Navigation
     header.smaller .top-bar .is-dropdown-submenu li {
       background: #fefefe; }
       header.smaller .top-bar .is-dropdown-submenu li a {
-        padding: 1.25rem 1rem;
-        font-size: .9375rem; }
+        padding: 1.25rem 1rem !important;
+        font-size: .9375rem !important; }
       header.smaller .top-bar .is-dropdown-submenu li:hover {
         background: #daecf5; } }
 /*!

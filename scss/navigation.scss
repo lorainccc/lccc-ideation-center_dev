@@ -186,8 +186,8 @@ Section 5: Navigation
 					li {
 						background: $white;
 						a {
-							padding: 1.25rem 1rem;
-							font-size: .9375rem;
+							padding: 1.25rem 1rem !important;
+							font-size: .9375rem !important;
 						}
 
 						&:hover {

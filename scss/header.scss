@@ -34,6 +34,7 @@ header:not(.article-header):not(.entry-header) {
 		padding: 1rem 0;
 	}
 	
+	
 	@media screen and (min-width: 64em ) {
 	
 		&.smaller {
@@ -65,8 +66,8 @@ header:not(.article-header):not(.entry-header) {
 					li {
 						background: $white;
 						a {
-							padding: 1.25rem 1rem;
-							font-size: .9375rem;
+							padding: 1.25rem 1rem !important;
+							font-size: .9375rem !important;
 						}
 
 						&:hover {
@@ -97,6 +98,7 @@ header:not(.article-header):not(.entry-header) {
 		}
 		
 	}
+	
 }
 @media screen and (min-width: 64em ) {
 	#content {
