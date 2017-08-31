@@ -155,7 +155,7 @@ $iso_8601 = date( 'c', $event_time );
 
 		</div>
 		<?php the_excerpt(); ?>
-		<a class="read-more" href="<?php the_permalink(); ?>">Read More</a>
+		<a class="read-more" href="<?php the_permalink(); ?>">Read More &raquo;</a>
 	
 	</div> <!-- end .entry-content -->
 

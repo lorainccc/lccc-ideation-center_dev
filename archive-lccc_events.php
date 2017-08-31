@@ -56,7 +56,13 @@
 	
 		<aside class="small-12 medium-4 large-3 columns" role="complementary">
 		
-			<?php get_template_part('template-parts/content', 'event-cat-list'); ?>
+			<?php 
+			
+			get_template_part('template-parts/content', 'event-cat-list'); 
+			
+			get_template_part( 'template-parts/content', 'sidebar-quick-links' );
+			
+			?>
 		
 		</aside>
 	
