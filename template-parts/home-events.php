@@ -23,17 +23,6 @@ $event_args = array(
 
 $events_query = new WP_Query( $event_args );
 $event_count = $events_query->post_count;
-
-if( ( $events_query->current_post + 1 ) == $event_count ) :
-
-	$end = ' end';
-
-else :
-
-	$end = '';
-
-endif;
-
 $events_subheading = get_field('events_subheading');
 
 ?>
@@ -156,6 +145,17 @@ $events_subheading = get_field('events_subheading');
 		$event_date_time = $eventstartmonthfull . ' ' . $eventstartday . ', ' . $eventstartyear . ' ' . $starttime;
 		$event_time = strtotime( $event_date_time );
 		$iso_8601 = date( 'c', $event_time );
+	
+		if( ( $events_query->current_post + 1 ) == $event_count ) :
+
+			$end = ' end';
+
+		else :
+
+			$end = '';
+
+		endif;
+
 
 	
 	?>
