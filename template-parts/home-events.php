@@ -164,7 +164,7 @@ $events_subheading = get_field('events_subheading');
 	
 		<div class="row single-event-inner">
 		
-			<div class="small-3 medium-12 large-3 columns calendar-column">
+			<div class="small-2 medium-12 large-3 columns calendar-column">
 			
 				<div class="calendar-icon">
 				
@@ -176,7 +176,7 @@ $events_subheading = get_field('events_subheading');
 			
 			</div>
 			
-			<div class="small-9 medium-12 large-9 columns event-info-column">
+			<div class="small-10 medium-12 large-9 columns event-info-column">
 			
 				<h3><?php the_title(); ?></h3>
 				
