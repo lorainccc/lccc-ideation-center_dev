@@ -830,6 +830,10 @@ hr.shadow-divider {
 	
 }
 
+#connect-with-us {
+	margin-bottom: 2rem;
+}
+
 /* Events section */
 
 .single-event-inner {
@@ -851,6 +855,21 @@ hr.shadow-divider {
 			family: $header-font-family;
 			size: 1rem;
 		}
+		display: inline;
+	}
+}
+
+@media screen and (min-width: 64em) {
+	.event-info-column {
+		padding-left: 0;
+	}
+	
+	.calendar-column {
+		padding-right: 0;
+	}
+	
+	.calendar-icon {
+		margin-left: 1rem;
 	}
 }
 

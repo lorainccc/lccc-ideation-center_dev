@@ -789,6 +789,9 @@ hr.shadow-divider {
     #cool .featured-items-row .columns:not(:last-child) {
       border-bottom: 1px solid #cacaca; } }
 
+#connect-with-us {
+  margin-bottom: 2rem; }
+
 /* Events section */
 .single-event-inner h3 {
   font-size: 1.25rem;
@@ -801,8 +804,18 @@ hr.shadow-divider {
   margin-bottom: .75rem; }
 .single-event-inner .event-description > .info-value > p {
   font-family: "Raleway", sans-serif;
-  font-size: 1rem; }
+  font-size: 1rem;
+  display: inline; }
 
+@media screen and (min-width: 64em) {
+  .event-info-column {
+    padding-left: 0; }
+
+  .calendar-column {
+    padding-right: 0; }
+
+  .calendar-icon {
+    margin-left: 1rem; } }
 .calendar-icon {
   height: 60px;
   width: 60px;
