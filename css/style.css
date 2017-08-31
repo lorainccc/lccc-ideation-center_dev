@@ -814,9 +814,6 @@ hr.shadow-divider {
   .calendar-icon {
     margin-left: .5rem; } }
 @media screen and (max-width: 39.9375em) {
-  .event-info-column {
-    padding-left: 1.4375rem; }
-
   .single-event:not(:last-child) {
     border-bottom: 1px solid #cacaca;
     margin-bottom: 1.5rem; } }

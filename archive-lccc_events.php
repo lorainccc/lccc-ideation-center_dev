@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="event-content">
+<div id="event-archive-content">
 
 	<?php
 	
