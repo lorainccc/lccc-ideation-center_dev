@@ -51,8 +51,8 @@
 				//campana_page_navi();
 				echo '<nav>';
 			
-				previous_post_link('&laquo; previous');
-				next_post_link('next &raquo;');
+				previous_post_link('%link', '&laquo; previous');
+				next_post_link('%link', 'next &raquo;');
 			
 				echo '</nav>';
 						
