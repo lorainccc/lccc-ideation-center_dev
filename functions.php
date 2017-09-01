@@ -367,7 +367,8 @@ function modify_event_cat_query( $event_cat_query ) {
 			array(
 				'taxonomy'	=>	'event_categories',
 				'field'		=>	'slug',
-				'terms' => 'term_slug'
+				'terms' => 'term_slug',
+				'operator' => 'IN',
 			)
 		);
 		
