@@ -1158,7 +1158,9 @@ hr.shadow-divider {
     .pagination-wrapper .pagination .nav-links span.current {
       background: #0c3b78; }
     .pagination-wrapper .pagination .nav-links a.next, .pagination-wrapper .pagination .nav-links a.prev {
-      color: #e16025; }
+      color: #0055a4; }
+      .pagination-wrapper .pagination .nav-links a.next:hover, .pagination-wrapper .pagination .nav-links a.prev:hover {
+        background: none; }
 
 /*!
 Section 3: Body

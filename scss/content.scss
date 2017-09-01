@@ -1458,7 +1458,11 @@ hr.shadow-divider {
 			}
 			
 			a.next, a.prev {
-				color: $orange;
+				color: $medium-blue;
+				
+				&:hover {
+					background: none;
+				}
 			}
 		}
 		
