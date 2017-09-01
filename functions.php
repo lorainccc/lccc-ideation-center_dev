@@ -351,7 +351,7 @@ add_action( 'pre_get_posts', 'modify_events_query', 1, 1 );
 function modify_event_cat_query( $event_cat_query ) {
 	if( !is_admin() && is_tax('event_categories') && $events_cat_query->is_main_query() ) {
 		
-		global $event_cat_term;
+		//global $event_cat_term;
 		
 		$today = date( 'Y-m-d' );
 		$event_cat_meta_query = array(
@@ -368,7 +368,7 @@ function modify_event_cat_query( $event_cat_query ) {
 			array(
 				'taxonomy'	=>	'event_categories',
 				'field'		=>	'slug',
-				'terms'		=>	$event_cat_term->slug,
+				//'terms'		=>	$event_cat_term->slug,
 			)
 		);
 		
