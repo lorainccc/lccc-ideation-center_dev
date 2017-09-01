@@ -1255,6 +1255,8 @@ header:not(.article-header):not(.entry-header) {
           width: 225px; }
         header:not(.article-header):not(.entry-header).smaller .top-bar .menu:not(.submenu):not(.is-dropdown-submenu) li a {
           padding: 0 1rem; }
+        header:not(.article-header):not(.entry-header).smaller .top-bar .menu:not(.submenu):not(.is-dropdown-submenu) li:last-child a {
+          padding: 0 0 0 1rem; }
         header:not(.article-header):not(.entry-header).smaller .top-bar .is-dropdown-submenu {
           background-color: #fefefe;
           border: none;
