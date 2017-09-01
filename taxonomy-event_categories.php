@@ -17,6 +17,8 @@
 			<?php
 			
 			$term = get_queried_object();
+			$paged = get_query_var( 'paged' ) ? get_query_var( 'paged') : 1;
+			
 			$args = array(
 				'post_type' => 'lccc_events',
 				'event_categories' => $term->slug,
@@ -24,6 +26,7 @@
 				'posts_per_page' => 1,
 				'order'=> 'ASC',
 				'orderby'=> 'meta_value',
+				'paged' => $paged,
 				'meta_key' => 'event_start_date',
 				'meta_query' => array(
 					array(
@@ -35,7 +38,6 @@
 				)
 			);
 			
-			$args['paged'] = get_query_var( 'paged' ) ? get_query_var( 'paged') : 1;
 			
 			$query = new WP_Query( $args );
 			
