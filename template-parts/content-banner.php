@@ -103,7 +103,7 @@ elseif( is_post_type_archive('lccc_events') || is_tax('event_categories') ) :
 
 		if( is_tax('event_categories') ) :
 
-			$event_cat = single_cat_title();
+			$event_cat = single_cat_title( '', false);
 			$banner_headline = '<h1>' . $event_cat . '</h1>';		
 
 		else :
