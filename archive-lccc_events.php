@@ -51,7 +51,6 @@
 			
 				endwhile;
 			
-				wp_reset_postdata();
 				//campana_page_navi();
 				campana_page_navi();
 			/*
