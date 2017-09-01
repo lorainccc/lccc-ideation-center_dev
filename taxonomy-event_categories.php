@@ -16,9 +16,7 @@
 		
 			<?php
 			
-			
-			//global $event_cat_term;
-			/*
+			$term = get_queried_object();
 			$args = array(
 				'post_type' => 'lccc_events',
 				'event_categories' => $term->slug,
@@ -37,10 +35,10 @@
 			);
 			
 			$query = new WP_Query( $args );
-						*/
-			if( have_posts() ) : 
+						
+			if( $query->have_posts() ) : 
 			
-				while( have_posts() ) : the_post();
+				while( $query->have_posts() ) : $query->the_post();
 
 					get_template_part('template-parts/loop', 'events'); 
 			
