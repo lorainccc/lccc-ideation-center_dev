@@ -15,6 +15,10 @@
 		<main class="small-12 medium-8 large-9 columns" role="main">
 		
 			<?php
+			
+			// This query is being modified via modify_events_query() in functions.php
+			// Posts are only displayed if end date is greater or equal to current day
+			// Posts are ordered by the start date
 						
 			if( have_posts() ) : 
 			
