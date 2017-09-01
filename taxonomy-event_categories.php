@@ -64,7 +64,7 @@
 			<div class="pagination-wrapper text-center">
 			
 			<?php
-				
+				/*
 				the_posts_pagination( array(
 					'mid'	=>	3,
 					'prev_text'	=> '&laquo; Previous',
@@ -72,7 +72,10 @@
 					'screen_reader_text' => 'Events navigation'
 				)
 				);
+				*/
 				
+				next_posts_link( 'Older Entries', $the_query->max_num_pages );
+				previous_posts_link( 'Newer Entries' );
 				
 				$wp_query = NULL;
 				$wp_query = $temp_query;
