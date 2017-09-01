@@ -351,7 +351,6 @@ function modify_event_cat_query( $event_cat_query ) {
 	if( !is_admin() && is_tax('event_categories') && $events_cat_query->is_main_query() ) {
 		
 		$today = date( 'Y-m-d' );
-		$term = get_queried_object();
 		$event_cat_meta_query = array(
 			array(
 				'key'		=>	'event_end_date',
@@ -361,7 +360,14 @@ function modify_event_cat_query( $event_cat_query ) {
 			)
 		);
 		
-		$event_cat_query->set( 'event_categories', $term->slug);
+		$event_tax_query = array(
+			array(
+				'taxonomy'	=>	'event_categories',
+				'field'		=>	'slug',
+			)
+		);
+		
+		$event_cat_query->set( 'tax_query', $event_tax_query);
 		$event_cat_query->set( 'posts_per_page', 10 );
 		$event_cat_query->set( 'meta_query', $event_cat_meta_query );
 		$event_cat_query->set( 'meta_key', 'event_start_date' );
