@@ -403,11 +403,26 @@ function campana_page_navi($before = '', $after = '') {
 }
 
 
-function events_query_filter( $events_query ) {
+function modify_events_query( $events_query ) {
 	if( !is_admin() && is_post_type_archive('lccc_events') && $events_query->is_main_query() ) {
+		
+		$today = date( 'Y-m-d' );
+		$events_meta_query = array(
+			array(
+				'key'		=>	'event_end_date',
+				'value'		=>	$today,
+				'compare'	=>	'>=',
+				'type'		=>	'DATE'
+			)
+		);
+		
 		$events_query->set( 'posts_per_page', 3 );
+		$events_query->set( 'meta_query', $events_meta_query );
+		$events_query->set( 'meta_key', 'event_start_date' );
+		$events_query->set( 'order', 'ASC' );
+		$events_query->set( 'orderby', 'meta_value' );
 	}
 }
-add_action( 'pre_get_posts', 'events_query_filter', 1, 1 );
+add_action( 'pre_get_posts', 'modify_events_query', 1, 1 );
 
 ?>
