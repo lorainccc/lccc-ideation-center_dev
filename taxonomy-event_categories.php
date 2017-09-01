@@ -34,7 +34,13 @@
 				)
 			);
 			
+			$args['paged'] = get_query_var( 'paged' ) ? get_query_var( 'paged') : 1;
+			
 			$query = new WP_Query( $args );
+			
+			$temp_query = $wp_query;
+			$wp_query = NULL;
+			$wp_query = $query;
 						
 			if( $query->have_posts() ) : 
 			
@@ -43,6 +49,10 @@
 					get_template_part('template-parts/loop', 'events'); 
 			
 				endwhile;
+			
+			endif;
+			
+			wp_reset_postdata();
 			
 			?>
 			
@@ -58,18 +68,14 @@
 				)
 				);
 				
+				
+				$wp_query = NULL;
+				$wp_query = $temp_query;
+				
 			?>
 			
 			</div>
-			
-			<?php
-			
-				wp_reset_postdata();
-						
-			endif;
-			
-			?>
-		
+					
 		</main>
 	
 		<aside class="small-12 medium-4 large-3 columns" role="complementary">
