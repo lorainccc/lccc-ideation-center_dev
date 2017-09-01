@@ -55,7 +55,7 @@
 			
 			endif;
 			
-			wp_reset_postdata();
+			
 			
 			?>
 			
@@ -75,7 +75,7 @@
 				$wp_query = NULL;
 				$wp_query = $temp_query;
 				
-				
+				wp_reset_postdata();
 			?>
 			
 			</div>
