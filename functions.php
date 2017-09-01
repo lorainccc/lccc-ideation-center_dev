@@ -349,7 +349,7 @@ add_action( 'pre_get_posts', 'modify_events_query', 1, 1 );
 
 
 function modify_event_cat_query( $event_cat_query ) {
-	if( !is_admin() && is_tax('event_categories') && $events_cat_query->is_main_query() ) {
+	if( !is_admin() && is_tax('event_categories') && $event_cat_query->is_main_query() ) {
 		
 		
 		$today = date( 'Y-m-d' );
