@@ -403,4 +403,11 @@ function campana_page_navi($before = '', $after = '') {
 }
 
 
+function events_query_filter( $events_query ) {
+	if( !is_admin() && is_post_type_archive('lccc_events') && $events_query->is_main_query() ) {
+		$events_query->set( 'posts_per_page', 3 );
+	}
+}
+add_action( 'pre_get_posts', 'events_query_filter', 1, 1 );
+
 ?>
