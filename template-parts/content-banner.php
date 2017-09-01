@@ -100,7 +100,17 @@ elseif( is_post_type_archive('lccc_events') || is_tax('event_categories') ) :
 		$background_image = get_field('events_banner_image', 'option');
 		$background_image_vertical_alignment = get_field('events_background_image_vertical_alignment', 'option');
 		$angle_overlay = get_field('events_angle_overlay', 'option');
-		$banner_headline = '<h1>' . get_field('events_banner_headline', 'option') . '</h1>';
+
+		if( is_tax('event_categories') ) :
+
+			$event_cat = single_cat_title();
+			$banner_headline = '<h1>' . $event_cat . '</h1>';		
+
+		else :
+
+			$banner_headline = '<h1>' . get_field('events_banner_headline', 'option') . '</h1>';
+
+		endif;
 
 // if is 404 page, get banner values from Fallbacks/Defaults option page
 elseif( is_404() ) :
