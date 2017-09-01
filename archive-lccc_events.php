@@ -17,6 +17,7 @@
 			<?php
 			
 			$today = date( 'Y-m-d' );
+			$paged = get_query_var('paged') ? get_query_var('paged') : 1;
 			
 			// get all events that have an end date that equals today's date or later, then order by the start date
 			$event_args = array(
@@ -35,7 +36,7 @@
 				'meta_key'				 => 'event_start_date',
 				'order'                  => 'ASC',
 				'orderby'                => 'meta_value',
-				'paged' 				=> ( get_query_var('paged') ? get_query_var('paged') : 1 ),
+				'paged' 				 => $paged
 			);
 
 			$events_query = new WP_Query( $event_args );
@@ -50,8 +51,9 @@
 			
 				endwhile;
 			
+				wp_reset_postdata();
 				//campana_page_navi();
-				wpbeginner_numeric_posts_nav();
+				campana_page_navi();
 			/*
 				echo '<nav>';
 			
