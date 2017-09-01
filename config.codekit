@@ -1091,11 +1091,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/taxonomy-event_categories.php": {
+	"\/taxonomy-event_categories_old.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/taxonomy-event_categories.php",
+		"inputAbbreviatedPath": "\/taxonomy-event_categories_old.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
