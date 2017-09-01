@@ -16,7 +16,8 @@
 		
 			<?php
 			
-			$term = get_queried_object();
+			$event_cat_term = get_queried_object();
+			global $event_cat_term;
 			/*
 			$args = array(
 				'post_type' => 'lccc_events',
