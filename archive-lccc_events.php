@@ -16,10 +16,10 @@
 		
 			<?php
 			
+			/*
 			$today = date( 'Y-m-d' );
 			$paged = get_query_var('paged') ? get_query_var('paged') : 1;
 			
-			// get all events that have an end date that equals today's date or later, then order by the start date
 			$event_args = array(
 				'post_type'              => array( 'lccc_events' ),
 				'post_status'            => array( 'publish' ),
@@ -42,10 +42,11 @@
 			$events_query = new WP_Query( $event_args );
 			
 			global $events_query;
+			*/
 			
-			if( $events_query->have_posts() ) : 
+			if( have_posts() ) : 
 			
-				while( $events_query->have_posts() ) : $events_query->the_post();
+				while( have_posts() ) : the_post();
 
 					get_template_part('template-parts/loop', 'events'); 
 			
