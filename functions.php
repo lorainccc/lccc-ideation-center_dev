@@ -372,7 +372,6 @@ function modify_event_cat_query( $event_cat_query ) {
 		
 		
 		$event_cat_query->set( 'tax_query', $event_tax_query);
-		//$event_cat_query->set( 'post_type', 'lccc_events');
 		$event_cat_query->set( 'posts_per_page', 10 );
 		$event_cat_query->set( 'meta_query', $event_cat_meta_query );
 		$event_cat_query->set( 'meta_key', 'event_start_date' );
