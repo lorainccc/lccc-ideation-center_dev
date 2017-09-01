@@ -348,4 +348,9 @@ function modify_events_query( $events_query ) {
 add_action( 'pre_get_posts', 'modify_events_query', 1, 1 );
 
 
+// Prevent Event category archive pagination from throwing 404 on page 2+
+
+add_rewrite_rule( "page-slug/page/([0-9]{1,})/?$", 'index.php?pagename=page-slug&paged=$matches[1]', "top" );
+
+
 ?>
