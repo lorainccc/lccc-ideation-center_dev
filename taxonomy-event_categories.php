@@ -49,7 +49,7 @@
 			$wp_query = $query;
 			*/
 			
-			wp_reset_query();
+			$wp_query = $wp_the_query;
 			
 						
 			if( $query->have_posts() ) : 
@@ -82,6 +82,7 @@
 				$wp_query = NULL;
 				$wp_query = $temp_query;
 				*/
+				wp_reset_query();
 				
 			?>
 			
