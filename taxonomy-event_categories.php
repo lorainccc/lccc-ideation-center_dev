@@ -55,6 +55,10 @@
 			
 				endwhile;
 			
+			endif; 
+			
+			wp_reset_postdata();
+			
 			?>
 			
 			<div class="pagination-wrapper text-center">
@@ -73,13 +77,10 @@
 				$wp_query = NULL;
 				$wp_query = $temp_query;
 				
-				wp_reset_postdata();
+				
 			?>
 			
 			</div>
-			
-			<?php endif; ?>
-			
 			
 			
 			
