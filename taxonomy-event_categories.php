@@ -21,6 +21,7 @@
 				'post_type' => 'lccc_events',
 				'event_categories' => $term->slug,
 				'post_status' => 'publish',
+				'posts_per_page' => 1,
 				'order'=> 'ASC',
 				'orderby'=> 'meta_value',
 				'meta_key' => 'event_start_date',
