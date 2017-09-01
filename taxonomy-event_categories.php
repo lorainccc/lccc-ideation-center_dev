@@ -41,7 +41,7 @@
 			
 			$query = new WP_Query( $args );
 			
-			
+			// pagination fix
 			$temp_query = $wp_query;
 			$wp_query = NULL;
 			$wp_query = $query;
