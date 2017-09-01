@@ -1454,7 +1454,7 @@ hr.shadow-divider {
 			}
 			
 			span.current {
-				background: $footer-blue;
+				background: $dark-blue;
 			}
 			
 			a.next, a.prev {
@@ -1464,6 +1464,10 @@ hr.shadow-divider {
 				&:hover {
 					background: none;
 				}
+			}
+			
+			a:not(.next):not(.prev){
+				color: $dark-blue;
 			}
 		}
 		

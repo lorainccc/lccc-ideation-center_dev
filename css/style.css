@@ -1156,11 +1156,13 @@ hr.shadow-divider {
     .pagination-wrapper .pagination .nav-links span.current, .pagination-wrapper .pagination .nav-links a {
       display: inline-block; }
     .pagination-wrapper .pagination .nav-links span.current {
-      background: #0c3b78; }
+      background: #003b76; }
     .pagination-wrapper .pagination .nav-links a.next, .pagination-wrapper .pagination .nav-links a.prev {
       color: #0055a4; }
       .pagination-wrapper .pagination .nav-links a.next:hover, .pagination-wrapper .pagination .nav-links a.prev:hover {
         background: none; }
+    .pagination-wrapper .pagination .nav-links a:not(.next):not(.prev) {
+      color: #003b76; }
 
 /*!
 Section 3: Body
