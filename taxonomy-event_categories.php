@@ -39,11 +39,11 @@
 			
 			$query = new WP_Query( $args );
 			
-			/*
+			
 			$temp_query = $wp_query;
 			$wp_query = NULL;
 			$wp_query = $query;
-			*/
+			
 						
 			if( $query->have_posts() ) : 
 			
@@ -71,10 +71,10 @@
 				)
 				);
 				
-				/*
+				
 				$wp_query = NULL;
 				$wp_query = $temp_query;
-				*/
+				
 				
 			?>
 			
