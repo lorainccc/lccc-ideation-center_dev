@@ -94,7 +94,7 @@ elseif( is_singular('lccc_events') ) :
 
 	endif;
 
-// if is events archive page, use default banner options (theme options)
+// if is events or event category archive page, use default banner options (theme options)
 elseif( is_post_type_archive('lccc_events') || is_tax('event_categories') ) :
 
 		$background_image = get_field('events_banner_image', 'option');
