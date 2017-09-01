@@ -352,8 +352,7 @@ function modify_event_cat_query( $event_cat_query ) {
 	if( !is_admin() && is_tax('event_categories') && $events_cat_query->is_main_query() ) {
 		
 		
-		$term = get_query_var('event_categories');
-		$tax_slug = $term->slug;
+		
 		$today = date( 'Y-m-d' );
 		$event_cat_meta_query = array(
 			array(
@@ -364,6 +363,7 @@ function modify_event_cat_query( $event_cat_query ) {
 			)
 		);
 		
+		/*
 		$event_tax_query = array(
 			array(
 				'taxonomy'	=>	'event_categories',
@@ -371,8 +371,9 @@ function modify_event_cat_query( $event_cat_query ) {
 				'terms'		=>	$term
 			)
 		);
+		*/
 		
-		$event_cat_query->set( 'tax_query', $event_tax_query);
+		//$event_cat_query->set( 'tax_query', $event_tax_query);
 		$event_cat_query->set( 'posts_per_page', 10 );
 		$event_cat_query->set( 'meta_query', $event_cat_meta_query );
 		$event_cat_query->set( 'meta_key', 'event_start_date' );
