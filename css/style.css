@@ -1150,8 +1150,15 @@ hr.shadow-divider {
 
 .pagination-wrapper {
   margin-top: 2rem; }
-  .pagination-wrapper .pagination .nav-links span.current, .pagination-wrapper .pagination .nav-links a {
-    display: inline-block; }
+  .pagination-wrapper .pagination .nav-links {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600; }
+    .pagination-wrapper .pagination .nav-links span.current, .pagination-wrapper .pagination .nav-links a {
+      display: inline-block; }
+    .pagination-wrapper .pagination .nav-links span.current {
+      background: #0c3b78; }
+    .pagination-wrapper .pagination .nav-links a.next, .pagination-wrapper .pagination .nav-links a.prev {
+      color: #e16025; }
 
 /*!
 Section 3: Body

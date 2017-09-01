@@ -1445,8 +1445,20 @@ hr.shadow-divider {
 	.pagination {
 		
 		.nav-links {
+			
+			font-family: $header-font-family;
+			font-weight: $font-semibold;
+			
 			span.current, a {
 				display: inline-block;
+			}
+			
+			span.current {
+				background: $footer-blue;
+			}
+			
+			a.next, a.prev {
+				color: $orange;
 			}
 		}
 		
