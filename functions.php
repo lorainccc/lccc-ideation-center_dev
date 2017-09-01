@@ -368,11 +368,12 @@ function modify_event_cat_query( $event_cat_query ) {
 			array(
 				'taxonomy'	=>	'event_categories',
 				'field'		=>	'slug',
+				'terms'		=>	$event_cat_term->slug,
 			)
 		);
 		
 		
-		//$event_cat_query->set( 'tax_query', $event_tax_query);
+		$event_cat_query->set( 'tax_query', $event_tax_query);
 		$event_cat_query->set( 'posts_per_page', 10 );
 		$event_cat_query->set( 'meta_query', $event_cat_meta_query );
 		$event_cat_query->set( 'meta_key', 'event_start_date' );
