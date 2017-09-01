@@ -326,7 +326,7 @@ function hide_editor() {
 
 // Modify Events archive query
 function modify_events_query( $events_query ) {
-	if( !is_admin() && is_post_type_archive('lccc_events') && $events_query->is_main_query() ) {
+	if( !is_admin() && ( is_post_type_archive('lccc_events') || is_tax('event_categories') ) && $events_query->is_main_query() ) {
 		
 		$today = date( 'Y-m-d' );
 		$events_meta_query = array(
