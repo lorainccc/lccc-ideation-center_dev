@@ -16,7 +16,7 @@
 		
 			<?php
 			
-			$event_cat_term = get_queried_object();
+			
 			//global $event_cat_term;
 			/*
 			$args = array(
