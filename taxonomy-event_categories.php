@@ -53,10 +53,6 @@
 			
 				endwhile;
 			
-			endif;
-			
-			
-			
 			?>
 			
 			<div class="pagination-wrapper text-center">
@@ -79,6 +75,12 @@
 			?>
 			
 			</div>
+			
+			<?php endif; ?>
+			
+			
+			
+			
 					
 		</main>
 	
