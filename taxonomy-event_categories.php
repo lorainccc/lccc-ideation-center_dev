@@ -16,13 +16,29 @@
 		
 			<?php
 			
-			// This query is being modified via modify_events_query() in functions.php
-			// Posts are only displayed if end date is greater or equal to current day
-			// Posts are ordered by the start date
-						
-			if( have_posts() ) : 
+			$term = get_queried_object();
+			$args = array(
+				'post_type' => 'lccc_events',
+				'event_categories' => $term->slug,
+				'post_status' => 'publish',
+				'order'=> 'ASC',
+				'orderby'=> 'meta_value',
+				'meta_key' => 'event_start_date',
+				'meta_query' => array(
+					array(
+						'key'		=>	'event_end_date',
+						'value'		=>	$today,
+						'compare'	=>	'>=',
+						'type'		=>	'DATE'
+					)
+				)
+			);
 			
-				while( have_posts() ) : the_post();
+			$query = new WP_Query( $args );
+						
+			if( $query->have_posts() ) : 
+			
+				while( $query->have_posts() ) : $query->the_post();
 
 					get_template_part('template-parts/loop', 'events'); 
 			
