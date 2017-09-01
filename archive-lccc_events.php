@@ -15,35 +15,7 @@
 		<main class="small-12 medium-8 large-9 columns" role="main">
 		
 			<?php
-			
-			/*
-			$today = date( 'Y-m-d' );
-			$paged = get_query_var('paged') ? get_query_var('paged') : 1;
-			
-			$event_args = array(
-				'post_type'              => array( 'lccc_events' ),
-				'post_status'            => array( 'publish' ),
-				//'nopaging'               => false,
-				'posts_per_page' => '3',
-				'meta_query'			 => array(
-					array(
-						'key'		=>	'event_end_date',
-						'value'		=>	$today,
-						'compare'	=>	'>=',
-						'type'		=>	'DATE'
-					)
-				),
-				'meta_key'				 => 'event_start_date',
-				'order'                  => 'ASC',
-				'orderby'                => 'meta_value',
-				'paged' 				 => $paged
-			);
-
-			$events_query = new WP_Query( $event_args );
-			
-			global $events_query;
-			*/
-			
+						
 			if( have_posts() ) : 
 			
 				while( have_posts() ) : the_post();
@@ -52,13 +24,25 @@
 			
 				endwhile;
 			
+			?>
+			
+			<div class="pagination-wrapper text-center">
+			
+			<?php
 				
 				the_posts_pagination( array(
-					'mid'	=>	2,
-					'prev_text'	=> 'Previous',
-					'next_text' => 'Next',
+					'mid'	=>	3,
+					'prev_text'	=> '&laquo; Previous',
+					'next_text' => 'Next &raquo;',
+					'screen_reader_text' => 'Events navigation'
 				)
 				);
+				
+			?>
+			
+			</div>
+			
+			<?php
 			
 				wp_reset_postdata();
 						

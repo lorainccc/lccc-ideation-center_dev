@@ -1438,3 +1438,17 @@ hr.shadow-divider {
 		margin-top: 1.5rem;
 	}
 }
+
+.pagination-wrapper {
+	margin-top: 2rem;
+	
+	.pagination {
+		
+		.nav-links {
+			span.current, a {
+				display: inline-block;
+			}
+		}
+		
+	}
+}
