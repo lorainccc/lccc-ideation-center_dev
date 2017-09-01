@@ -52,16 +52,15 @@
 			
 				endwhile;
 			
-				//campana_page_navi();
-				campana_page_navi();
-			/*
-				echo '<nav>';
+				
+				the_posts_pagination( array(
+					'mid'	=>	2,
+					'prev_text'	=> 'Previous',
+					'next_text' => 'Next',
+				)
+				);
 			
-				previous_post_link('%link', '&laquo; previous');
-				next_post_link('%link', 'next &raquo;' $post);
-			
-				echo '</nav>';
-			*/
+				wp_reset_postdata();
 						
 			endif;
 			
