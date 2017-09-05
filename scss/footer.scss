@@ -36,11 +36,15 @@ footer {
 	margin-bottom: 2rem;
 }
 
-.footer-sm-links {
-	
-	a {
+.underline {
+	ul li a {
 		font-size: .75rem;
 	}
+}
+
+.footer-sm-links {
+	
+	
 	
 	@media screen and (max-width: 39.9375em) {
 		
