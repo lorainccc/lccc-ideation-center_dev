@@ -14,6 +14,7 @@ $city = get_field('city', 'option');
 $state = get_field('state', 'option');
 $zipcode = get_field('zipcode', 'option');
 $phone_number = get_field('phone_number', 'option');
+$email = get_field('email', 'option');
 $map_and_directions_label = get_field('map_and_directions_label', 'option');
 $google_maps_link = get_field('google_maps_link', 'option');
 $twitter_handle = get_field('twitter_handle', 'option');
@@ -61,6 +62,20 @@ $facebook_url = get_field('facebook_url', 'option');
 							<div class="small-12 medium-4 columns">
 							
 								<h2>Contact <?php echo $location_heading; ?></h2>
+								
+								<div class="footer-contact-info">
+								
+									<div class="street-address"><?php echo $$street_address; ?></div>
+									
+									<div class="locale-region"><?php echo $city . ', ' . $state . ' ' . $zipcode; ?></div>
+									
+									<div class="phone"><?php echo $phone_number; ?></div>
+									
+									<div class="email"><?php echo $email; ?></div>
+									
+									<div class="map-link"><a href="<?php echo $google_maps_link; ?>" target="_blank" title="Get Direction to <?php echo $location_heading; ?>"><?php echo $map_and_directions_label; ?></a></div>
+								
+								</div>
 								
 							</div>
 							
