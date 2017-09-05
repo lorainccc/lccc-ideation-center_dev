@@ -71,7 +71,7 @@ $facebook_url = get_field('facebook_url', 'option');
 									
 									<div class="phone"><?php echo $phone_number; ?></div>
 									
-									<div class="email"><?php echo $email; ?></div>
+									<div class="email"><a href="mailto:<?php echo $email; ?>" target="_blank"><?php echo $email; ?></a></div>
 									
 									<div class="map-link"><a href="<?php echo $google_maps_link; ?>" target="_blank" title="Get Direction to <?php echo $footer_contact_section_heading; ?>"><?php echo $map_and_directions_label; ?></a></div>
 								
