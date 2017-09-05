@@ -641,7 +641,8 @@ hr.shadow-divider {
   #visit-campana .location-info .map-container, #contact .location-info .map-container {
     display: none; }
   #visit-campana .location-info .map-placeholder, #contact .location-info .map-placeholder {
-    display: block; } }
+    display: block;
+    margin-bottom: 1rem; } }
 @media screen and (min-width: 40em) {
   #visit-campana .location-info .map-container, #contact .location-info .map-container {
     display: block; }
