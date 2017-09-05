@@ -526,6 +526,10 @@ hr.shadow-divider {
 			padding-left: 4rem;
 		}
 		
+		@media screen and (max-width: 39.9375em) {
+			margin-top: 2rem;
+		}
+		
 		h3 {
 			font-size: 1.8125rem;
 			color: $dark-blue;
@@ -811,6 +815,16 @@ hr.shadow-divider {
 			}
 			color: $medium-blue;
 		}
+		
+		@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+			.columns {
+				padding: {
+					top: 1rem;
+					bottom: 1rem;
+				}
+			}
+		}
+
 		
 		@media screen and (max-width: 39.9375em) {
 			.columns {
