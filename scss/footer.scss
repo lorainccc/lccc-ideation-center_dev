@@ -6,6 +6,7 @@ footer {
 	background-color: $footer-blue;
 	padding: 2.75rem 0;
 	margin-top: 4rem;
+	color: $white;
 }
 
 .footer-inner {
@@ -37,6 +38,10 @@ footer {
 
 .footer-sm-links {
 	
+	a {
+		font-size: .75rem;
+	}
+	
 	@media screen and (max-width: 39.9375em) {
 		
 		display: flex;
@@ -65,6 +70,15 @@ footer {
 		a {
 			padding: 0;
 		}
+	}
+}
+
+.footer-contact-info {
+	color: $white;
+	font-size: .75rem;
+	
+	.map-link {
+		margin-top: 1rem;
 	}
 }
 

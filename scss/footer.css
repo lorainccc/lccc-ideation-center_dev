@@ -10,9 +10,9 @@ Error: Undefined variable: "$footer-blue".
 6: 	background-color: $footer-blue;
 7: 	padding: 2.75rem 0;
 8: 	margin-top: 4rem;
-9: }
-10: 
-11: .footer-inner {
+9: 	color: $white;
+10: }
+11: 
 
 Backtrace:
 /Applications/MAMP/htdocs/LCCC-Campana/wp-content/themes/lccc-ideation-center_dev/scss/footer.scss:6
@@ -61,4 +61,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$footer-blue\".\A         on line 6 of /Applications/MAMP/htdocs/LCCC-Campana/wp-content/themes/lccc-ideation-center_dev/scss/footer.scss\A \A 1: /*!\A 2: Section 6: Footer\A 3: */\A 4: \A 5: footer {\A 6: 	background-color: $footer-blue;\A 7: 	padding: 2.75rem 0;\A 8: 	margin-top: 4rem;\A 9: }\A 10: \A 11: .footer-inner {"; }
+  content: "Error: Undefined variable: \"$footer-blue\".\A         on line 6 of /Applications/MAMP/htdocs/LCCC-Campana/wp-content/themes/lccc-ideation-center_dev/scss/footer.scss\A \A 1: /*!\A 2: Section 6: Footer\A 3: */\A 4: \A 5: footer {\A 6: 	background-color: $footer-blue;\A 7: 	padding: 2.75rem 0;\A 8: 	margin-top: 4rem;\A 9: 	color: $white;\A 10: }\A 11: "; }

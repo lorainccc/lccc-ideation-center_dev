@@ -1497,7 +1497,8 @@ Section 6: Footer
 footer {
   background-color: #0c3b78;
   padding: 2.75rem 0;
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  color: #fefefe; }
 
 .footer-inner h2 {
   font-size: .75rem;
@@ -1512,6 +1513,8 @@ footer {
 .footer-logo {
   margin-bottom: 2rem; }
 
+.footer-sm-links a {
+  font-size: .75rem; }
 @media screen and (max-width: 39.9375em) {
   .footer-sm-links {
     display: flex;
@@ -1528,6 +1531,12 @@ footer {
       margin-right: 0; } }
 .footer-sm-links li a {
   padding: 0; }
+
+.footer-contact-info {
+  color: #fefefe;
+  font-size: .75rem; }
+  .footer-contact-info .map-link {
+    margin-top: 1rem; }
 
 /*
 footer {
