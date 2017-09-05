@@ -3,6 +3,8 @@
 $visit_section_heading = get_field('visit_section_heading', 'option');
 $visit_section_subheading = get_field('visit_section_subheading', 'option');
 $map_embed_code = get_field('map_embed_code', 'option');
+$map_image_for_mobile = get_field('map_image_for_mobile', 'option');
+$google_maps_link = get_field('google_maps_link', 'option');
 $location_heading = get_field('location_heading', 'option');
 $street_address = get_field('street_address', 'option');
 $city = get_field('city', 'option');
@@ -52,6 +54,12 @@ $form_shortcode = get_field('form_shortcode', 'option');
 				if( $map_embed_code ) :
 			
 					echo '<div class="map-container">' . $map_embed_code . '</div>';
+			
+					echo '<div class="map-placeholder">';
+			
+						echo '<a href="' . $google_maps_link . '" target="_blank" title="View on Google Maps"><img src="' . $map_image_for_mobile . '" alt="Google Map Image" /></a>';
+			
+					echo '</div>';
 			
 				endif;
 

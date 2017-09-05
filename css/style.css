@@ -637,6 +637,16 @@ hr.shadow-divider {
   display: block; }
 #visit-campana .location-info .map-container, #contact .location-info .map-container {
   margin-bottom: 1.5rem; }
+@media screen and (max-width: 39.9375em) {
+  #visit-campana .location-info .map-container, #contact .location-info .map-container {
+    display: none; }
+  #visit-campana .location-info .map-placeholder, #contact .location-info .map-placeholder {
+    display: block; } }
+@media screen and (min-width: 40em) {
+  #visit-campana .location-info .map-container, #contact .location-info .map-container {
+    display: block; }
+  #visit-campana .location-info .map-placeholder, #contact .location-info .map-placeholder {
+    display: none; } }
 @media screen and (min-width: 40em) {
   #visit-campana .tour-form, #visit-campana .contact-form, #contact .tour-form, #contact .contact-form {
     border-left: 2px solid #003b76;

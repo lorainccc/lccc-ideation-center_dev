@@ -531,6 +531,28 @@ hr.shadow-divider {
 		.map-container {
 			margin-bottom: 1.5rem;
 		}
+		
+		@media screen and (max-width: 39.9375em) {
+			.map-container {
+				display: none;
+			}
+			
+			.map-placeholder {
+				display: block;
+			}
+		}
+		
+		@media screen and (min-width: 40em) {
+			
+			.map-container {
+				display: block;
+			}
+			
+			.map-placeholder {
+				display: none;
+			}
+
+		}
 	}
 	
 	.tour-form, .contact-form {
