@@ -55,12 +55,6 @@ $form_shortcode = get_field('form_shortcode', 'option');
 			
 					echo '<div class="map-container">' . $map_embed_code . '</div>';
 			
-					echo '<div class="map-placeholder">';
-			
-						echo '<a href="' . $google_maps_link . '" target="_blank" title="View on Google Maps"><img src="' . $map_image_for_mobile . '" alt="Google Map Image" /></a>';
-			
-					echo '</div>';
-			
 				endif;
 
 			?>
