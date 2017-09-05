@@ -353,6 +353,9 @@ p {
   font-size: 1.125rem;
   font-family: "Open Sans", sans-serif; }
 
+@media screen and (max-width: 39.9375em) {
+  #content {
+    position: relative; } }
 .button {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;

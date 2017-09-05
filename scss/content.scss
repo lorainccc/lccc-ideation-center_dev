@@ -46,6 +46,12 @@ p {
 	}
 }
 
+@media screen and (max-width: 39.9375em) {
+	#content {
+		position: relative;
+	}
+}
+
 .button {
 	font: {
 		family: $header-font-family;
