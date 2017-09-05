@@ -1399,9 +1399,9 @@ hr.shadow-divider {
 }
 
 .gsc-results .gsc-cursor-box .gsc-cursor-current-page {
-	background-color: $dark-blue;
-	border: none;
-	color: $white;
+	background-color: $dark-blue !important;
+	border: none !important;
+	color: $white !important;
 }
 
 /************************************************
