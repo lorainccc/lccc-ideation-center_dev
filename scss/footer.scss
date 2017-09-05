@@ -54,6 +54,8 @@ footer {
 		justify-content: center;
 		flex-direction: row;
 		
+		margin-bottom: 2rem;
+		
 		li {
 			margin: 0 .5rem;
 		}
@@ -83,6 +85,10 @@ footer {
 	
 	.map-link {
 		margin-top: 1rem;
+	}
+	
+	@media screen and (max-width: 39.9375em) {
+		margin-bottom: 2rem;
 	}
 }
 

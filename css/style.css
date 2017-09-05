@@ -1522,7 +1522,8 @@ footer {
     flex-wrap: wrap;
     -webkit-box-pack: center;
     justify-content: center;
-    flex-direction: row; }
+    flex-direction: row;
+    margin-bottom: 2rem; }
     .footer-sm-links li {
       margin: 0 .5rem; } }
 @media screen and (min-width: 40em) {
@@ -1538,6 +1539,9 @@ footer {
   font-size: .75rem; }
   .footer-contact-info .map-link {
     margin-top: 1rem; }
+  @media screen and (max-width: 39.9375em) {
+    .footer-contact-info {
+      margin-bottom: 2rem; } }
 
 /*
 footer {
