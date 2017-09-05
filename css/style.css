@@ -455,6 +455,7 @@ hr.shadow-divider {
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
+  box-sizing: border-box;
   margin-bottom: 4rem;
   /* Small only */
   /* Medium only */
@@ -479,15 +480,19 @@ hr.shadow-divider {
       font-weight: 700;
       color: #fefefe; }
   @media screen and (max-width: 39.9375em) {
-    .page-banner .banner-headline-row .columns {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-    .page-banner .banner-headline-row h1:not(.tax-title), .page-banner .banner-headline-row .fake-h1 {
-      font-size: 3rem; }
-    .page-banner .banner-headline-row h1.tax-title {
-      font-size: 2.25rem;
-      line-height: 100%; }
+    .page-banner .banner-headline-row {
+      /*
+      .columns {
+      	display: flex;
+      	flex-direction: column;
+      	justify-content: center;
+      }
+      */ }
+      .page-banner .banner-headline-row h1:not(.tax-title), .page-banner .banner-headline-row .fake-h1 {
+        font-size: 3rem; }
+      .page-banner .banner-headline-row h1.tax-title {
+        font-size: 2.25rem;
+        line-height: 100%; }
     .page-banner .page-banner-inner {
       height: 100%;
       width: 100%;

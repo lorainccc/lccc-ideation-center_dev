@@ -195,7 +195,7 @@ hr.shadow-divider {
 	}
 	position: relative;
 	width: 100%;
-	
+	box-sizing: border-box;
 	margin-bottom: 4rem;
 	
 	.page-banner-inner {
@@ -241,12 +241,13 @@ hr.shadow-divider {
 		
 		
 		.banner-headline-row {
+			/*
 			.columns {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 			}
-			
+			*/
 			h1:not(.tax-title), .fake-h1 {
 				font-size: 3rem;
 			}
