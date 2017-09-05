@@ -8,7 +8,7 @@
  */
 
 
-$location_heading = get_field('location_heading', 'option');
+$footer_contact_section_heading = get_field('footer_contact_section_heading', 'option');
 $street_address = get_field('street_address', 'option');
 $city = get_field('city', 'option');
 $state = get_field('state', 'option');
@@ -61,7 +61,7 @@ $facebook_url = get_field('facebook_url', 'option');
 							
 							<div class="small-12 medium-4 columns">
 							
-								<h2>Contact <?php echo $location_heading; ?></h2>
+								<h2><?php echo $footer_contact_section_heading; ?></h2>
 								
 								<div class="footer-contact-info">
 								
@@ -73,7 +73,7 @@ $facebook_url = get_field('facebook_url', 'option');
 									
 									<div class="email"><?php echo $email; ?></div>
 									
-									<div class="map-link"><a href="<?php echo $google_maps_link; ?>" target="_blank" title="Get Direction to <?php echo $location_heading; ?>"><?php echo $map_and_directions_label; ?></a></div>
+									<div class="map-link"><a href="<?php echo $google_maps_link; ?>" target="_blank" title="Get Direction to <?php echo $footer_contact_section_heading; ?>"><?php echo $map_and_directions_label; ?></a></div>
 								
 								</div>
 								
