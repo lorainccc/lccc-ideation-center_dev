@@ -3,7 +3,6 @@
 $visit_section_heading = get_field('visit_section_heading', 'option');
 $visit_section_subheading = get_field('visit_section_subheading', 'option');
 $map_embed_code = get_field('map_embed_code', 'option');
-$map_image_for_mobile = get_field('map_image_for_mobile', 'option');
 $google_maps_link = get_field('google_maps_link', 'option');
 $location_heading = get_field('location_heading', 'option');
 $street_address = get_field('street_address', 'option');
