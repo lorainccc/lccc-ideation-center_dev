@@ -627,6 +627,9 @@ hr.shadow-divider {
 @media screen and (min-width: 40em) {
   #visit-campana .location-info, #contact .location-info {
     padding-right: 4rem; } }
+@media screen and (max-width: 39.9375em) {
+  #visit-campana .location-info iframe, #contact .location-info iframe {
+    pointer-events: none; } }
 #visit-campana .location-info h3, #contact .location-info h3 {
   font-size: 1.3125rem;
   color: #e16025; }

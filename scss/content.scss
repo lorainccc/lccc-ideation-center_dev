@@ -513,6 +513,12 @@ hr.shadow-divider {
 			padding-right: 4rem;
 		}
 		
+		@media screen and (max-width: 39.9375em) {
+			iframe {
+				pointer-events: none;
+			}
+		}
+		
 		h3 {
 			font-size: 1.3125rem;
 			color: $orange;
