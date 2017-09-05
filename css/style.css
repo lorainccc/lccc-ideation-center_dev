@@ -441,7 +441,9 @@ hr.shadow-divider {
 
 @media screen and (max-width: 39.9375em) {
   aside {
-    margin-top: 2rem; } }
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #cacaca; } }
 /***********************************************
 2.2 GLOBAL PAGE STYLES (for shared template parts)
 ***********************************************/
@@ -1152,6 +1154,13 @@ hr.shadow-divider {
 .event-social-sharing .menu > li > a {
   padding: 0;
   margin-right: .5rem; }
+@media screen and (max-width: 39.9375em) {
+  .event-social-sharing .menu {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: row; } }
 
 @media screen and (min-width: 64em) {
   .single-event-inner main, .events-archive-inner main {
