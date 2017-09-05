@@ -439,6 +439,9 @@ hr.shadow-divider {
     padding-left: .5rem;
     padding-right: .5rem; }
 
+@media screen and (max-width: 39.9375em) {
+  aside {
+    margin-top: 2rem; } }
 /***********************************************
 2.2 GLOBAL PAGE STYLES (for shared template parts)
 ***********************************************/
@@ -786,8 +789,8 @@ hr.shadow-divider {
   color: #0055a4; }
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   #cool .featured-items-row .columns {
-    padding-top: 1rem;
-    padding-bottom: 1rem; } }
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem; } }
 @media screen and (max-width: 39.9375em) {
   #cool .featured-items-row .columns {
     padding-bottom: 1.5rem; }
@@ -876,6 +879,9 @@ hr.shadow-divider {
   .home-featured-post {
     border-bottom: 1px solid #cacaca;
     padding-bottom: 1.5rem; } }
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .home-featured-post {
+    margin-bottom: 2rem; } }
 
 .home-recent-posts .home-recent-posts-row h3 {
   font-size: 1.3125rem;
@@ -986,6 +992,9 @@ hr.shadow-divider {
   .page-two-columns .ss-sidebar {
     border-right: 1px solid #cacaca;
     padding-right: 3rem; } }
+@media screen and (max-width: 39.9375em) {
+  .page-two-columns .ss-sidebar {
+    margin-top: 2rem; } }
 
 .sidebar-widget:not(:first-child) {
   margin-top: 2rem; }
