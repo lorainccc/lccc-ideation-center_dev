@@ -338,7 +338,7 @@ function modify_events_query( $events_query ) {
 			)
 		);
 		
-		$events_query->set( 'posts_per_page', 1 );
+		$events_query->set( 'posts_per_page', 10 );
 		$events_query->set( 'meta_query', $events_meta_query );
 		$events_query->set( 'meta_key', 'event_start_date' );
 		$events_query->set( 'order', 'ASC' );

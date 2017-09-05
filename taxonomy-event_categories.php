@@ -23,7 +23,7 @@
 				'post_type' => 'lccc_events',
 				'event_categories' => $term->slug,
 				'post_status' => 'publish',
-				'posts_per_page' => 1,
+				'posts_per_page' => -1,
 				'order'=> 'ASC',
 				'orderby'=> 'meta_value',
 				'paged' => $paged,
@@ -60,29 +60,6 @@
 			wp_reset_postdata();
 			
 			?>
-			
-			<div class="pagination-wrapper text-center">
-			
-			<?php
-				
-				the_posts_pagination( array(
-					'mid'	=>	3,
-					'prev_text'	=> '&laquo; Previous',
-					'next_text' => 'Next &raquo;',
-					'screen_reader_text' => 'Events navigation'
-				)
-				);
-				
-				
-				$wp_query = NULL;
-				$wp_query = $temp_query;
-				
-				
-			?>
-			
-			</div>
-			
-			
 			
 					
 		</main>
