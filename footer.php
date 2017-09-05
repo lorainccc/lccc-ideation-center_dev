@@ -65,7 +65,7 @@ $facebook_url = get_field('facebook_url', 'option');
 								
 								<div class="footer-contact-info">
 								
-									<div class="street-address"><?php echo $$street_address; ?></div>
+									<div class="street-address"><?php echo $street_address; ?></div>
 									
 									<div class="locale-region"><?php echo $city . ', ' . $state . ' ' . $zipcode; ?></div>
 									
