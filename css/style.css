@@ -1129,6 +1129,11 @@ hr.shadow-divider {
     background-color: #003b76 !important;
     color: #fefefe !important; }
 
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+  background-color: #003b76;
+  border: none;
+  color: #fefefe; }
+
 /************************************************
 2.9 EVENTS STYLES
 ************************************************/
