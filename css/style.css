@@ -1559,7 +1559,7 @@ footer {
 .footer-logo {
   margin-bottom: 2rem; }
 
-.underline li a {
+.footer-links li > a {
   font-size: .75rem; }
 
 @media screen and (max-width: 39.9375em) {

@@ -198,7 +198,7 @@ function campana_top_nav() {
 
 function campana_footer_nav() {
 	wp_nav_menu( array(
-		'menu_class'     => 'underline',
+		'menu_class'     => 'footer-links',
 		'theme_location' => 'campana_footer_nav',
 	));
 }
