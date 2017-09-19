@@ -1475,6 +1475,8 @@ Section 5: Navigation
   color: #007bbf; }
 .top-nav-container > div > .menu:not(.is-dropdown-submenu) > li:last-child > a {
   padding-right: 0; }
+.top-nav-container > div .menu .active > a {
+  color: #007bbf; }
 
 .main-nav-container > div > .menu:not(.is-dropdown-submenu) > li > a {
   font-size: 1.072rem;
