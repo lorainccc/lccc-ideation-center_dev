@@ -1455,6 +1455,9 @@ Section 5: Navigation
 
   .no-js .title-bar {
     display: none; } }
+.menu .active > a {
+  background: none; }
+
 .is-dropdown-submenu {
   background-color: #fefefe;
   border: none;

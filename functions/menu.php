@@ -11,7 +11,8 @@ register_nav_menus(
   		'header-shortcuts' => esc_html__( 'Header Shortcuts Menu', 'lorainccc' ),
   		'mobile-header-shortcuts' => esc_html__( 'Mobile Header Shortcuts Menu', 'lorainccc' ),
 		'campana-main-nav' => __( 'Campana Main Menu', 'campana'),
-		'campana-top-nav' => __( 'Campana Top Menu')
+		'campana-top-nav' => __( 'Campana Top Menu'),
+		'campana-footer-nav' => __( 'Campana Footer Links', 'campana')
 	) 
 );
 
@@ -194,6 +195,14 @@ function campana_top_nav() {
     	'fallback_cb' => ''  							// Fallback function
 	));
 }
+
+function campana_footer_nav() {
+	wp_nav_menu( array(
+		'menu_class'     => 'underline',
+		'theme_location' => 'campana_footer_nav',
+	));
+}
+
 
 // Add Foundation active class to menu
 function required_active_nav_class( $classes, $item ) {

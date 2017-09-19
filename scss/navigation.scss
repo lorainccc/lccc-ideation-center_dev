@@ -18,6 +18,10 @@ Section 5: Navigation
   }
 }
 
+.menu .active > a {
+	background: none;
+}
+
 .is-dropdown-submenu {
 	background-color: $white;
 	border: none;
