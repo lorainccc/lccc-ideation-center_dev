@@ -62,9 +62,7 @@ Section 5: Navigation
 		
 	}
 	
-	.menu .active > a {
-		color: $light-blue;
-	}
+	
 	
 }
 	
@@ -103,6 +101,9 @@ Section 5: Navigation
 				padding-left: 0;
 			}
 		}
+	}
+	.menu .active > a {
+		color: $light-blue !important;
 	}
 }
 
