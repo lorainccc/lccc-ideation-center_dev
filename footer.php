@@ -83,7 +83,7 @@ $facebook_url = get_field('facebook_url', 'option');
 							
 								<h2>Quick Links</h2>
 								
-								<?php footer_quicklinks_nav(); ?>
+								<?php campana_footer_nav(); ?>
 							
 							</div>
 							
