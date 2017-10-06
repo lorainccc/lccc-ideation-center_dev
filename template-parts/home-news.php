@@ -97,6 +97,7 @@
 			'post__not_in'		     => array( $exclude_post_id ),
 			'posts_per_page'		 => '3',
 			'nopaging'				 => true,
+			'ignore_sticky_posts'	 => true
 		);
 
 		// The Query
