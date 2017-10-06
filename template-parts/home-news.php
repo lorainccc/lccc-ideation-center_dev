@@ -94,9 +94,9 @@
 			'post_status'            => array( 'publish' ),
 			'order'                  => 'DESC',
 			'orderby'                => 'date',
-			//'post__not_in'		     => array( $exclude_post_id ),
+			'post__not_in'		     => array( $exclude_post_id ),
 			'posts_per_page'		 => '1',
-			'nopaging'				 => true,
+			'nopaging'				 => false,
 			'ignore_sticky_posts'	 => true
 		);
 
