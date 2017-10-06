@@ -95,9 +95,9 @@
 			'order'                  => 'DESC',
 			'orderby'                => 'date',
 			'post__not_in'		     => array( $exclude_post_id ),
-			'posts_per_page'		 => '1',
+			'posts_per_page'		 => '3',
 			'nopaging'				 => false,
-			'ignore_sticky_posts'	 => true
+			//'ignore_sticky_posts'	 => true
 		);
 
 		// The Query
