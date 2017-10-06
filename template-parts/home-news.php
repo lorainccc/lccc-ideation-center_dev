@@ -71,7 +71,7 @@
 		
 		endif; 
 		
-		wp_reset_postdata();
+		//wp_reset_postdata();
 		
 		
 		if( $has_featured == true ) :
