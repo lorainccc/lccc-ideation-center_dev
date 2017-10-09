@@ -347,5 +347,19 @@ function modify_events_query( $events_query ) {
 }
 add_action( 'pre_get_posts', 'modify_events_query', 1, 1 );
 
+// Add tabindex="-1" to off-canvas menu
+
+function offcanvas_tab_index() {
+?>
+
+<script>
+	
+	jQuery(".off-canvas ul li a").attr("tabindex", -1);
+	
+</script>
+
+<?php
+}
+add_action('wp_footer', 'offcanvas_tab_index', 200 );
 
 ?>
