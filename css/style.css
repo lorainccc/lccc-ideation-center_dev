@@ -915,6 +915,8 @@ hr.shadow-divider {
   height: 1px;
   width: 100%;
   background: #cacaca; }
+.home-recent-posts div > .button {
+  margin-top: 1rem; }
 
 /****************************************
 2.4 OVERVIEW TEMPLATE STYLES
