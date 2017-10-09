@@ -4,7 +4,7 @@
 	
 		<div class="small-12 columns text-center">
 		
-			<h2>Blog/News Section Heading</h2>
+			<h2>In the news</h2>
 		
 		</div>
 	
