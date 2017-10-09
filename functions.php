@@ -354,7 +354,7 @@ function offcanvas_tab_index() {
 
 <script>
 	
-	jQuery(".off-canvas ul li a").attr("tabindex", -1);
+	jQuery("#offCanvas ul li a, button.menu-icon, #offCanvas .gsc-input input").attr("tabindex", -1);
 	
 </script>
 
