@@ -34,7 +34,7 @@
 	
 		<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 			
-			<div class="off-canvas position-right" id="offCanvas" data-position="right" data-off-canvas>
+			<div class="off-canvas position-right" id="offCanvas" data-position="right" data-off-canvas data-trap-focus="true">
 			
 				<?php get_template_part( 'template-parts/nav', 'offcanvas'); ?>
 			
