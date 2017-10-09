@@ -354,7 +354,7 @@ function offcanvas_tab_index() {
 
 <script>
 	
-	jQuery("#offCanvas ul li a, #offCanvas ul li a:first-of-type, .menu-icon, #offCanvas .gsc-search-box #gsc-i-id1, #offCanvas .gsc-search-box input.gsc-input , .menu-item-6 a").attr("tabindex", -1);
+	jQuery("#offCanvas ul li a, #offCanvas ul li a:first-of-type, .menu-icon, #offCanvas .gsc-search-box input#gsc-i-id1, #offCanvas .gsc-search-box input.gsc-input , .menu-item-6 a").attr("tabindex", -1);
 	
 </script>
 
