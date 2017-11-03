@@ -921,6 +921,8 @@ main a:not(.button) {
   background: #cacaca; }
 .home-recent-posts div > .button {
   margin-top: 2rem; }
+.home-recent-posts .home-news-view-all {
+  padding-top: 1rem; }
 
 /****************************************
 2.4 OVERVIEW TEMPLATE STYLES

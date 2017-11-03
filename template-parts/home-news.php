@@ -191,7 +191,7 @@
 			
 		endif; // end if has recent post
 		
-		echo '<div class="text-center"><a href="' . get_permalink( get_option('page_for_posts' ) ) . '" class="button">View All News</a></div>';
+		echo '<div class="text-center small-12 columns home-news-view-all"><a href="' . get_permalink( get_option('page_for_posts' ) ) . '" class="button">View All News</a></div>';
 			
 		wp_reset_postdata();
 		
