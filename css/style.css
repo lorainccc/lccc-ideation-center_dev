@@ -447,6 +447,9 @@ hr.shadow-divider {
     margin-top: 2rem;
     padding-top: 2rem;
     border-top: 1px solid #cacaca; } }
+main a:not(.button) {
+  text-decoration: underline; }
+
 /***********************************************
 2.2 GLOBAL PAGE STYLES (for shared template parts)
 ***********************************************/
@@ -799,7 +802,8 @@ hr.shadow-divider {
 #cool .featured-items-row a {
   font-size: 1rem;
   font-weight: 700;
-  color: #0055a4; }
+  color: #0055a4;
+  text-decoration: underline; }
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   #cool .featured-items-row .columns {
     padding-top: 1.5rem;
@@ -961,7 +965,8 @@ hr.shadow-divider {
 .read-more {
   font-size: 1rem;
   font-weight: 700;
-  color: #0055a4; }
+  color: #0055a4;
+  text-decoration: underline; }
 
 @media screen and (max-width: 39.9375em) {
   .spotlight-row > div {
@@ -1556,13 +1561,15 @@ footer {
   list-style: none;
   margin: 0; }
 .footer-inner a {
-  color: #fefefe; }
+  color: #fefefe;
+  text-decoration: underline; }
 
 .footer-logo {
   margin-bottom: 2rem; }
 
 .footer-links li > a {
-  font-size: .75rem; }
+  font-size: .75rem;
+  text-decoration: underline; }
 
 @media screen and (max-width: 39.9375em) {
   .footer-sm-links {
