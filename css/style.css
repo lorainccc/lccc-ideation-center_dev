@@ -447,7 +447,7 @@ hr.shadow-divider {
     margin-top: 2rem;
     padding-top: 2rem;
     border-top: 1px solid #cacaca; } }
-main a:not(.button) {
+main a:not(.button):hover {
   text-decoration: underline; }
 
 /***********************************************
@@ -802,8 +802,9 @@ main a:not(.button) {
 #cool .featured-items-row a {
   font-size: 1rem;
   font-weight: 700;
-  color: #0055a4;
-  text-decoration: underline; }
+  color: #0055a4; }
+  #cool .featured-items-row a:hover {
+    text-decoration: underline; }
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   #cool .featured-items-row .columns {
     padding-top: 1.5rem;
@@ -967,8 +968,9 @@ main a:not(.button) {
 .read-more {
   font-size: 1rem;
   font-weight: 700;
-  color: #0055a4;
-  text-decoration: underline; }
+  color: #0055a4; }
+  .read-more:hover {
+    text-decoration: underline; }
 
 @media screen and (max-width: 39.9375em) {
   .spotlight-row > div {
@@ -1087,8 +1089,9 @@ main a:not(.button) {
   margin-bottom: .5rem; }
   .post-taxonomies a, .event-taxonomy-links a {
     font-weight: 600;
-    color: #e16025;
-    text-decoration: underline; }
+    color: #e16025; }
+    .post-taxonomies a:hover, .event-taxonomy-links a:hover {
+      text-decoration: underline; }
 
 .blog-single-inner {
   padding-top: 2rem;

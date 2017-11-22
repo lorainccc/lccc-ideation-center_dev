@@ -183,7 +183,7 @@ hr.shadow-divider {
 	}
 }
 
-main a:not(.button) {
+main a:not(.button):hover {
 	text-decoration: underline;
 }
 
@@ -840,7 +840,10 @@ main a:not(.button) {
 				weight: $font-bold;
 			}
 			color: $medium-blue;
-			text-decoration: underline;
+			
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 		
 		@media screen and (min-width: 40em) and (max-width: 63.9375em) {
@@ -1127,7 +1130,11 @@ main a:not(.button) {
 		weight: $font-bold;
 	}
 	color: $medium-blue;
-	text-decoration: underline;
+	
+	&:hover {
+		text-decoration: underline;
+	}
+	
 }
 
 @media screen and (max-width: 39.9375em) {
@@ -1146,7 +1153,6 @@ main a:not(.button) {
 		&:first-child {
 			padding-top: 0;
 		}
-		
 	}
 }
 
@@ -1329,7 +1335,11 @@ main a:not(.button) {
 	a {
 		font-weight: $font-semibold;
 		color: $orange;
-		text-decoration: underline;
+		
+		&:hover {
+			text-decoration: underline;
+		}
+		
 	}
 	
 	margin-bottom: .5rem;
