@@ -39,7 +39,7 @@ function lorainccc_subsite_foundation_scripts() {
 add_action( 'wp_enqueue_scripts', 'lorainccc_subsite_foundation_scripts' );
 
 function lorainccc_subsite_scripts() {
-	wp_enqueue_style( 'lorainccc_subsite-style', get_stylesheet_directory_uri() . '/css/style.css');
+	wp_enqueue_style( 'lorainccc_subsite-style', get_stylesheet_directory_uri() . 'style.css');
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
