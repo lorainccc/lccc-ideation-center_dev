@@ -29,8 +29,6 @@ get_header();
             switch_to_blog($post->blog_id);
 			
 				get_template_part( 'template-parts/loop', 'search');
-            
-            restore_current();
 				
 			endwhile;
 				
